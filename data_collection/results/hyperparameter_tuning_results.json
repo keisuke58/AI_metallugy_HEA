@@ -1,0 +1,49 @@
+{
+  "L": {
+    "params": {
+      "alpha": 10.0
+    },
+    "test_r2": 0.04785996320510122,
+    "test_rmse": 55.52975255012256,
+    "test_mae": 41.77917296454351
+  },
+  "R": {
+    "params": {
+      "alpha": 100.0
+    },
+    "test_r2": 0.06862497509431387,
+    "test_rmse": 54.92089659169139,
+    "test_mae": 41.57622428521814
+  },
+  "KNN": {
+    "params": {
+      "metric": "manhattan",
+      "n_neighbors": 7,
+      "weights": "uniform"
+    },
+    "test_r2": 0.01596316836831535,
+    "test_rmse": 56.45221690347887,
+    "test_mae": 42.644971428571424
+  },
+  "SVR": {
+    "params": {
+      "C": 1000,
+      "epsilon": 1.0,
+      "gamma": "scale"
+    },
+    "test_r2": 0.5945473679761493,
+    "test_rmse": 36.23642849525435,
+    "test_mae": 23.417341322956077
+  },
+  "RF": {
+    "params": {
+      "max_depth": 10,
+      "min_samples_leaf": 1,
+      "min_samples_split": 2,
+      "n_estimators": 100
+    },
+    "test_r2": 0.565725444854804,
+    "test_rmse": 37.50226657632258,
+    "test_mae": 25.937860969085023
+  }
+}

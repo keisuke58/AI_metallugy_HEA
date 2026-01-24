@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEA弾性率予測プロジェクト - プレゼンテーション</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .slide {
+            background: white;
+            border-radius: 15px;
+            padding: 60px;
+            margin: 30px 0;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            min-height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        h1 {
+            color: #667eea;
+            font-size: 3em;
+            margin-bottom: 30px;
+            text-align: center;
+            border-bottom: 4px solid #667eea;
+            padding-bottom: 20px;
+        }
+        
+        h2 {
+            color: #764ba2;
+            font-size: 2.2em;
+            margin-bottom: 25px;
+            border-left: 5px solid #764ba2;
+            padding-left: 15px;
+        }
+        
+        h3 {
+            color: #555;
+            font-size: 1.5em;
+            margin: 20px 0 15px 0;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 1.1em;
+        }
+        
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+        
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .metric-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .metric-value {
+            font-size: 3em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .metric-label {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .success {
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        .improvement {
+            color: #ffc107;
+            font-weight: bold;
+        }
+        
+        ul {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin: 10px 0;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .card h3 {
+            color: #667eea;
+            margin-top: 0;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            font-size: 1.1em;
+        }
+        
+        .slide-number {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(102, 126, 234, 0.8);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        
+        .slide {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- スライド1: タイトル -->
+        <div class="slide">
+            <div class="slide-number">スライド 1/12</div>
+            <h1>🎯 HEA弾性率予測プロジェクト</h1>
+            <div style="text-align: center; margin-top: 50px;">
+                <h2 style="border: none; text-align: center;">プレゼンテーション資料</h2>
+                <p style="font-size: 1.3em; margin-top: 30px; color: #666;">
+                    高エントロピー合金の弾性率を機械学習で予測
+                </p>
+            </div>
+        </div>
+        
+        <!-- スライド2: プロジェクト概要 -->
+        <div class="slide">
+            <div class="slide-number">スライド 2/12</div>
+            <h2>プロジェクト概要</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>目的</h3>
+                    <p>高エントロピー合金（HEA）の弾性率を機械学習で予測</p>
+                </div>
+                <div class="card">
+                    <h3>成果</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>✅ 322個のデータを収集・統合</li>
+                        <li>✅ 8種類のモデルを開発・評価</li>
+                        <li>✅ <span class="highlight">最良性能: R² = 0.67</span> を達成</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- スライド3: データ収集結果 -->
+        <div class="slide">
+            <div class="slide-number">スライド 3/12</div>
+            <h2>データ収集結果</h2>
+            <h3>データソース</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ソース</th>
+                        <th>データ数</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>DOE/OSTI</td>
+                        <td>107個</td>
+                    </tr>
+                    <tr>
+                        <td>Gorsse Dataset</td>
+                        <td>211個</td>
+                    </tr>
+                    <tr>
+                        <td>最新研究</td>
+                        <td>4個</td>
+                    </tr>
+                    <tr style="background-color: #e8f4f8;">
+                        <td><strong>合計</strong></td>
+                        <td><strong>322個</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 style="margin-top: 30px;">データ特性</h3>
+            <ul>
+                <li>弾性率範囲: <span class="highlight">27-466 GPa</span></li>
+                <li>平均: <span class="highlight">165.4 GPa</span></li>
+                <li>生体医学用途データ（30-90 GPa）も含む</li>
+            </ul>
+        </div>
+        
+        <!-- スライド4: 特徴量エンジニアリング -->
+        <div class="slide">
+            <div class="slide-number">スライド 4/12</div>
+            <h2>特徴量エンジニアリング</h2>
+            <div class="metric-box">
+                <div class="metric-label">特徴量数</div>
+                <div class="metric-value">29個</div>
+            </div>
+            <h3>最重要特徴量（上位5つ）</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>順位</th>
+                        <th>特徴量</th>
+                        <th>重要度</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1位</td>
+                        <td><strong>Ti組成比</strong></td>
+                        <td>16.6%</td>
+                    </tr>
+                    <tr>
+                        <td>2位</td>
+                        <td>平均電気陰性度</td>
+                        <td>8.8%</td>
+                    </tr>
+                    <tr>
+                        <td>3位</td>
+                        <td>価電子濃度</td>
+                        <td>8.0%</td>
+                    </tr>
+                    <tr>
+                        <td>4位</td>
+                        <td>Co組成比</td>
+                        <td>6.8%</td>
+                    </tr>
+                    <tr>
+                        <td>5位</td>
+                        <td>密度</td>
+                        <td>6.4%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="margin-top: 20px; font-size: 1.1em; color: #667eea; font-weight: bold;">
+                💡 発見: Ti組成比が最も重要な予測因子
+            </p>
+        </div>
+        
+        <!-- スライド5: モデル性能比較 -->
+        <div class="slide">
+            <div class="slide-number">スライド 5/12</div>
+            <h2>モデル性能比較</h2>
+            <h3>全モデル性能（初期訓練）</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>順位</th>
+                        <th>モデル</th>
+                        <th>R²</th>
+                        <th>RMSE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #fff3cd;">
+                        <td>🥇 1位</td>
+                        <td><strong>Random Forest</strong></td>
+                        <td><strong>0.57</strong></td>
+                        <td><strong>37.5 GPa</strong></td>
+                    </tr>
+                    <tr style="background-color: #e7f3ff;">
+                        <td>🥈 2位</td>
+                        <td><strong>MLFFNN</strong></td>
+                        <td><strong>0.49</strong></td>
+                        <td><strong>40.5 GPa</strong></td>
+                    </tr>
+                    <tr>
+                        <td>🥉 3位</td>
+                        <td>Lasso</td>
+                        <td>0.37</td>
+                        <td>45.1 GPa</td>
+                    </tr>
+                    <tr>
+                        <td>4位</td>
+                        <td>Linear</td>
+                        <td>0.36</td>
+                        <td>45.5 GPa</td>
+                    </tr>
+                    <tr>
+                        <td>5位</td>
+                        <td>SVR</td>
+                        <td>0.36</td>
+                        <td>45.6 GPa</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="margin-top: 20px; text-align: center; font-size: 1.2em;">
+                <span class="highlight">最良: Random Forest（R² = 0.57）</span>
+            </p>
+        </div>
+        
+        <!-- スライド6: 最適化結果 -->
+        <div class="slide">
+            <div class="slide-number">スライド 6/12</div>
+            <h2>最適化結果</h2>
+            <h3>最適化による性能向上</h3>
+            <div class="grid">
+                <div class="card">
+                    <h3>全データセット使用時</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><strong>SVR（最適化後）</strong></li>
+                        <li>R² = <span class="improvement">0.59</span></li>
+                        <li>⬆️ <span class="improvement">+67%</span></li>
+                        <li style="margin-top: 15px;">Random Forest</li>
+                        <li>R² = 0.57</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>実測データのみ使用時</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><strong>Gradient Boosting</strong></li>
+                        <li>R² = <span class="improvement">0.67</span></li>
+                        <li>⬆️ <span class="improvement">+37%</span></li>
+                        <li style="margin-top: 15px;">Test RMSE: 49.7 GPa</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 30px; padding: 20px; background: #e8f4f8; border-radius: 10px;">
+                <p style="font-size: 1.2em; font-weight: bold; color: #667eea;">
+                    結論: 最適化により大幅な性能向上を達成
+                </p>
+            </div>
+        </div>
+        
+        <!-- スライド7: 最良モデルの性能 -->
+        <div class="slide">
+            <div class="slide-number">スライド 7/12</div>
+            <h2>最良モデルの性能</h2>
+            <h3>Gradient Boosting（実測データのみ）</h3>
+            <div class="grid">
+                <div class="metric-box">
+                    <div class="metric-label">Test R²</div>
+                    <div class="metric-value">0.6744</div>
+                </div>
+                <div class="metric-box">
+                    <div class="metric-label">Test RMSE</div>
+                    <div class="metric-value">49.70</div>
+                    <div class="metric-label">GPa</div>
+                </div>
+                <div class="metric-box">
+                    <div class="metric-label">Test MAE</div>
+                    <div class="metric-value">37.07</div>
+                    <div class="metric-label">GPa</div>
+                </div>
+            </div>
+            <h3 style="margin-top: 30px;">改善の軌跡</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>段階</th>
+                        <th>R²</th>
+                        <th>改善率</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>初期</td>
+                        <td>0.49</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>基本最適化</td>
+                        <td>0.62</td>
+                        <td class="improvement">+25.9%</td>
+                    </tr>
+                    <tr>
+                        <td>高度最適化</td>
+                        <td>0.63</td>
+                        <td class="improvement">+27.6%</td>
+                    </tr>
+                    <tr style="background-color: #fff3cd;">
+                        <td><strong>最終最適化</strong></td>
+                        <td><strong>0.67</strong></td>
+                        <td class="improvement"><strong>+36.7%</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- スライド8: 重要な発見 -->
+        <div class="slide">
+            <div class="slide-number">スライド 8/12</div>
+            <h2>重要な発見</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>1. データに関する発見</h3>
+                    <ul>
+                        <li>✅ 322個のデータで実用的なモデルを構築可能</li>
+                        <li>✅ 実測データのみ（109個）でも良好な性能</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>2. 特徴量に関する発見</h3>
+                    <ul>
+                        <li><strong>Ti組成比</strong>が最も重要（16.6%）</li>
+                        <li>材料記述子（電気陰性度、価電子濃度）が有効</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>3. モデルに関する発見</h3>
+                    <ul>
+                        <li>非線形モデル（SVR、GB、RF）が良好</li>
+                        <li>最適化により67%の性能向上を達成</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- スライド9: 可視化結果 -->
+        <div class="slide">
+            <div class="slide-number">スライド 9/12</div>
+            <h2>可視化結果</h2>
+            <div class="metric-box">
+                <div class="metric-label">作成された図表</div>
+                <div class="metric-value">21個</div>
+            </div>
+            <h3>主要カテゴリ</h3>
+            <div class="grid">
+                <div class="card">
+                    <h3>📊 データ分析</h3>
+                    <p>データ特性、分布、相関</p>
+                </div>
+                <div class="card">
+                    <h3>📈 モデル性能</h3>
+                    <p>性能比較、改善履歴</p>
+                </div>
+                <div class="card">
+                    <h3>📉 予測結果</h3>
+                    <p>予測値 vs 実測値、予測区間</p>
+                </div>
+                <div class="card">
+                    <h3>🔍 残差分析</h3>
+                    <p>残差分布、誤差分析</p>
+                </div>
+                <div class="card">
+                    <h3>🎯 特徴量分析</h3>
+                    <p>重要度、特徴量 vs 目的変数</p>
+                </div>
+                <div class="card">
+                    <h3>📚 学習曲線</h3>
+                    <p>学習過程、最適化履歴</p>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 20px; font-size: 1.1em;">
+                <strong>すべての図表は <code>figures/</code> ディレクトリに保存</strong>
+            </p>
+        </div>
+        
+        <!-- スライド10: 実用的な価値 -->
+        <div class="slide">
+            <div class="slide-number">スライド 10/12</div>
+            <h2>実用的な価値</h2>
+            <h3>応用可能性</h3>
+            <div class="grid">
+                <div class="card">
+                    <h3>1. 材料設計の効率化</h3>
+                    <ul>
+                        <li>新規HEA合金の弾性率を事前予測</li>
+                        <li>実験コストの削減</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>2. 組成最適化</h3>
+                    <ul>
+                        <li>目標弾性率を達成する組成を探索</li>
+                        <li>設計空間の効率的な探索</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>3. 品質管理</h3>
+                    <ul>
+                        <li>製造プロセスの品質評価</li>
+                        <li>バッチ間の一貫性確認</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- スライド11: 今後の展望 -->
+        <div class="slide">
+            <div class="slide-number">スライド 11/12</div>
+            <h2>今後の展望</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>短期的改善（1-3ヶ月）</h3>
+                    <ul>
+                        <li>📈 データ収集の拡大（目標: 500-600個）</li>
+                        <li>🔧 特徴量の拡充（相情報、処理条件）</li>
+                        <li>⚙️ モデルの改善（過学習抑制、アンサンブル）</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>中長期的改善（3-12ヶ月）</h3>
+                    <ul>
+                        <li>🎓 転移学習の適用</li>
+                        <li>📊 不確実性の定量化</li>
+                        <li>🎯 マルチタスク学習（弾性率、強度、硬度）</li>
+                        <li>🧪 アクティブラーニング</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- スライド12: 結論 -->
+        <div class="slide">
+            <div class="slide-number">スライド 12/12</div>
+            <h2>結論</h2>
+            <h3>プロジェクト成果</h3>
+            <div class="grid">
+                <div class="card">
+                    <ul style="list-style: none; padding: 0;">
+                        <li>✅ <strong>データ収集</strong>: 322個のデータを統合</li>
+                        <li>✅ <strong>特徴量</strong>: 29個の特徴量を生成</li>
+                        <li>✅ <strong>モデル</strong>: 8種類のモデルを実装</li>
+                        <li>✅ <strong>性能</strong>: R² = 0.67 を達成</li>
+                        <li>✅ <strong>可視化</strong>: 21個の図表を作成</li>
+                    </ul>
+                </div>
+            </div>
+            <h3 style="margin-top: 30px;">実用的な価値</h3>
+            <div style="background: #e8f4f8; padding: 25px; border-radius: 10px; margin-top: 20px;">
+                <ul style="font-size: 1.2em;">
+                    <li>新規HEA合金の弾性率予測が可能</li>
+                    <li>材料設計の効率化に貢献</li>
+                    <li>実験コストの削減</li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="footer">
+        <p>HEA弾性率予測プロジェクト - プレゼンテーション資料</p>
+        <p>作成日: 2026年1月20日</p>
+    </div>
+</body>
+</html>

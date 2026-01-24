@@ -1,0 +1,59 @@
+✅ hea_gnn環境が見つかりました
+
+==========================================
+訓練を再開します
+==========================================
+
+✅ データファイル: ../data_collection/processed_data/data_with_features.csv
+/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:60: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+================================================================================
+HEA Elastic Modulus Prediction: GNN & Transformer Training
+================================================================================
+📊 データファイル: /home/nishioka/LUH/AI_metallurgy/data_collection/processed_data/data_with_features.csv
+📁 出力ディレクトリ: /home/nishioka/LUH/AI_metallurgy/gnn_transformer_models/results
+💾 モデルディレクトリ: /home/nishioka/LUH/AI_metallurgy/gnn_transformer_models/models
+⚙️  デバイス: cpu
+📦 モデルタイプ: 軽量版
+================================================================================
+================================================================================
+GNN Model Training
+================================================================================
+✅ 322サンプルを読み込みました
+📊 組成特徴量: 17個
+📊 データ分割: Train=257, Val=32, Test=33
+
+Epoch 1/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:   0%|          | 0/33 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "train.py", line 601, in <module>
+    main()
+  File "train.py", line 575, in main
+    gnn_results = train_gnn(CONFIG, data_path, output_dir, model_dir)
+  File "train.py", line 211, in train_gnn
+    train_loss, train_r2, train_rmse, train_mae = train_epoch(
+  File "train.py", line 62, in train_epoch
+    output = model(batch)
+  File "/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/nishioka/LUH/AI_metallurgy/gnn_transformer_models/gnn_model.py", line 311, in forward
+    additional_out = self.additional_mlp(additional_features)
+  File "/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/container.py", line 219, in forward
+    input = module(input)
+  File "/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/linear.py", line 117, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (1x64 and 8x64)
+
+==========================================
+訓練完了
+==========================================
