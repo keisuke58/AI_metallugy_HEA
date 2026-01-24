@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Model files and checkpoints (uncomment if you don't want to track these)
+# *.pth
+# *.pkl
+# *.h5
+# *.ckpt
+# checkpoints/
+
+# Data files (uncomment if you don't want to track these)
+# *.csv
+# *.pkl
+# *.hdf5
+# *.h5
+# data/
+
+# Results and outputs
+# results/
+# outputs/
+# logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.bak
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+
+# Screen and tmux sessions
+*.screen
+*.tmux
