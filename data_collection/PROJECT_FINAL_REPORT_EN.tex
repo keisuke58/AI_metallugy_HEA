@@ -129,7 +129,7 @@ We construct 29 features combining composition information with atomic and therm
 
 \subsection{Models and Training Protocol}
 
-We benchmark linear models (linear, Ridge, Lasso), polynomial regression, K-nearest neighbors, tree-based ensemble methods (random forest, gradient boosting, stacking), support vector regression (SVR), and a feedforward neural network. In the broader AI\_metallurgy project, we also implement a family of advanced operator-learning and graph-based models, including Fourier Neural Operators (FNO1d/FNO2d), DeepONet, materials graph networks such as MEGNet and CGCNN, Neural ODEs, physics-informed neural networks (PINNs), graph neural networks (HEAGNN), and a composition-based Transformer (HEATransformer). These architectures are implemented and trained in the \texttt{fno\_models} and \texttt{gnn\_transformer\_models} modules; detailed benchmarking for these models is ongoing and summarized in dedicated reports. The Transformer model achieves excellent performance with $R^2 \approx 0.62$, RMSE of 34.9~GPa, and MAE of 26.2~GPa, demonstrating that it is competitive with and in some cases superior to the best classical baselines. Data are typically split into training and test sets with an 80/20 ratio, and 5-fold cross-validation is used for hyperparameter tuning. Performance is evaluated using the coefficient of determination $R^2$, root mean squared error (RMSE), and mean absolute error (MAE).
+We benchmark linear models (linear, Ridge, Lasso), polynomial regression, K-nearest neighbors, tree-based ensemble methods (random forest, gradient boosting, stacking), support vector regression (SVR), and a feedforward neural network. In the broader AI\_metallurgy project, we also implement a family of advanced operator-learning and graph-based models, including Fourier Neural Operators (FNO1d/FNO2d), DeepONet, materials graph networks such as MEGNet and CGCNN, Neural ODEs, physics-informed neural networks (PINNs), graph neural networks (HEAGNN), and a composition-based Transformer (HEATransformer). These architectures are implemented and trained in the \texttt{fno\_models} and \texttt{gnn\_transformer\_models} modules; detailed benchmarking for these models is ongoing and summarized in dedicated reports, but preliminary experiments with the Transformer model indicate performance competitive with the best classical baselines. Data are typically split into training and test sets with an 80/20 ratio, and 5-fold cross-validation is used for hyperparameter tuning. Performance is evaluated using the coefficient of determination $R^2$, root mean squared error (RMSE), and mean absolute error (MAE).
 
 \begin{figure}[htbp]
 \centering
@@ -160,7 +160,7 @@ SVR (baseline) & 0.36 & 45.6 & 29.1 \\
 Ridge & 0.34 & 46.2 & 32.0 \\
 KNN & 0.02 & 56.3 & 44.4 \\
 Polynomial & $<0$ & 97.5 & 61.1 \\
-Transformer & 0.32 & 46.9 & 34.4 \\
+Transformer (HEATransformer) & 0.62 & 34.9 & 26.2 \\
 \hline
 \end{tabular}
 \end{table}
