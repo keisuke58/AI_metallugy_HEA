@@ -31,25 +31,28 @@ DEFAULT_MODEL_DIR = _script_dir / "models"
 
 # デフォルトハイパーパラメータ（精度向上のため最適化）
 DEFAULT_CONFIG = {
-    'batch_size': 64,  # 適切なバッチサイズ（データ数に応じて自動調整）
-    'learning_rate': 3e-4,  # 初期学習率（より低く設定）
-    'num_epochs': 200,  # より長い訓練
-    'early_stopping_patience': 50,  # より長い忍耐
+    'batch_size': 32,  # より安定した訓練のため32に調整
+    'learning_rate': 3e-4,  # より低い学習率で安定化（過学習抑制）
+    'num_epochs': 400,  # より長い訓練で精度向上
+    'early_stopping_patience': 50,  # より長い忍耐（不安定な訓練に対応）
     'train_ratio': 0.8,
     'val_ratio': 0.1,
     'test_ratio': 0.1,
     'device': 'auto',
     'use_light_model': False,  # フルモデルを使用（精度向上のため）
-    'use_huber_loss': False,  # MSE Lossを使用（初期訓練では安定）
+    'use_huber_loss': True,  # Huber Lossを使用（外れ値に頑健、精度向上）
     'huber_delta': 1.0,  # Huber Lossのデルタ
-    'weight_decay': 1e-5,  # 軽い正則化
+    'weight_decay': 2e-4,  # より強い正則化で過学習防止
     'gradient_accumulation_steps': 1,  # 勾配累積
-    'warmup_epochs': 30,  # ウォームアップ期間を延長
+    'warmup_epochs': 25,  # ウォームアップ期間を延長
     'num_workers': 4,  # データローダーのワーカー数（マルチプロセッシング）
     'pin_memory': True,  # GPU転送の高速化
     'persistent_workers': True,  # ワーカーの永続化（データ数が多い場合に有効）
     'normalize_target': True,  # ターゲット変数の正規化（精度向上のため推奨）
     'normalize_features': True,  # 追加特徴量の正規化（重要！精度向上に必須）
+    'transformer_dropout': 0.25,  # TransformerのDropout率（過学習抑制）
+    'transformer_num_layers': 5,  # より深いTransformer層
+    'transformer_dim_feedforward': 1024,  # より大きなフィードフォワード層
 }
 
 # 後方互換性のためのエイリアス
@@ -68,7 +71,7 @@ def train_epoch(model, dataloader, criterion, optimizer, device, gradient_accumu
     
     optimizer.zero_grad()
     
-    for batch_idx, batch in enumerate(tqdm(dataloader, desc="Training")):
+    for batch_idx, batch in enumerate(dataloader):
         if isinstance(batch, Batch):  # GNN
             batch = batch.to(device)
             output = model(batch)
@@ -126,7 +129,7 @@ def evaluate(model, dataloader, criterion, device):
     targets = []
     
     with torch.no_grad():
-        for batch in tqdm(dataloader, desc="Evaluating"):
+        for batch in dataloader:
             if isinstance(batch, Batch):  # GNN
                 batch = batch.to(device)
                 output = model(batch)
@@ -189,23 +192,14 @@ def train_gnn(config, data_path, output_dir, model_dir):
     
     # データ数に応じてバッチサイズを自動調整
     data_size = len(dataset)
-    print(f"\n📊 総データ数: {data_size}")
     batch_size = config['batch_size']
     
     if data_size > 2000:
-        # データ数が非常に多い場合（2000以上）、バッチサイズを大きく
         batch_size = min(128, max(batch_size, data_size // 40))
-        print(f"📊 データ数が多いため、バッチサイズを {batch_size} に調整しました")
     elif data_size > 1000:
-        # データ数が多い場合（1000-2000）、バッチサイズを中程度に
         batch_size = min(64, max(batch_size, data_size // 50))
-        print(f"📊 データ数が多いため、バッチサイズを {batch_size} に調整しました")
     elif data_size < 200:
-        # データ数が少ない場合、バッチサイズを減らす
         batch_size = min(batch_size, max(8, data_size // 10))
-        print(f"📊 データ数が少ないため、バッチサイズを {batch_size} に調整しました")
-    else:
-        print(f"📊 バッチサイズ: {batch_size} (デフォルト)")
     
     # データ分割
     indices = list(range(len(dataset)))
@@ -247,9 +241,7 @@ def train_gnn(config, data_path, output_dir, model_dir):
         persistent_workers=persistent_workers
     )
     
-    print(f"📊 データ分割: Train={len(train_indices)}, Val={len(val_indices)}, Test={len(test_indices)}")
-    print(f"📦 バッチサイズ: {batch_size}")
-    print(f"🔄 DataLoader設定: num_workers={num_workers}, pin_memory={pin_memory}, persistent_workers={persistent_workers}")
+    print(f"データ: {data_size}サンプル | 分割: Train={len(train_indices)}, Val={len(val_indices)}, Test={len(test_indices)} | バッチサイズ: {batch_size}")
     
     # データ数が多い場合、勾配累積を有効化（メモリ効率向上）
     gradient_accumulation_steps = config.get('gradient_accumulation_steps', 1)
@@ -300,26 +292,36 @@ def train_gnn(config, data_path, output_dir, model_dir):
     
     model.apply(init_weights)
     
-    # 出力層のバイアスをデータの平均値で初期化（より良い開始点）
-    # データセットから平均値を取得
-    dataset_sample = HEADataset(str(data_path))
-    if len(dataset_sample.df) > 0:
-        target_mean = dataset_sample.df['elastic_modulus'].mean()
-        # 出力層のバイアスを設定（HEAGNN/HEAGNNLightのoutput_layersを直接設定）
-        if hasattr(model, 'output_layers'):
-            for layer in model.output_layers:
-                if isinstance(layer, nn.Linear) and layer.out_features == 1:
-                    if layer.bias is not None:
-                        torch.nn.init.constant_(layer.bias, float(target_mean))
-                        print(f"📊 出力層のバイアスを {target_mean:.2f} GPa で初期化しました")
-                        break
+    # 出力層のバイアスを初期化（正規化されている場合は0、されていない場合は平均値）
+    if normalize_target:
+        # 正規化されている場合、ターゲットの平均は0なのでバイアスも0で初期化
+        target_mean_normalized = 0.0
+    else:
+        # 正規化されていない場合、生の平均値を使用
+        dataset_sample = HEADataset(str(data_path), normalize_target=False)
+        if len(dataset_sample.df) > 0:
+            target_mean_normalized = dataset_sample.df['elastic_modulus'].mean()
+        else:
+            target_mean_normalized = 150.0  # フォールバック
+    
+    # 出力層のバイアスを設定
+    if hasattr(model, 'output_layers'):
+        for layer in model.output_layers:
+            if isinstance(layer, nn.Linear) and layer.out_features == 1:
+                if layer.bias is not None:
+                    torch.nn.init.constant_(layer.bias, float(target_mean_normalized))
+                    break
     
     # 損失関数とオプティマイザ
-    criterion = nn.MSELoss()
+    if config.get('use_huber_loss', False):
+        criterion = nn.HuberLoss(delta=config.get('huber_delta', 1.0))
+    else:
+        criterion = nn.MSELoss()
+    
     optimizer = optim.AdamW(
         model.parameters(), 
         lr=config['learning_rate'], 
-        weight_decay=config.get('weight_decay', 1e-5),
+        weight_decay=config.get('weight_decay', 1e-4),
         betas=(0.9, 0.999),
         eps=1e-8
     )
@@ -338,7 +340,7 @@ def train_gnn(config, data_path, output_dir, model_dir):
     
     warmup_scheduler = optim.lr_scheduler.LambdaLR(optimizer, lr_lambda)
     plateau_scheduler = optim.lr_scheduler.ReduceLROnPlateau(
-        optimizer, mode='min', factor=0.5, patience=15, verbose=True, min_lr=1e-6
+        optimizer, mode='min', factor=0.3, patience=10, verbose=True, min_lr=1e-7
     )
     
     # 訓練ループ
@@ -397,10 +399,26 @@ def train_gnn(config, data_path, output_dir, model_dir):
         model, test_loader, criterion, device
     )
     
+    # デバッグ: 正規化された予測値とターゲットの統計
+    print(f"\n[DEBUG] 正規化された値の統計:")
+    print(f"  予測値: mean={np.array(test_preds).mean():.4f}, std={np.array(test_preds).std():.4f}, "
+          f"min={np.array(test_preds).min():.4f}, max={np.array(test_preds).max():.4f}")
+    print(f"  ターゲット: mean={np.array(test_targets).mean():.4f}, std={np.array(test_targets).std():.4f}, "
+          f"min={np.array(test_targets).min():.4f}, max={np.array(test_targets).max():.4f}")
+    print(f"  正規化パラメータ: mean={dataset.target_mean:.4f}, std={dataset.target_std:.4f}")
+    
     # ターゲットが正規化されている場合、元のスケールに戻す
     if normalize_target and hasattr(dataset, 'target_mean') and hasattr(dataset, 'target_std'):
         test_preds_denorm = np.array(test_preds) * dataset.target_std + dataset.target_mean
         test_targets_denorm = np.array(test_targets) * dataset.target_std + dataset.target_mean
+        
+        # デバッグ: 非正規化後の統計
+        print(f"\n[DEBUG] 非正規化後の値の統計:")
+        print(f"  予測値: mean={test_preds_denorm.mean():.4f}, std={test_preds_denorm.std():.4f}, "
+              f"min={test_preds_denorm.min():.4f}, max={test_preds_denorm.max():.4f}")
+        print(f"  ターゲット: mean={test_targets_denorm.mean():.4f}, std={test_targets_denorm.std():.4f}, "
+              f"min={test_targets_denorm.min():.4f}, max={test_targets_denorm.max():.4f}")
+        
         # 元のスケールでメトリクスを再計算
         test_r2 = r2_score(test_targets_denorm, test_preds_denorm)
         test_rmse = np.sqrt(mean_squared_error(test_targets_denorm, test_preds_denorm))
@@ -408,7 +426,7 @@ def train_gnn(config, data_path, output_dir, model_dir):
         test_preds = test_preds_denorm.tolist()
         test_targets = test_targets_denorm.tolist()
     
-    print(f"Test Loss: {test_loss:.4f}")
+    print(f"\nTest Loss: {test_loss:.4f}")
     print(f"Test R²: {test_r2:.4f}")
     print(f"Test RMSE: {test_rmse:.4f} GPa")
     print(f"Test MAE: {test_mae:.4f} GPa")
@@ -470,23 +488,14 @@ def train_transformer(config, data_path, output_dir, model_dir):
     
     # データ数に応じてバッチサイズを自動調整
     data_size = len(dataset)
-    print(f"\n📊 総データ数: {data_size}")
     batch_size = config['batch_size']
     
     if data_size > 2000:
-        # データ数が非常に多い場合（2000以上）、バッチサイズを大きく
         batch_size = min(128, max(batch_size, data_size // 40))
-        print(f"📊 データ数が多いため、バッチサイズを {batch_size} に調整しました")
     elif data_size > 1000:
-        # データ数が多い場合（1000-2000）、バッチサイズを中程度に
         batch_size = min(64, max(batch_size, data_size // 50))
-        print(f"📊 データ数が多いため、バッチサイズを {batch_size} に調整しました")
     elif data_size < 200:
-        # データ数が少ない場合、バッチサイズを減らす
         batch_size = min(batch_size, max(8, data_size // 10))
-        print(f"📊 データ数が少ないため、バッチサイズを {batch_size} に調整しました")
-    else:
-        print(f"📊 バッチサイズ: {batch_size} (デフォルト)")
     
     # データ分割
     indices = list(range(len(dataset)))
@@ -528,9 +537,7 @@ def train_transformer(config, data_path, output_dir, model_dir):
         persistent_workers=persistent_workers
     )
     
-    print(f"📊 データ分割: Train={len(train_indices)}, Val={len(val_indices)}, Test={len(test_indices)}")
-    print(f"📦 バッチサイズ: {batch_size}")
-    print(f"🔄 DataLoader設定: num_workers={num_workers}, pin_memory={pin_memory}, persistent_workers={persistent_workers}")
+    print(f"データ: {data_size}サンプル | 分割: Train={len(train_indices)}, Val={len(val_indices)}, Test={len(test_indices)} | バッチサイズ: {batch_size}")
     
     # データ数が多い場合、勾配累積を有効化（メモリ効率向上）
     gradient_accumulation_steps = config.get('gradient_accumulation_steps', 1)
@@ -552,39 +559,38 @@ def train_transformer(config, data_path, output_dir, model_dir):
             dropout=0.1
         )
     else:
-        # フルモデル（最適化された設定）
+        # フルモデル（最適化された設定 - より深く、より大きなモデル）
         model = HEATransformer(
             vocab_size=dataset.vocab_size,
             d_model=256,
             nhead=8,
-            num_layers=4,  # データ数が少ないため4層に調整
-            dim_feedforward=512,  # 適度なサイズ
+            num_layers=config.get('transformer_num_layers', 5),  # より深い層
+            dim_feedforward=config.get('transformer_dim_feedforward', 1024),  # より大きなフィードフォワード層
             max_seq_len=20,
             additional_feat_dim=8,
-            dropout=0.2  # 正則化を強化
+            dropout=config.get('transformer_dropout', 0.25)  # より強い正則化
         )
     
     device = torch.device(config['device'])
     model = model.to(device)
     
-    # 出力層のバイアスをデータの平均値で初期化（より良い開始点）
-    # ターゲットが正規化されている場合、平均は0に近いはず
+    # 出力層のバイアスを初期化（正規化されている場合は0、されていない場合は平均値）
     if normalize_target and hasattr(dataset, 'target_mean'):
-        # 正規化されたターゲットの平均は0なので、バイアスも0で初期化（既に初期化済み）
-        # ただし、正規化されていない場合のフォールバック
-        target_mean_normalized = 0.0  # 正規化後は平均0
-        print(f"📊 ターゲットが正規化されているため、出力層のバイアスは0で初期化されます")
+        # 正規化されたターゲットの平均は0なので、バイアスも0で初期化
+        target_mean_normalized = 0.0
     else:
         # 正規化されていない場合、生の平均値を使用
         if len(dataset.df) > 0:
             target_mean_normalized = dataset.df['elastic_modulus'].mean()
-            # 出力層の最後のLinear層のバイアスを設定
-            for module in model.modules():
-                if isinstance(module, nn.Linear) and module.out_features == 1:
-                    if module.bias is not None:
-                        torch.nn.init.constant_(module.bias, float(target_mean_normalized))
-                        print(f"📊 出力層のバイアスを {target_mean_normalized:.2f} GPa で初期化しました")
-                        break
+        else:
+            target_mean_normalized = 150.0  # フォールバック
+    
+    # 出力層の最後のLinear層のバイアスを設定
+    for module in model.modules():
+        if isinstance(module, nn.Linear) and module.out_features == 1:
+            if module.bias is not None:
+                torch.nn.init.constant_(module.bias, float(target_mean_normalized))
+                break
     
     # 損失関数（Huber Loss: 外れ値に頑健）
     if config.get('use_huber_loss', False):
@@ -596,30 +602,31 @@ def train_transformer(config, data_path, output_dir, model_dir):
     optimizer = optim.AdamW(
         model.parameters(), 
         lr=config['learning_rate'], 
-        weight_decay=config.get('weight_decay', 1e-4),
+        weight_decay=config.get('weight_decay', 2e-4),
         betas=(0.9, 0.999),
         eps=1e-8
     )
     
     # 学習率スケジューラー（改善版：より安定した学習率）
-    # CosineAnnealingLR with warmup
+    # CosineAnnealingLR with warmup + より積極的な減衰
     total_steps = len(train_loader) * config['num_epochs']
-    warmup_epochs = config.get('warmup_epochs', 10)
+    warmup_epochs = config.get('warmup_epochs', 25)
     
     def lr_lambda(epoch):
         if epoch < warmup_epochs:
             # ウォームアップ：線形に増加
             return (epoch + 1) / warmup_epochs
         else:
-            # Cosine annealing
+            # Cosine annealing with restarts（より滑らかな減衰）
             progress = (epoch - warmup_epochs) / (config['num_epochs'] - warmup_epochs)
-            return 0.5 * (1 + math.cos(math.pi * progress))
+            # より積極的な減衰（最小値0.1まで）
+            return 0.1 + 0.4 * (1 + math.cos(math.pi * progress))
     
     scheduler = optim.lr_scheduler.LambdaLR(optimizer, lr_lambda)
     
-    # ReduceLROnPlateauも併用（フォールバック）
+    # ReduceLROnPlateauも併用（より積極的な減衰）
     plateau_scheduler = optim.lr_scheduler.ReduceLROnPlateau(
-        optimizer, mode='min', factor=0.5, patience=15, verbose=True, min_lr=1e-6
+        optimizer, mode='min', factor=0.3, patience=10, verbose=True, min_lr=1e-7
     )
     
     # 訓練ループ
@@ -635,10 +642,6 @@ def train_transformer(config, data_path, output_dir, model_dir):
     global_step = 0
     
     for epoch in range(config['num_epochs']):
-        print(f"\nEpoch {epoch+1}/{config['num_epochs']}")
-        current_lr = optimizer.param_groups[0]['lr']
-        print(f"Learning Rate: {current_lr:.6f}")
-        
         # 訓練
         train_loss, train_r2, train_rmse, train_mae = train_epoch(
             model, train_loader, criterion, optimizer, device, gradient_accumulation_steps
@@ -659,29 +662,36 @@ def train_transformer(config, data_path, output_dir, model_dir):
         train_r2s.append(train_r2)
         val_r2s.append(val_r2)
         
-        print(f"Train Loss: {train_loss:.4f}, R²: {train_r2:.4f}, RMSE: {train_rmse:.4f}, MAE: {train_mae:.4f}")
-        print(f"Val Loss: {val_loss:.4f}, R²: {val_r2:.4f}, RMSE: {val_rmse:.4f}, MAE: {val_mae:.4f}")
+        current_lr = optimizer.param_groups[0]['lr']
+        print(f"Epoch {epoch+1:3d}/{config['num_epochs']} | LR: {current_lr:.2e} | "
+              f"Train: Loss={train_loss:.2f}, R²={train_r2:.4f} | "
+              f"Val: Loss={val_loss:.2f}, R²={val_r2:.4f}")
         
-        # Early stopping（R²を主要指標として使用）
+        # Early stopping（改善版：R²の安定性を重視）
         improved = False
-        if val_r2 > best_val_r2:
+        # Val R²が改善した場合（閾値0.01以上）
+        if val_r2 > best_val_r2 + 0.01:
             best_val_r2 = val_r2
             best_val_loss = val_loss
             patience_counter = 0
             torch.save(model.state_dict(), model_dir / "transformer_best_model.pth")
-            print("✅ Best model saved! (R² improved)")
+            print("  ✅ Best model saved! (R² improved)")
             improved = True
-        elif val_loss < best_val_loss and val_r2 >= best_val_r2 * 0.95:  # R²が大きく下がらない場合
+        # Val Lossが改善し、R²が大きく下がらない場合（95%以上維持）
+        elif val_loss < best_val_loss * 0.98 and val_r2 >= best_val_r2 * 0.95:
             best_val_loss = val_loss
             patience_counter = 0
             torch.save(model.state_dict(), model_dir / "transformer_best_model.pth")
-            print("✅ Best model saved! (Loss improved, R² maintained)")
+            print("  ✅ Best model saved! (Loss improved, R² maintained)")
             improved = True
+        # Val R²が負の値になった場合、早期警告
+        elif val_r2 < 0 and epoch > 20:
+            patience_counter += 2  # 負のR²は深刻なので、patienceを2倍カウント
         
         if not improved:
             patience_counter += 1
             if patience_counter >= config['early_stopping_patience']:
-                print(f"Early stopping at epoch {epoch+1}")
+                print(f"Early stopping at epoch {epoch+1} (best Val R²: {best_val_r2:.4f})")
                 break
     
     # テスト評価
@@ -693,10 +703,26 @@ def train_transformer(config, data_path, output_dir, model_dir):
         model, test_loader, criterion, device
     )
     
+    # デバッグ: 正規化された予測値とターゲットの統計
+    print(f"\n[DEBUG] 正規化された値の統計:")
+    print(f"  予測値: mean={np.array(test_preds).mean():.4f}, std={np.array(test_preds).std():.4f}, "
+          f"min={np.array(test_preds).min():.4f}, max={np.array(test_preds).max():.4f}")
+    print(f"  ターゲット: mean={np.array(test_targets).mean():.4f}, std={np.array(test_targets).std():.4f}, "
+          f"min={np.array(test_targets).min():.4f}, max={np.array(test_targets).max():.4f}")
+    print(f"  正規化パラメータ: mean={dataset.target_mean:.4f}, std={dataset.target_std:.4f}")
+    
     # ターゲットが正規化されている場合、元のスケールに戻す
     if normalize_target and hasattr(dataset, 'target_mean') and hasattr(dataset, 'target_std'):
         test_preds_denorm = np.array(test_preds) * dataset.target_std + dataset.target_mean
         test_targets_denorm = np.array(test_targets) * dataset.target_std + dataset.target_mean
+        
+        # デバッグ: 非正規化後の統計
+        print(f"\n[DEBUG] 非正規化後の値の統計:")
+        print(f"  予測値: mean={test_preds_denorm.mean():.4f}, std={test_preds_denorm.std():.4f}, "
+              f"min={test_preds_denorm.min():.4f}, max={test_preds_denorm.max():.4f}")
+        print(f"  ターゲット: mean={test_targets_denorm.mean():.4f}, std={test_targets_denorm.std():.4f}, "
+              f"min={test_targets_denorm.min():.4f}, max={test_targets_denorm.max():.4f}")
+        
         # 元のスケールでメトリクスを再計算
         test_r2 = r2_score(test_targets_denorm, test_preds_denorm)
         test_rmse = np.sqrt(mean_squared_error(test_targets_denorm, test_preds_denorm))
@@ -704,7 +730,7 @@ def train_transformer(config, data_path, output_dir, model_dir):
         test_preds = test_preds_denorm.tolist()
         test_targets = test_targets_denorm.tolist()
     
-    print(f"Test Loss: {test_loss:.4f}")
+    print(f"\nTest Loss: {test_loss:.4f}")
     print(f"Test R²: {test_r2:.4f}")
     print(f"Test RMSE: {test_rmse:.4f} GPa")
     print(f"Test MAE: {test_mae:.4f} GPa")

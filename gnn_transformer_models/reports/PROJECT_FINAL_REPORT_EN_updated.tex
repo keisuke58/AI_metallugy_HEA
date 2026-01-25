@@ -3,7 +3,6 @@
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
 \usepackage{hyperref}
-\usepackage{booktabs}
 
 \title{Machine Learning-based Prediction of Elastic Modulus in High-Entropy and Multi-Principal Element Alloys}
 \author{AI\_metallurgy Project Team}
@@ -57,7 +56,7 @@ Auxiliary databases such as DISMA and MPEA mechanical-property compilations are 
 
 \subsection{Integration and Cleaning}
 
-Each dataset is first parsed into a standardized tabular format with at least an alloy identifier, Young's modulus in GPa, and a source label. The main integration steps are:
+Each dataset is first parsed into a standardized tabular format with at least an alloy identifier, Young's modulus in \si{GPa}, and a source label. The main integration steps are:
 
 \begin{enumerate}
   \item Column harmonization to a unified label \texttt{elastic\_modulus} in GPa;

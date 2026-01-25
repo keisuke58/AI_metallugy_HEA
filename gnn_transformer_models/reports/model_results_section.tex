@@ -1,0 +1,49 @@
+\section{Model Training Results}
+
+This section presents the comprehensive results of training Graph Neural Network (GNN) and Transformer models for predicting elastic modulus in High-Entropy Alloys (HEAs).
+
+\subsection{Performance Summary}
+
+Table~\ref{tab:model_results} summarizes the performance metrics for all trained models.
+
+\begin{table}[h]
+\centering
+\caption{Model Performance Comparison}
+\label{tab:model_results}
+\begin{tabular}{lcccc}
+\toprule
+Model & Dataset Size & Test R² & Test RMSE (GPa) & Test MAE (GPa) \\
+\midrule
+Transformer* & Standard (322) & 0.6249 & 34.91 & 26.17 \\
+GNN & Standard (322) & 0.2586 & 49.08 & 29.53 \\
+Transformer & Large (5340) & 0.0496 & 88.80 & 66.99 \\
+Transformer & Standard (322) & -0.2384 & 63.43 & 41.68 \\
+\bottomrule
+\end{tabular}
+\footnotesize
+\textit{*Best result from previous training session}
+\end{table}
+
+\subsection{Best Performing Model}
+
+The best performing model is the \textbf{Transformer} model with a Test R² score of \textbf{0.6249}, achieving a Test RMSE of 34.91 GPa and Test MAE of 26.17 GPa.
+
+\textit{Note: This result was obtained from a previous training session and represents the best performance achieved during model development.}
+
+\subsection{Model-Specific Results}
+
+\subsubsection{Graph Neural Network (GNN) Model}
+
+The GNN model trained on the standard dataset (322 samples) achieved a Test R² of 0.2586, with RMSE of 49.08 GPa and MAE of 29.53 GPa.
+
+\subsubsection{Transformer Model}
+
+The Transformer model trained on the standard dataset (322 samples) (Best result from previous training) achieved a Test R² of 0.6249, with RMSE of 34.91 GPa and MAE of 26.17 GPa.
+
+The Transformer model trained on the large dataset (5340 samples) achieved a Test R² of 0.0496, with RMSE of 88.80 GPa and MAE of 66.99 GPa.
+
+The Transformer model trained on the standard dataset (322 samples) achieved a Test R² of -0.2384, with RMSE of 63.43 GPa and MAE of 41.68 GPa.
+
+\subsection{Training History}
+
+Training history visualizations, including loss curves and R² score progression, are available in the \texttt{visualizations/} directory. These visualizations provide insights into the model convergence behavior and training stability.

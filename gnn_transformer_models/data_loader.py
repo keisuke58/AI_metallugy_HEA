@@ -236,13 +236,17 @@ class HEADataset(Dataset):
 class TransformerDataset(Dataset):
     """Transformer用データセット（改善版：特徴量正規化付き）"""
     
-    def __init__(self, data_path: str, max_length: int = 20, fit_scaler: bool = True, scaler_path: str = None):
+    def __init__(self, data_path: str, max_length: int = 20, fit_scaler: bool = True, scaler_path: str = None,
+                 normalize_target: bool = False, target_mean: float = None, target_std: float = None):
         """
         Args:
             data_path: CSVファイルのパス
             max_length: 最大シーケンス長
             fit_scaler: スケーラーをフィットするか（訓練時はTrue、推論時はFalse）
             scaler_path: スケーラーの保存パス
+            normalize_target: ターゲット変数を正規化するか
+            target_mean: 正規化用の平均値（推論時用）
+            target_std: 正規化用の標準偏差（推論時用）
         """
         self.df = pd.read_csv(data_path)
         self.df = self.df.dropna(subset=['elastic_modulus'])
@@ -257,6 +261,21 @@ class TransformerDataset(Dataset):
         self.cls_idx = 1
         self.sep_idx = 2
         self.elem_to_idx = {elem: idx + 3 for idx, elem in enumerate(ELEMENT_LIST)}
+        
+        # ターゲット変数の正規化
+        self.normalize_target = normalize_target
+        if normalize_target:
+            if target_mean is None or target_std is None:
+                # 訓練時: データから計算
+                self.target_mean = self.df['elastic_modulus'].mean()
+                self.target_std = self.df['elastic_modulus'].std()
+            else:
+                # 推論時: 指定された値を使用
+                self.target_mean = target_mean
+                self.target_std = target_std
+        else:
+            self.target_mean = None
+            self.target_std = None
         
         # 特徴量の正規化（RobustScaler: 外れ値に頑健）
         feature_cols = ['mixing_entropy', 'mixing_enthalpy', 'vec', 'delta_r', 
@@ -282,9 +301,7 @@ class TransformerDataset(Dataset):
                 with open(scaler_path, 'rb') as f:
                     self.scaler = pickle.load(f)
         
-        print(f"✅ {len(self.df)}サンプルを読み込みました")
-        print(f"📊 語彙サイズ: {self.vocab_size}")
-        print(f"📊 特徴量正規化: {'有効' if self.scaler is not None else '無効'}")
+        print(f"✅ {len(self.df)}サンプル, 語彙:{self.vocab_size}, 特徴量正規化:{'有効' if self.scaler else '無効'}, ターゲット正規化:{'有効' if normalize_target else '無効'}")
     
     def __len__(self):
         return len(self.df)
