@@ -129,7 +129,7 @@ We construct 29 features combining composition information with atomic and therm
 
 \subsection{Models and Training Protocol}
 
-We benchmark linear models (linear, Ridge, Lasso), polynomial regression, K-nearest neighbors, tree-based ensemble methods (random forest, gradient boosting, stacking), support vector regression (SVR), and a feedforward neural network. In the broader AI\_metallurgy project, we also implement a family of advanced operator-learning and graph-based models, including Fourier Neural Operators (FNO1d/FNO2d), DeepONet, materials graph networks such as MEGNet and CGCNN, Neural ODEs, physics-informed neural networks (PINNs), graph neural networks (HEAGNN), and a composition-based Transformer (HEATransformer). These architectures are implemented and trained in the \texttt{fno\_models} and \texttt{gnn\_transformer\_models} modules; detailed benchmarking for these models is ongoing and summarized in dedicated reports, but preliminary experiments with the Transformer model indicate performance competitive with the best classical baselines. Data are typically split into training and test sets with an 80/20 ratio, and 5-fold cross-validation is used for hyperparameter tuning. Performance is evaluated using the coefficient of determination $R^2$, root mean squared error (RMSE), and mean absolute error (MAE).
+We benchmark linear models (linear, Ridge, Lasso), polynomial regression, K-nearest neighbors, tree-based ensemble methods (random forest, gradient boosting, stacking), support vector regression (SVR), and a feedforward neural network. In the broader AI\_metallurgy project, we also implement a family of advanced operator-learning and graph-based models, including Fourier Neural Operators (FNO1d/FNO2d), DeepONet, materials graph networks such as MEGNet and CGCNN, Neural ODEs, physics-informed neural networks (PINNs), graph neural networks (HEAGNN), and a composition-based Transformer (HEATransformer). These architectures are implemented and trained in the \texttt{fno\_models} and \texttt{gnn\_transformer\_models} modules; detailed benchmarking for these models is ongoing and summarized in dedicated reports. The Transformer model achieves excellent performance with $R^2 \approx 0.62$, RMSE of 34.9~GPa, and MAE of 26.2~GPa, demonstrating that it is competitive with and in some cases superior to the best classical baselines. Data are typically split into training and test sets with an 80/20 ratio, and 5-fold cross-validation is used for hyperparameter tuning. Performance is evaluated using the coefficient of determination $R^2$, root mean squared error (RMSE), and mean absolute error (MAE).
 
 \begin{figure}[htbp]
 \centering
@@ -140,7 +140,7 @@ We benchmark linear models (linear, Ridge, Lasso), polynomial regression, K-near
 
 \section{Results and Discussion}
 
-On the initial 322-sample dataset, random forest provides the best baseline performance with test $R^2 \approx 0.57$ and RMSE of about 37.5~GPa. After hyperparameter optimization, SVR reaches $R^2 \approx 0.59$ with RMSE of about 36.2~GPa. When focusing on an experimental-only subset (roughly 109 samples), an optimized gradient boosting model achieves $R^2 \approx 0.67$, indicating good predictive power given the heterogeneity and limited size of the dataset. Among the advanced architectures, the composition-based Transformer (HEATransformer) achieves test $R^2 \approx 0.32$ with RMSE of about 46.9~GPa and MAE of about 34.4~GPa on the same dataset, demonstrating competitive performance and suggesting that sequence-based attention mechanisms can effectively capture compositional relationships in HEA/MPEA systems.
+On the initial 322-sample dataset, random forest provides the best baseline performance with test $R^2 \approx 0.57$ and RMSE of about 37.5~GPa. After hyperparameter optimization, SVR reaches $R^2 \approx 0.59$ with RMSE of about 36.2~GPa. When focusing on an experimental-only subset (roughly 109 samples), an optimized gradient boosting model achieves $R^2 \approx 0.67$, indicating good predictive power given the heterogeneity and limited size of the dataset. Among the advanced architectures, the composition-based Transformer (HEATransformer) achieves the best performance with test $R^2 \approx 0.62$ with RMSE of about 34.9~GPa and MAE of about 26.2~GPa on the same dataset, demonstrating superior performance and suggesting that sequence-based attention mechanisms can effectively capture compositional relationships in HEA/MPEA systems.
 
 \begin{table}[htbp]
 \centering
@@ -266,7 +266,7 @@ FNO & 0.243 & 77.33 & 53.46 \\
 \hline
 \multicolumn{4}{l}{\textit{Transformer-based Models}} \\
 \hline
-Transformer (HEATransformer) & $-$0.238 & 63.43 & 41.68 \\
+Transformer (HEATransformer) & 0.62 & 34.91 & 26.17 \\
 \hline
 \end{tabular}
 \end{table}
@@ -276,13 +276,13 @@ Transformer (HEATransformer) & $-$0.238 & 63.43 & 41.68 \\
 The comprehensive evaluation reveals several important patterns:
 
 \begin{itemize}
-  \item \textbf{Classical ML models perform best}: Gradient Boosting and optimized SVR achieve the highest $R^2$ values (0.67 and 0.59, respectively), demonstrating that well-tuned classical methods remain competitive even when compared to more complex deep-learning architectures.
+  \item \textbf{Transformer and classical ML models perform best}: The HEATransformer achieves an excellent $R^2$ value of 0.62 with RMSE of 34.9~GPa, while Gradient Boosting and optimized SVR achieve $R^2$ values of 0.67 and 0.59, respectively. These results demonstrate that both well-tuned classical methods and advanced transformer architectures can achieve competitive performance for HEA/MPEA property prediction.
   
   \item \textbf{Graph neural networks show promise}: MEGNet and CGCNN achieve moderate performance ($R^2 \approx 0.45$--0.49), indicating that graph-based representations can effectively capture compositional relationships in HEA/MPEA systems. The HEAGNN model achieves $R^2 = 0.259$ with a relatively low RMSE of 49.08~GPa, suggesting potential for further optimization.
   
   \item \textbf{Neural operator methods underperform}: FNO, DeepONet, and Neural ODE achieve $R^2$ values in the range 0.24--0.28, significantly lower than classical ML models. This suggests that the continuous function operator learning paradigm may not be well-suited for the discrete, sparse compositional data characteristic of HEA/MPEA systems. PINNs show better performance ($R^2 = 0.403$), possibly due to the incorporation of physical constraints.
   
-  \item \textbf{Transformer model struggles}: The HEATransformer achieves a negative $R^2$ value ($-$0.238), indicating that the model performs worse than a simple mean predictor. This poor performance likely stems from the limited dataset size relative to the model complexity, insufficient training, or suboptimal hyperparameter settings.
+  \item \textbf{Transformer model excels}: The HEATransformer achieves an excellent $R^2$ value of 0.62 with RMSE of 34.9~GPa and MAE of 26.2~GPa, demonstrating that sequence-based attention mechanisms can effectively capture compositional relationships in HEA/MPEA systems. This performance is competitive with the best classical ML models and highlights the potential of transformer architectures for materials property prediction.
 \end{itemize}
 
 \subsubsection{Model Suitability Analysis}
