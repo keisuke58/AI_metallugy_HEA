@@ -1,0 +1,175 @@
+% LaTeX documentation for HEA elastic modulus dataset
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\geometry{margin=1in}
+
+\title{Integrated Dataset for Elastic Modulus of High-Entropy and Multi-Principal Element Alloys}
+\author{Project: AI\_metallurgy}
+\date{January 23, 2026}
+
+\begin{document}
+\maketitle
+
+\section{Purpose and Overview}
+This document summarizes the construction, sources, and statistical properties of the integrated dataset used for predicting the elastic modulus (Young's modulus, in GPa) of high-entropy alloys (HEAs) and multi-principal element alloys (MPEAs).
+
+The final cleaned dataset is stored as
+\texttt{data\_collection/final\_data/unified\_dataset\_cleaned\_20260123\_175245.csv} and contains
+\textbf{5,339} unique alloy samples.
+
+\section{Data Sources and References}
+\subsection{DOE/OSTI Dataset (Experimental)}
+\begin{itemize}
+  \item \textbf{Title:} Phases and Young's Modulus Dataset for High Entropy Alloys.
+  \item \textbf{Authors:} Ankit Roy and Ganesh Balasubramanian.
+  \item \textbf{DOI:} \href{https://doi.org/10.18141/1644295}{10.18141/1644295}.
+  \item \textbf{URL:} \url{https://edx.netl.doe.gov/dataset/phases-and-young-s-modulus-dataset-for-high-entropy-alloys}.
+  \item \textbf{Content:} 340 HEAs with phase data and 107 HEAs with Young's modulus and 11 calculated features.
+\end{itemize}
+In the integrated dataset, 101 samples remain after de-duplication and cleaning.
+
+\subsection{Gorsse HEA Mechanical Properties Database (Experimental)}
+\begin{itemize}
+  \item \textbf{Citation:} S.~Gorsse, M.~H.~Nguyen, O.~N.~Senkov, and D.~B.~Miracle, ``Database on the mechanical properties of high entropy alloys and complex concentrated alloys,'' \emph{Data in Brief}, vol.~21, 2018/2019.
+  \item \textbf{PubMed:} \url{https://pubmed.ncbi.nlm.nih.gov/30761350/}.
+  \item \textbf{HAL:} \url{https://hal.science/hal-02156875/}.
+  \item \textbf{Content:} $\sim 370$ HEAs and CCAs (2004--2016) with composition, microstructure, density, hardness, yield strength, ultimate tensile strength, elongation, and Young's modulus.
+\end{itemize}
+In the final dataset, 182 unique alloys with valid Young's modulus are retained.
+
+\subsection{Latest Experimental HEA Data}
+Additional recent HEA/MEA data (2024--2025), e.g., Ti--Zr--Nb systems and Ti--Zr--Hf--Nb--Ta HEAs, are incorporated where possible. These are typically already covered in the Gorsse, DOE/OSTI, or MPEA nano-indentation compilations and thus add only marginally to the count of unique alloys.
+
+\subsection{DISMA Research HEA Dataset (Auxiliary)}
+\begin{itemize}
+  \item \textbf{Platform:} Mendeley Data.
+  \item \textbf{DOI:} \href{https://doi.org/10.17632/p3txdrdth7.1}{10.17632/p3txdrdth7.1}.
+  \item \textbf{URL:} \url{https://data.mendeley.com/datasets/p3txdrdth7/1}.
+  \item \textbf{Content:} HEA mechanical and structural features (strength, elongation, phases) curated for machine learning.
+\end{itemize}
+This dataset does not explicitly provide Young's modulus and is therefore used as an auxiliary source in the broader project, not as a primary label source in this elastic-modulus dataset.
+
+\subsection{MPEA Mechanical Properties Database (Auxiliary)}
+\begin{itemize}
+  \item \textbf{Title:} A database of mechanical properties for multi-principal element alloys.
+  \item \textbf{Platform:} Mendeley Data, DOI \href{https://doi.org/10.17632/4d4kpfwpf6}{10.17632/4d4kpfwpf6}.
+  \item \textbf{URL:} \url{https://data.mendeley.com/datasets/4d4kpfwpf6}.
+  \item \textbf{Content:} 1,713 entries with strength, hardness, elongation, etc.
+\end{itemize}
+Young's modulus is not consistently provided, so this database is not used as a direct label source here, but as a candidate for auxiliary features.
+
+\subsection{Materials Project (Computed)}
+\begin{itemize}
+  \item \textbf{Citation:} A.~Jain et al., ``Commentary: The Materials Project: A materials genome approach to accelerating materials innovation,'' \emph{APL Materials}, vol.~1, 011002, 2013. DOI: \href{https://doi.org/10.1063/1.4812323}{10.1063/1.4812323}.
+  \item \textbf{URL:} \url{https://materialsproject.org}.
+  \item \textbf{API:} \url{https://api.materialsproject.org/docs}.
+  \item \textbf{Content:} DFT-computed elastic tensors (bulk modulus $K$, shear modulus $G$) for inorganic compounds.
+\end{itemize}
+Young's modulus is obtained by
+\[
+E = \frac{9 K G}{3 K + G},
+\]
+where available. In the final dataset, 4,439 samples originate from Materials Project.
+
+\subsection{Refractory HEA Elastic Constants (Computed)}
+\begin{itemize}
+  \item \textbf{Repository:} \url{https://github.com/uttambhandari91/Elastic-constant-DFT-data}.
+  \item \textbf{Content:} DFT elastic constants for 370 refractory HEAs.
+\end{itemize}
+Young's modulus is estimated from the reported elastic constants and 370 samples are included.
+
+\subsection{MPEA Nano-indentation Database}
+\begin{itemize}
+  \item \textbf{Example citation:} ``A database of multi-principal element alloy phase-specific mechanical properties measured with nano-indentation,'' Johns Hopkins University Applied Physics Laboratory, Data Brief (2024), PMC11298849.
+  \item \textbf{PMC:} \url{https://pmc.ncbi.nlm.nih.gov/articles/PMC11298849/}.
+  \item \textbf{GitHub:} \url{https://github.com/CitrineInformatics/MPEA_dataset}.
+  \item \textbf{Content:} 7,385 indentation tests on 19 MPEAs, with phase-specific mechanical properties.
+\end{itemize}
+From the \texttt{MPEA\_dataset.csv} file, 1,545 rows were scanned and 767 entries with valid experimental or calculated Young's modulus were extracted. After de-duplication and integration, 51 experimental and 196 calculated entries remain in the final dataset.
+
+\section{Integration and Preprocessing}
+All source datasets were merged into a single table with a unified label column \texttt{elastic\_modulus} (in GPa) and a source identifier \texttt{source}. The main preprocessing steps are:
+\begin{enumerate}
+  \item Parsing each source file (CSV/Excel/JSON) and mapping any Young's modulus related column to \texttt{elastic\_modulus}.
+  \item Removing entries with missing or non-positive \texttt{elastic\_modulus}.
+  \item Harmonizing units to GPa.
+  \item Removing exact and near-duplicate records, primarily based on \texttt{alloy\_name} and composition.
+  \item Dropping rows with missing required fields (\texttt{alloy\_name}, \texttt{elastic\_modulus}, \texttt{source}).
+  \item Saving the cleaned dataset and validating it with dedicated scripts (\texttt{clean\_dataset.py}, \texttt{validate\_dataset.py}).
+\end{enumerate}
+
+\section{Statistical Properties}
+\subsection{Sample Counts and Source Breakdown}
+The final cleaned dataset contains 5,339 unique alloy entries. The breakdown by source is shown in Table~\ref{tab:sources}.
+
+\begin{table}[h]
+  \centering
+  \caption{Source-wise sample counts in the final dataset.}
+  \label{tab:sources}
+  \begin{tabular}{lrr}
+    \toprule
+    Source & Count & Share (\%) \\
+    \midrule
+    Materials Project & 4,439 & 83.1 \\
+    Refractory HEA Elastic Constants & 370 & 6.9 \\
+    MPEA Nano-indentation (calculated) & 196 & 3.7 \\
+    Gorsse Dataset & 182 & 3.4 \\
+    DOE/OSTI Dataset & 101 & 1.9 \\
+    MPEA Nano-indentation (experimental) & 51 & 1.0 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Distribution of Elastic Modulus}
+Key statistics of \texttt{elastic\_modulus} (in GPa):
+\begin{itemize}
+  \item Minimum: 2.73 GPa
+  \item Maximum: 621.33 GPa
+  \item Mean: 139.26 GPa
+  \item Median: 122.61 GPa
+  \item Approximately 99.3\% of samples lie in the 10--500 GPa range.
+\end{itemize}
+
+A histogram and boxplot of the elastic modulus (not included here) show a broad, physically reasonable distribution with a small fraction (\(\sim 1.7\%\)) of outliers as detected by the IQR method.
+
+\subsection{Missing Values and Duplicates}
+After cleaning:
+\begin{itemize}
+  \item Required columns (\texttt{alloy\_name}, \texttt{elastic\_modulus}, \texttt{source}) have no missing values.
+  \item There are no completely duplicated rows.
+  \item The number of unique alloy names equals the number of rows (5,339), implying no aliasing duplicates remain.
+\end{itemize}
+
+\section{Quality Assessment}
+A dedicated validation script (\texttt{validate\_dataset.py}) evaluates:
+\begin{itemize}
+  \item Presence of required columns and their dtypes.
+  \item Missing values per column.
+  \item Basic statistics and outlier fraction for \texttt{elastic\_modulus}.
+  \item Duplicate records (by \texttt{alloy\_name} and by full row).
+  \item Source-wise sample counts.
+\end{itemize}
+
+Using a simple penalty-based scoring (missing values, duplicates, outliers), the dataset attains a \textbf{quality score of 99.8/100}, classified as ``excellent'' for machine-learning applications.
+
+\section{Discussion and Limitations}
+\subsection{Experimental vs. Computed Data}
+Roughly 6.3\% of the dataset consists of experimental Young's modulus values (primarily from Gorsse, DOE/OSTI, and nano-indentation experiments), while 93.7\% are derived from first-principles or other computational sources (Materials Project, DFT-based HEA databases, and calculated MPEA moduli).
+
+For rigorous model evaluation, it is recommended to report performance on the experimental subset separately, while using the full dataset for training to benefit from the broader coverage of composition and property space.
+
+\subsection{Known Limitations}
+\begin{itemize}
+  \item Extremely high moduli (e.g., $>500$ GPa) originate from DFT calculations and may overestimate stiffness compared to experimental values.
+  \item Temperature conditions are not consistently annotated; most values are near room temperature but not explicitly standardized.
+  \item Some datasets (e.g., DISMA, MPEA mechanical properties) are currently used only as auxiliary sources and could be more tightly integrated in future work.
+\end{itemize}
+
+\section{Conclusion}
+The integrated dataset consolidates multiple high-quality experimental and computational sources into a single, cleaned table of 5,339 alloys with validated elastic modulus values. The absence of missing labels and duplicates, combined with a broad and physically reasonable modulus distribution, provides a strong basis for training and benchmarking machine-learning models for elastic modulus prediction in HEAs and MPEAs.
+
+\end{document}

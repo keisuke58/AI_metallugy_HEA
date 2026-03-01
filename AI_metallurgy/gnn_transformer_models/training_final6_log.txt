@@ -1,0 +1,665 @@
+✅ hea_gnn環境が見つかりました
+
+==========================================
+訓練を再開します
+==========================================
+
+✅ データファイル: ../data_collection/processed_data/data_with_features.csv
+/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:60: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+================================================================================
+HEA Elastic Modulus Prediction: GNN & Transformer Training
+================================================================================
+📊 データファイル: /home/nishioka/LUH/AI_metallurgy/data_collection/processed_data/data_with_features.csv
+📁 出力ディレクトリ: /home/nishioka/LUH/AI_metallurgy/gnn_transformer_models/results
+💾 モデルディレクトリ: /home/nishioka/LUH/AI_metallurgy/gnn_transformer_models/models
+⚙️  デバイス: cpu
+📦 モデルタイプ: 軽量版
+================================================================================
+================================================================================
+GNN Model Training
+================================================================================
+✅ 322サンプルを読み込みました
+📊 組成特徴量: 17個
+📊 データ分割: Train=257, Val=32, Test=33
+
+Epoch 1/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:   3%|▎         | 1/33 [00:00<00:06,  5.24it/s]Training:  21%|██        | 7/33 [00:00<00:00, 26.84it/s]Training:  39%|███▉      | 13/33 [00:00<00:00, 37.20it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 45.66it/s]Training:  79%|███████▉  | 26/33 [00:00<00:00, 48.04it/s]Training:  97%|█████████▋| 32/33 [00:00<00:00, 50.65it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 41.78it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 126.09it/s]
+Train Loss: 15458.0695, R²: -4.0573, RMSE: 126.3883, MAE: 107.1384
+Val Loss: 10711.8527, R²: -2.1717, RMSE: 101.0062, MAE: 86.0298
+✅ Best model saved!
+
+Epoch 2/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 58.89it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 58.99it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 59.39it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 59.62it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 55.39it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 57.68it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 129.92it/s]
+Train Loss: 5064.3540, R²: -0.6656, RMSE: 72.5334, MAE: 54.6198
+Val Loss: 4165.4325, R²: -0.2021, RMSE: 62.1828, MAE: 51.2362
+✅ Best model saved!
+
+Epoch 3/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 57.13it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 58.21it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 58.79it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 56.41it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 57.52it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 57.29it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 130.76it/s]
+Train Loss: 4371.0872, R²: -0.4836, RMSE: 68.4541, MAE: 52.2158
+Val Loss: 3891.8285, R²: -0.1473, RMSE: 60.7487, MAE: 48.9408
+✅ Best model saved!
+
+Epoch 4/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 54.44it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 44.24it/s]Training:  52%|█████▏    | 17/33 [00:00<00:00, 45.88it/s]Training:  67%|██████▋   | 22/33 [00:00<00:00, 44.49it/s]Training:  88%|████████▊ | 29/33 [00:00<00:00, 47.06it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 48.22it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 120.32it/s]
+Train Loss: 3815.9268, R²: -0.2803, RMSE: 63.5925, MAE: 47.0145
+Val Loss: 3490.2471, R²: -0.0338, RMSE: 57.6659, MAE: 46.1937
+✅ Best model saved!
+
+Epoch 5/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 59.64it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 59.47it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 59.27it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 59.02it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 54.59it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 57.20it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 131.90it/s]
+Train Loss: 3336.2183, R²: -0.0913, RMSE: 58.7108, MAE: 43.3980
+Val Loss: 3470.4714, R²: -0.0272, RMSE: 57.4831, MAE: 45.7195
+✅ Best model saved!
+
+Epoch 6/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 57.59it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 58.62it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 58.77it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 59.22it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 59.32it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 59.59it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 131.79it/s]
+Train Loss: 3320.2766, R²: -0.0889, RMSE: 58.6477, MAE: 42.7359
+Val Loss: 4134.9267, R²: -0.2411, RMSE: 63.1843, MAE: 50.0061
+
+Epoch 7/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  21%|██        | 7/33 [00:00<00:00, 60.45it/s]Training:  42%|████▏     | 14/33 [00:00<00:00, 59.22it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 59.51it/s]Training:  79%|███████▉  | 26/33 [00:00<00:00, 59.55it/s]Training:  97%|█████████▋| 32/33 [00:00<00:00, 59.57it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 60.05it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 130.43it/s]
+Train Loss: 3511.7819, R²: -0.1126, RMSE: 59.2814, MAE: 42.9912
+Val Loss: 3414.2281, R²: -0.0148, RMSE: 57.1333, MAE: 45.5948
+✅ Best model saved!
+
+Epoch 8/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 53.98it/s]Training:  39%|███▉      | 13/33 [00:00<00:00, 57.72it/s]Training:  58%|█████▊    | 19/33 [00:00<00:00, 57.01it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 54.01it/s]Training:  97%|█████████▋| 32/33 [00:00<00:00, 55.90it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 56.37it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 132.28it/s]
+Train Loss: 3938.9034, R²: -0.2482, RMSE: 62.7908, MAE: 46.2317
+Val Loss: 3395.2164, R²: -0.0085, RMSE: 56.9577, MAE: 45.2115
+✅ Best model saved!
+
+Epoch 9/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  15%|█▌        | 5/33 [00:00<00:00, 47.02it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 55.24it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 56.43it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 57.54it/s]Training:  94%|█████████▍| 31/33 [00:00<00:00, 58.73it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 57.67it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 119.35it/s]
+Train Loss: 3490.1681, R²: -0.1485, RMSE: 60.2298, MAE: 44.6583
+Val Loss: 3380.9450, R²: -0.0115, RMSE: 57.0412, MAE: 45.1471
+✅ Best model saved!
+
+Epoch 10/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 59.96it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 59.45it/s]Training:  58%|█████▊    | 19/33 [00:00<00:00, 59.76it/s]Training:  79%|███████▉  | 26/33 [00:00<00:00, 60.29it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 56.97it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 58.16it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 131.96it/s]
+Train Loss: 3370.9199, R²: -0.0924, RMSE: 58.7412, MAE: 41.9120
+Val Loss: 3416.6416, R²: -0.0213, RMSE: 57.3159, MAE: 45.5399
+
+Epoch 11/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  21%|██        | 7/33 [00:00<00:00, 60.78it/s]Training:  42%|████▏     | 14/33 [00:00<00:00, 59.44it/s]Training:  64%|██████▎   | 21/33 [00:00<00:00, 57.89it/s]Training:  85%|████████▍ | 28/33 [00:00<00:00, 58.87it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 59.44it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 130.98it/s]
+Train Loss: 3441.1121, R²: -0.0749, RMSE: 58.2687, MAE: 42.1624
+Val Loss: 3459.0453, R²: -0.0227, RMSE: 57.3549, MAE: 45.6544
+
+Epoch 12/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  21%|██        | 7/33 [00:00<00:00, 60.48it/s]Training:  42%|████▏     | 14/33 [00:00<00:00, 55.22it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 52.90it/s]Training:  79%|███████▉  | 26/33 [00:00<00:00, 55.25it/s]Training:  97%|█████████▋| 32/33 [00:00<00:00, 56.21it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 56.25it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 132.20it/s]
+Train Loss: 3664.3932, R²: -0.1253, RMSE: 59.6196, MAE: 42.7420
+Val Loss: 3606.0669, R²: -0.0697, RMSE: 58.6601, MAE: 46.2071
+
+Epoch 13/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  21%|██        | 7/33 [00:00<00:00, 60.35it/s]Training:  42%|████▏     | 14/33 [00:00<00:00, 60.00it/s]Training:  64%|██████▎   | 21/33 [00:00<00:00, 59.90it/s]Training:  85%|████████▍ | 28/33 [00:00<00:00, 60.08it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 60.26it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 132.46it/s]
+Train Loss: 3448.9108, R²: -0.1181, RMSE: 59.4273, MAE: 43.2410
+Val Loss: 3381.1079, R²: -0.0068, RMSE: 56.9080, MAE: 44.9778
+
+Epoch 14/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 59.36it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 59.09it/s]Training:  58%|█████▊    | 19/33 [00:00<00:00, 59.71it/s]Training:  79%|███████▉  | 26/33 [00:00<00:00, 59.79it/s]Training:  97%|█████████▋| 32/33 [00:00<00:00, 59.41it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 59.94it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 132.70it/s]
+Train Loss: 3575.0489, R²: -0.1139, RMSE: 59.3154, MAE: 42.9256
+Val Loss: 3481.1687, R²: -0.0337, RMSE: 57.6640, MAE: 45.4385
+
+Epoch 15/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  21%|██        | 7/33 [00:00<00:00, 60.31it/s]Training:  42%|████▏     | 14/33 [00:00<00:00, 59.58it/s]Training:  64%|██████▎   | 21/33 [00:00<00:00, 59.89it/s]Training:  85%|████████▍ | 28/33 [00:00<00:00, 60.10it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 58.58it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 121.18it/s]
+Train Loss: 3591.7465, R²: -0.0983, RMSE: 58.8981, MAE: 42.1602
+Val Loss: 4398.6925, R²: -0.3191, RMSE: 65.1398, MAE: 51.7321
+
+Epoch 16/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  21%|██        | 7/33 [00:00<00:00, 60.65it/s]Training:  42%|████▏     | 14/33 [00:00<00:00, 60.01it/s]Training:  64%|██████▎   | 21/33 [00:00<00:00, 54.91it/s]Training:  82%|████████▏ | 27/33 [00:00<00:00, 55.94it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 57.45it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 128.70it/s]
+Train Loss: 3397.0747, R²: -0.1069, RMSE: 59.1283, MAE: 42.9578
+Val Loss: 3692.9494, R²: -0.0802, RMSE: 58.9475, MAE: 46.2816
+
+Epoch 17/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 59.07it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 59.37it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 59.47it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 59.77it/s]Training:  94%|█████████▍| 31/33 [00:00<00:00, 57.89it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 59.03it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 132.26it/s]
+Train Loss: 3431.4981, R²: -0.0725, RMSE: 58.2034, MAE: 43.0030
+Val Loss: 3382.1631, R²: -0.0056, RMSE: 56.8731, MAE: 45.2391
+
+Epoch 18/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  21%|██        | 7/33 [00:00<00:00, 60.59it/s]Training:  42%|████▏     | 14/33 [00:00<00:00, 59.88it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 59.92it/s]Training:  79%|███████▉  | 26/33 [00:00<00:00, 58.13it/s]Training:  97%|█████████▋| 32/33 [00:00<00:00, 58.27it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 59.27it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 132.45it/s]
+Train Loss: 3459.7755, R²: -0.0949, RMSE: 58.8078, MAE: 42.3814
+Val Loss: 3342.3750, R²: 0.0030, RMSE: 56.6316, MAE: 45.1010
+✅ Best model saved!
+
+Epoch 19/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 59.31it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 52.97it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 55.50it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 57.13it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 58.09it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 57.70it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 131.92it/s]
+Train Loss: 3420.1056, R²: -0.0743, RMSE: 58.2513, MAE: 42.0425
+Val Loss: 3410.8989, R²: -0.0447, RMSE: 57.9694, MAE: 46.2379
+
+Epoch 20/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 58.82it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 57.96it/s]Training:  58%|█████▊    | 19/33 [00:00<00:00, 59.15it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 56.35it/s]Training:  94%|█████████▍| 31/33 [00:00<00:00, 54.92it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 56.70it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 131.66it/s]
+Train Loss: 3422.7434, R²: -0.1064, RMSE: 59.1149, MAE: 42.3806
+Val Loss: 3459.5457, R²: -0.0300, RMSE: 57.5594, MAE: 45.7762
+
+Epoch 21/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 59.42it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 58.18it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 58.12it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 55.88it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 57.07it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 54.38it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 131.78it/s]
+Train Loss: 3295.8279, R²: -0.0400, RMSE: 57.3151, MAE: 40.5620
+Val Loss: 3505.1919, R²: -0.0645, RMSE: 58.5169, MAE: 46.5394
+
+Epoch 22/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 55.78it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 57.58it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 47.72it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 50.88it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 53.57it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 53.61it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 132.66it/s]
+Train Loss: 3424.6488, R²: -0.0950, RMSE: 58.8105, MAE: 41.8871
+Val Loss: 4167.9191, R²: -0.2440, RMSE: 63.2591, MAE: 49.7908
+
+Epoch 23/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  15%|█▌        | 5/33 [00:00<00:00, 47.49it/s]Training:  33%|███▎      | 11/33 [00:00<00:00, 53.02it/s]Training:  52%|█████▏    | 17/33 [00:00<00:00, 52.98it/s]Training:  70%|██████▉   | 23/33 [00:00<00:00, 54.93it/s]Training:  88%|████████▊ | 29/33 [00:00<00:00, 55.98it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 55.40it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 133.08it/s]
+Train Loss: 3751.2810, R²: -0.1797, RMSE: 61.0431, MAE: 42.8686
+Val Loss: 4047.2490, R²: -0.2185, RMSE: 62.6069, MAE: 48.6247
+
+Epoch 24/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 57.01it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 57.48it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 57.30it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 56.41it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 57.13it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 57.52it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 108.10it/s]
+Train Loss: 3795.0678, R²: -0.1285, RMSE: 59.7036, MAE: 42.9467
+Val Loss: 3425.0804, R²: -0.0361, RMSE: 57.7295, MAE: 45.5341
+
+Epoch 25/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 52.93it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 55.05it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 54.64it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 54.69it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 51.32it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 53.47it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 132.98it/s]
+Train Loss: 3273.9016, R²: -0.0556, RMSE: 57.7428, MAE: 40.3946
+Val Loss: 3501.2903, R²: 0.0123, RMSE: 56.3669, MAE: 44.1772
+
+Epoch 26/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 58.42it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 57.12it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 57.96it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 58.19it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 57.76it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 58.21it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 132.00it/s]
+Train Loss: 3200.4131, R²: -0.0204, RMSE: 56.7718, MAE: 40.2408
+Val Loss: 3709.9253, R²: -0.1104, RMSE: 59.7639, MAE: 46.9425
+
+Epoch 27/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 58.64it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 51.31it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 53.06it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 55.13it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 54.28it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 54.95it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 131.98it/s]
+Train Loss: 3560.0045, R²: -0.1185, RMSE: 59.4374, MAE: 42.7202
+Val Loss: 3323.1757, R²: -0.0046, RMSE: 56.8458, MAE: 45.1845
+✅ Best model saved!
+
+Epoch 28/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 58.66it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 56.77it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 57.57it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 55.87it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 55.61it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 55.01it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 129.58it/s]
+Train Loss: 3379.0021, R²: -0.0974, RMSE: 58.8756, MAE: 42.9224
+Val Loss: 4012.0358, R²: -0.2186, RMSE: 62.6091, MAE: 48.9346
+
+Epoch 29/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 54.21it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 57.10it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 56.74it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 57.37it/s]Training:  94%|█████████▍| 31/33 [00:00<00:00, 58.26it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 57.96it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 131.75it/s]
+Train Loss: 3373.9187, R²: -0.0760, RMSE: 58.2985, MAE: 41.7912
+Val Loss: 3510.9740, R²: -0.0526, RMSE: 58.1884, MAE: 45.6828
+
+Epoch 30/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 57.50it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 57.71it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 54.62it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 56.18it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 56.94it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 57.11it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 130.97it/s]
+Train Loss: 3607.7521, R²: -0.1713, RMSE: 60.8238, MAE: 43.8870
+Val Loss: 3450.9423, R²: -0.0320, RMSE: 57.6157, MAE: 45.5180
+
+Epoch 31/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 58.68it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 58.51it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 58.64it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 58.74it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 58.60it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 58.82it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 131.50it/s]
+Train Loss: 3512.3872, R²: -0.0541, RMSE: 57.7011, MAE: 40.4550
+Val Loss: 3298.8955, R²: 0.0066, RMSE: 56.5296, MAE: 45.1139
+✅ Best model saved!
+
+Epoch 32/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 56.77it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 50.14it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 52.79it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 47.98it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 51.52it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 52.12it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 132.39it/s]
+Train Loss: 3269.9288, R²: -0.0458, RMSE: 57.4744, MAE: 41.6114
+Val Loss: 3327.1630, R²: -0.0039, RMSE: 56.8260, MAE: 45.8170
+
+Epoch 33/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 59.55it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 57.38it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 57.77it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 58.32it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 57.10it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 58.10it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 131.31it/s]
+Train Loss: 3561.9435, R²: -0.1327, RMSE: 59.8146, MAE: 42.5102
+Val Loss: 3335.0350, R²: 0.0076, RMSE: 56.5003, MAE: 45.0682
+
+Epoch 34/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 59.01it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 57.96it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 58.26it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 58.76it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 57.58it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 58.33it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 131.73it/s]
+Train Loss: 3393.1902, R²: -0.0912, RMSE: 58.7080, MAE: 43.2018
+Val Loss: 3436.2791, R²: -0.0215, RMSE: 57.3221, MAE: 45.3423
+
+Epoch 35/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 58.64it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 58.53it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 58.55it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 55.04it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 56.25it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 57.24it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 119.10it/s]
+Train Loss: 3256.3177, R²: -0.0732, RMSE: 58.2225, MAE: 40.9028
+Val Loss: 3669.7217, R²: -0.0901, RMSE: 59.2163, MAE: 46.6561
+
+Epoch 36/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 58.66it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 58.06it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 58.13it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 56.92it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 51.45it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 54.60it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 132.06it/s]
+Train Loss: 3219.0148, R²: -0.0364, RMSE: 57.2159, MAE: 40.8511
+Val Loss: 3453.5495, R²: -0.0354, RMSE: 57.7123, MAE: 45.4537
+
+Epoch 37/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 58.90it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 58.37it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 58.32it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 58.50it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 58.58it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 58.99it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 131.01it/s]
+Train Loss: 3317.4662, R²: -0.0790, RMSE: 58.3784, MAE: 41.9912
+Val Loss: 4156.6272, R²: -0.2577, RMSE: 63.6059, MAE: 50.4777
+
+Epoch 38/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 58.91it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 59.17it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 57.36it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 58.12it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 52.22it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 55.41it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 132.29it/s]
+Train Loss: 3419.0049, R²: -0.0449, RMSE: 57.4483, MAE: 41.1974
+Val Loss: 3566.4778, R²: -0.0683, RMSE: 58.6219, MAE: 46.0445
+
+Epoch 39/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 52.76it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 55.94it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 57.08it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 53.79it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 54.72it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 55.55it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 131.32it/s]
+Train Loss: 3221.0282, R²: -0.0310, RMSE: 57.0647, MAE: 40.8613
+Val Loss: 3619.3156, R²: -0.0792, RMSE: 58.9181, MAE: 45.9310
+
+Epoch 40/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  12%|█▏        | 4/33 [00:00<00:00, 36.44it/s]Training:  27%|██▋       | 9/33 [00:00<00:00, 43.32it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 50.17it/s]Training:  64%|██████▎   | 21/33 [00:00<00:00, 46.85it/s]Training:  82%|████████▏ | 27/33 [00:00<00:00, 50.52it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 50.22it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 130.26it/s]
+Train Loss: 3240.4700, R²: -0.0274, RMSE: 56.9669, MAE: 40.8701
+Val Loss: 3925.4492, R²: -0.1748, RMSE: 61.4737, MAE: 47.9730
+
+Epoch 41/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  12%|█▏        | 4/33 [00:00<00:00, 35.98it/s]Training:  30%|███       | 10/33 [00:00<00:00, 46.35it/s]Training:  48%|████▊     | 16/33 [00:00<00:00, 51.72it/s]Training:  67%|██████▋   | 22/33 [00:00<00:00, 54.37it/s]Training:  85%|████████▍ | 28/33 [00:00<00:00, 55.89it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 51.04it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 131.35it/s]
+Train Loss: 3240.8308, R²: -0.0285, RMSE: 56.9958, MAE: 40.9330
+Val Loss: 3380.0900, R²: -0.0164, RMSE: 57.1782, MAE: 46.0531
+
+Epoch 42/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  21%|██        | 7/33 [00:00<00:00, 58.19it/s]Training:  39%|███▉      | 13/33 [00:00<00:00, 58.63it/s]Training:  58%|█████▊    | 19/33 [00:00<00:00, 58.12it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 58.13it/s]Training:  94%|█████████▍| 31/33 [00:00<00:00, 55.79it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 57.42it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 133.06it/s]
+Train Loss: 3318.0163, R²: -0.0577, RMSE: 57.8007, MAE: 41.6268
+Val Loss: 3844.6720, R²: -0.1536, RMSE: 60.9153, MAE: 47.9407
+
+Epoch 43/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 56.06it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 55.89it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 57.41it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 57.45it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 54.44it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 56.09it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 132.41it/s]
+Train Loss: 3120.3064, R²: 0.0140, RMSE: 55.8059, MAE: 39.9537
+Val Loss: 3248.0973, R²: 0.0239, RMSE: 56.0337, MAE: 45.0959
+✅ Best model saved!
+
+Epoch 44/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 58.58it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 58.19it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 58.75it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 58.59it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 55.32it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 57.27it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 132.58it/s]
+Train Loss: 3215.3048, R²: -0.0223, RMSE: 56.8250, MAE: 40.9642
+Val Loss: 3299.4121, R²: 0.0054, RMSE: 56.5632, MAE: 44.9337
+
+Epoch 45/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  15%|█▌        | 5/33 [00:00<00:00, 48.67it/s]Training:  33%|███▎      | 11/33 [00:00<00:00, 54.61it/s]Training:  52%|█████▏    | 17/33 [00:00<00:00, 56.60it/s]Training:  70%|██████▉   | 23/33 [00:00<00:00, 57.53it/s]Training:  88%|████████▊ | 29/33 [00:00<00:00, 57.83it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 57.42it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 132.56it/s]
+Train Loss: 3302.3602, R²: -0.0354, RMSE: 57.1872, MAE: 40.4508
+Val Loss: 3429.9736, R²: -0.0378, RMSE: 57.7775, MAE: 45.4175
+
+Epoch 46/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 51.95it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 55.78it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 56.63it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 57.27it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 57.70it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 57.47it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 131.42it/s]
+Train Loss: 3231.9801, R²: -0.0333, RMSE: 57.1309, MAE: 41.1082
+Val Loss: 3276.3521, R²: 0.0144, RMSE: 56.3049, MAE: 44.8438
+
+Epoch 47/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 58.16it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 55.72it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 57.01it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 57.45it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 57.99it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 58.16it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 133.54it/s]
+Train Loss: 3259.3737, R²: -0.0573, RMSE: 57.7898, MAE: 41.2818
+Val Loss: 3545.9538, R²: -0.0643, RMSE: 58.5116, MAE: 45.8125
+
+Epoch 48/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  15%|█▌        | 5/33 [00:00<00:00, 49.18it/s]Training:  33%|███▎      | 11/33 [00:00<00:00, 55.05it/s]Training:  52%|█████▏    | 17/33 [00:00<00:00, 51.68it/s]Training:  70%|██████▉   | 23/33 [00:00<00:00, 45.74it/s]Training:  88%|████████▊ | 29/33 [00:00<00:00, 49.57it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 50.81it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 133.62it/s]
+Train Loss: 3243.6993, R²: -0.0065, RMSE: 56.3826, MAE: 40.0256
+Val Loss: 3257.2136, R²: 0.0249, RMSE: 56.0041, MAE: 45.2497
+
+Epoch 49/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 56.30it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 57.92it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 58.41it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 58.03it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 57.34it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 58.13it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 123.25it/s]
+Train Loss: 3173.1642, R²: -0.0217, RMSE: 56.8072, MAE: 40.0776
+Val Loss: 3307.0014, R²: 0.0057, RMSE: 56.5531, MAE: 45.0977
+
+Epoch 50/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training:  18%|█▊        | 6/33 [00:00<00:00, 56.42it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 57.47it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 58.31it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 58.57it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 58.76it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Training: 100%|██████████| 33/33 [00:00<00:00, 58.78it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 133.07it/s]
+train.py:246: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(model_dir / "gnn_best_model.pth"))
+Train Loss: 3443.2081, R²: 0.0180, RMSE: 55.6924, MAE: 39.7464
+Val Loss: 3349.5842, R²: 0.0112, RMSE: 56.3966, MAE: 45.5908
+
+================================================================================
+Test Evaluation
+================================================================================
+Evaluating:   0%|          | 0/5 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 5/5 [00:00<00:00, 136.57it/s]
+Test Loss: 2770.6177
+Test R²: 0.0060
+Test RMSE: 56.8261 GPa
+Test MAE: 42.7164 GPa
+Traceback (most recent call last):
+  File "train.py", line 601, in <module>
+    main()
+  File "train.py", line 575, in main
+    gnn_results = train_gnn(CONFIG, data_path, output_dir, model_dir)
+  File "train.py", line 272, in train_gnn
+    plot_results(test_targets, test_preds, train_losses, val_losses, 
+  File "train.py", line 437, in plot_results
+    axes[0, 0].plot([targets.min(), targets.max()], 
+AttributeError: 'list' object has no attribute 'min'
+
+==========================================
+訓練完了
+==========================================

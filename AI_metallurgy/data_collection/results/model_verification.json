@@ -1,0 +1,16 @@
+{
+  "model_dir": "/home/nishioka/LUH/AI_metallurgy/data_collection/models/final_measured_20260119_195152",
+  "model_type": "GradientBoostingRegressor",
+  "recorded_r2": 0.6744219930808478,
+  "verified_r2_train": 0.9997165366339613,
+  "verified_r2_test": 0.6744219930808478,
+  "verified_rmse": 49.6962666379328,
+  "verified_mae": 37.074649108803904,
+  "difference": 0.0,
+  "status": "excellent",
+  "data_samples": {
+    "train": 87,
+    "test": 22,
+    "features": 42
+  }
+}

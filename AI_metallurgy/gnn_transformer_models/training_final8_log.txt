@@ -1,0 +1,531 @@
+✅ hea_gnn環境が見つかりました
+
+==========================================
+訓練を再開します
+==========================================
+
+✅ データファイル: ../data_collection/processed_data/data_with_features.csv
+/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:60: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+================================================================================
+HEA Elastic Modulus Prediction: GNN & Transformer Training
+================================================================================
+📊 データファイル: /home/nishioka/LUH/AI_metallurgy/data_collection/processed_data/data_with_features.csv
+📁 出力ディレクトリ: /home/nishioka/LUH/AI_metallurgy/gnn_transformer_models/results
+💾 モデルディレクトリ: /home/nishioka/LUH/AI_metallurgy/gnn_transformer_models/models
+⚙️  デバイス: cpu
+📦 モデルタイプ: 軽量版
+================================================================================
+================================================================================
+GNN Model Training
+================================================================================
+✅ 322サンプルを読み込みました
+📊 組成特徴量: 17個
+📊 データ分割: Train=257, Val=32, Test=33
+
+Epoch 1/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  12%|█▏        | 4/33 [00:00<00:00, 33.34it/s]Training:  30%|███       | 10/33 [00:00<00:00, 39.04it/s]Training:  42%|████▏     | 14/33 [00:00<00:00, 27.31it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 29.27it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 37.26it/s]Training:  88%|████████▊ | 29/33 [00:00<00:00, 38.42it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 36.92it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 80.08it/s]
+Train Loss: 16219.6733, R²: -4.0696, RMSE: 126.5419, MAE: 108.8329
+Val Loss: 5049.3496, R²: -0.4490, RMSE: 68.2709, MAE: 55.6180
+✅ Best model saved!
+
+Epoch 2/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 30.84it/s]Training:  33%|███▎      | 11/33 [00:00<00:00, 36.93it/s]Training:  52%|█████▏    | 17/33 [00:00<00:00, 38.83it/s]Training:  70%|██████▉   | 23/33 [00:00<00:00, 44.91it/s]Training:  85%|████████▍ | 28/33 [00:00<00:00, 42.22it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 41.06it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 40.41it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 129.70it/s]
+Train Loss: 4729.3769, R²: -0.5053, RMSE: 68.9531, MAE: 52.3120
+Val Loss: 3974.9940, R²: -0.1429, RMSE: 60.6339, MAE: 49.4328
+✅ Best model saved!
+
+Epoch 3/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  12%|█▏        | 4/33 [00:00<00:01, 27.93it/s]Training:  21%|██        | 7/33 [00:00<00:00, 28.87it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 37.48it/s]Training:  48%|████▊     | 16/33 [00:00<00:00, 33.15it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 29.03it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 27.97it/s]Training:  85%|████████▍ | 28/33 [00:00<00:00, 29.32it/s]Training:  97%|█████████▋| 32/33 [00:01<00:00, 29.43it/s]Training: 100%|██████████| 33/33 [00:01<00:00, 30.54it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 130.65it/s]
+Train Loss: 4035.8492, R²: -0.2795, RMSE: 63.5718, MAE: 47.2439
+Val Loss: 3511.7489, R²: -0.0229, RMSE: 57.3618, MAE: 45.5218
+✅ Best model saved!
+
+Epoch 4/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  12%|█▏        | 4/33 [00:00<00:00, 35.17it/s]Training:  27%|██▋       | 9/33 [00:00<00:00, 37.81it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 46.67it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 41.42it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 38.00it/s]Training:  88%|████████▊ | 29/33 [00:00<00:00, 37.51it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 40.78it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 48.19it/s]
+Train Loss: 3349.0034, R²: -0.0865, RMSE: 58.5808, MAE: 44.0089
+Val Loss: 4109.1761, R²: -0.1483, RMSE: 60.7767, MAE: 47.2376
+
+Epoch 5/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  18%|█▊        | 6/33 [00:00<00:00, 40.81it/s]Training:  39%|███▉      | 13/33 [00:00<00:00, 42.44it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 44.92it/s]Training:  70%|██████▉   | 23/33 [00:00<00:00, 42.13it/s]Training:  85%|████████▍ | 28/33 [00:00<00:00, 40.38it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 40.01it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 41.10it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 128.68it/s]
+Train Loss: 3574.0660, R²: -0.0861, RMSE: 58.5719, MAE: 41.6450
+Val Loss: 4362.1950, R²: -0.0070, RMSE: 56.9146, MAE: 42.7774
+
+Epoch 6/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  12%|█▏        | 4/33 [00:00<00:00, 34.53it/s]Training:  24%|██▍       | 8/33 [00:00<00:01, 24.41it/s]Training:  39%|███▉      | 13/33 [00:00<00:00, 28.62it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 30.53it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 33.78it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 40.31it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 34.67it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 131.28it/s]
+Train Loss: 3568.0515, R²: -0.0033, RMSE: 56.2953, MAE: 38.2572
+Val Loss: 4370.9692, R²: 0.0149, RMSE: 56.2907, MAE: 42.0953
+
+Epoch 7/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:   9%|▉         | 3/33 [00:00<00:01, 29.85it/s]Training:  27%|██▋       | 9/33 [00:00<00:00, 36.67it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 44.69it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 41.90it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 40.66it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 40.26it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 41.72it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 132.22it/s]
+Train Loss: 2831.3564, R²: 0.0976, RMSE: 53.3874, MAE: 35.3554
+Val Loss: 4395.0590, R²: -0.1363, RMSE: 60.4573, MAE: 45.2743
+
+Epoch 8/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  12%|█▏        | 4/33 [00:00<00:00, 35.55it/s]Training:  24%|██▍       | 8/33 [00:00<00:00, 30.11it/s]Training:  42%|████▏     | 14/33 [00:00<00:00, 35.87it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 43.41it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 40.57it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 39.33it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 40.11it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 47.97it/s]
+Train Loss: 2940.8293, R²: 0.0445, RMSE: 54.9357, MAE: 39.1528
+Val Loss: 4441.6887, R²: 0.0039, RMSE: 56.6049, MAE: 42.1145
+
+Epoch 9/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 38.10it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 41.00it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 39.90it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 45.17it/s]Training:  88%|████████▊ | 29/33 [00:00<00:00, 41.35it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 40.40it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 120.89it/s]
+Train Loss: 2830.4503, R²: 0.0858, RMSE: 53.7353, MAE: 36.5595
+Val Loss: 4199.2327, R²: -0.0184, RMSE: 57.2344, MAE: 41.5732
+
+Epoch 10/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  12%|█▏        | 4/33 [00:00<00:00, 35.62it/s]Training:  27%|██▋       | 9/33 [00:00<00:00, 36.57it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 39.71it/s]Training:  58%|█████▊    | 19/33 [00:00<00:00, 39.22it/s]Training:  70%|██████▉   | 23/33 [00:00<00:00, 28.32it/s]Training:  85%|████████▍ | 28/33 [00:00<00:00, 33.44it/s]Training:  97%|█████████▋| 32/33 [00:00<00:00, 33.86it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 34.94it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 131.86it/s]
+Train Loss: 2840.6176, R²: 0.0800, RMSE: 53.9075, MAE: 35.8698
+Val Loss: 4737.0983, R²: -0.1171, RMSE: 59.9443, MAE: 42.9097
+
+Epoch 11/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:   9%|▉         | 3/33 [00:00<00:04,  7.08it/s]Training:  27%|██▋       | 9/33 [00:00<00:01, 20.20it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 29.19it/s]Training:  64%|██████▎   | 21/33 [00:00<00:00, 37.11it/s]Training:  82%|████████▏ | 27/33 [00:00<00:00, 42.70it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 34.60it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 127.74it/s]
+Train Loss: 2937.3948, R²: 0.0951, RMSE: 53.4636, MAE: 36.8071
+Val Loss: 4320.0550, R²: 0.0726, RMSE: 54.6174, MAE: 40.2990
+
+Epoch 12/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  18%|█▊        | 6/33 [00:00<00:00, 57.68it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 58.22it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 57.69it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 51.94it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 46.48it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 46.87it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 41.87it/s]
+Train Loss: 2618.8685, R²: 0.1774, RMSE: 50.9725, MAE: 32.4921
+Val Loss: 4245.6650, R²: 0.0488, RMSE: 55.3138, MAE: 38.3928
+
+Epoch 13/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  12%|█▏        | 4/33 [00:00<00:00, 33.20it/s]Training:  30%|███       | 10/33 [00:00<00:00, 44.33it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 44.93it/s]Training:  64%|██████▎   | 21/33 [00:00<00:00, 47.70it/s]Training:  79%|███████▉  | 26/33 [00:00<00:00, 40.18it/s]Training:  97%|█████████▋| 32/33 [00:00<00:00, 43.57it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 43.73it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 122.63it/s]
+Train Loss: 2430.2504, R²: 0.2106, RMSE: 49.9335, MAE: 31.9136
+Val Loss: 4432.6154, R²: 0.0431, RMSE: 55.4800, MAE: 38.5286
+
+Epoch 14/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  18%|█▊        | 6/33 [00:00<00:00, 57.09it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 48.60it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 52.82it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 53.99it/s]Training:  94%|█████████▍| 31/33 [00:00<00:00, 56.58it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 54.78it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 132.29it/s]
+Train Loss: 2668.2239, R²: 0.1347, RMSE: 52.2796, MAE: 33.7016
+Val Loss: 4210.9966, R²: 0.0324, RMSE: 55.7887, MAE: 40.2653
+
+Epoch 15/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 49.77it/s]Training:  33%|███▎      | 11/33 [00:00<00:00, 55.26it/s]Training:  52%|█████▏    | 17/33 [00:00<00:00, 31.44it/s]Training:  67%|██████▋   | 22/33 [00:00<00:00, 33.60it/s]Training:  79%|███████▉  | 26/33 [00:00<00:00, 24.61it/s]Training:  97%|█████████▋| 32/33 [00:00<00:00, 31.41it/s]Training: 100%|██████████| 33/33 [00:01<00:00, 32.93it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 71.24it/s]
+Train Loss: 3149.0624, R²: 0.1556, RMSE: 51.6443, MAE: 33.0103
+Val Loss: 4563.3108, R²: -0.0004, RMSE: 56.7284, MAE: 41.8746
+
+Epoch 16/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  18%|█▊        | 6/33 [00:00<00:00, 58.59it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 57.36it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 43.59it/s]Training:  70%|██████▉   | 23/33 [00:00<00:00, 45.59it/s]Training:  88%|████████▊ | 29/33 [00:00<00:00, 49.85it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 47.44it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 122.51it/s]
+Train Loss: 2404.2111, R²: 0.2185, RMSE: 49.6833, MAE: 31.6018
+Val Loss: 4075.1074, R²: 0.1544, RMSE: 52.1538, MAE: 36.8064
+
+Epoch 17/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  18%|█▊        | 6/33 [00:00<00:00, 59.42it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 58.92it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 57.61it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 57.10it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 53.25it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 55.94it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 130.78it/s]
+Train Loss: 2267.6172, R²: 0.2951, RMSE: 47.1866, MAE: 28.9692
+Val Loss: 4494.7242, R²: 0.1502, RMSE: 52.2845, MAE: 37.1558
+
+Epoch 18/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 49.46it/s]Training:  33%|███▎      | 11/33 [00:00<00:00, 55.40it/s]Training:  52%|█████▏    | 17/33 [00:00<00:00, 47.98it/s]Training:  67%|██████▋   | 22/33 [00:00<00:00, 46.44it/s]Training:  85%|████████▍ | 28/33 [00:00<00:00, 50.69it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 51.52it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 4/4 [00:00<00:00, 129.81it/s]
+train.py:252: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(model_dir / "gnn_best_model.pth"))
+Train Loss: 2402.3387, R²: 0.2315, RMSE: 49.2692, MAE: 29.7823
+Val Loss: 4714.4017, R²: 0.1521, RMSE: 52.2255, MAE: 37.0441
+Early stopping at epoch 18
+
+================================================================================
+Test Evaluation
+================================================================================
+Evaluating:   0%|          | 0/5 [00:00<?, ?it/s]/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([8])) that is different to the input size (torch.Size([8, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/loss.py:538: UserWarning: Using a target size (torch.Size([1])) that is different to the input size (torch.Size([1, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Evaluating: 100%|██████████| 5/5 [00:00<00:00, 140.27it/s]
+/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/nn/modules/transformer.py:307: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer was not TransformerEncoderLayer
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+/home/nishioka/miniconda3/envs/hea_gnn/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:60: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+Test Loss: 3196.7188
+Test R²: -0.1405
+Test RMSE: 60.8680 GPa
+Test MAE: 49.5064 GPa
+================================================================================
+Transformer Model Training
+================================================================================
+✅ 322サンプルを読み込みました
+📊 語彙サイズ: 20
+📊 データ分割: Train=257, Val=32, Test=33
+
+Epoch 1/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:   3%|▎         | 1/33 [00:00<00:04,  7.74it/s]Training:  15%|█▌        | 5/33 [00:00<00:01, 23.37it/s]Training:  30%|███       | 10/33 [00:00<00:00, 31.80it/s]Training:  42%|████▏     | 14/33 [00:00<00:00, 26.94it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 29.86it/s]Training:  67%|██████▋   | 22/33 [00:00<00:00, 32.08it/s]Training:  79%|███████▉  | 26/33 [00:00<00:00, 32.77it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 34.22it/s]Training: 100%|██████████| 33/33 [00:01<00:00, 31.33it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 125.05it/s]
+Train Loss: 10100.4202, R²: -2.2737, RMSE: 101.6868, MAE: 81.2141
+Val Loss: 6201.4125, R²: -0.9279, RMSE: 78.7490, MAE: 63.0595
+✅ Best model saved!
+
+Epoch 2/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  12%|█▏        | 4/33 [00:00<00:00, 31.06it/s]Training:  24%|██▍       | 8/33 [00:00<00:00, 32.50it/s]Training:  39%|███▉      | 13/33 [00:00<00:00, 37.00it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 39.15it/s]Training:  70%|██████▉   | 23/33 [00:00<00:00, 40.35it/s]Training:  85%|████████▍ | 28/33 [00:00<00:00, 41.09it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 42.18it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 39.72it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 131.33it/s]
+Train Loss: 4187.3187, R²: -0.3457, RMSE: 65.1967, MAE: 49.2026
+Val Loss: 4289.4171, R²: -0.3335, RMSE: 65.4936, MAE: 49.8138
+✅ Best model saved!
+
+Epoch 3/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 40.57it/s]Training:  30%|███       | 10/33 [00:00<00:00, 41.54it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 41.93it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 41.90it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 41.35it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 40.76it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 41.58it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 98.89it/s]
+Train Loss: 5354.9359, R²: -0.2260, RMSE: 62.2283, MAE: 45.3758
+Val Loss: 2944.8210, R²: 0.0845, RMSE: 54.2662, MAE: 40.8310
+✅ Best model saved!
+
+Epoch 4/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:   6%|▌         | 2/33 [00:00<00:01, 16.47it/s]Training:  21%|██        | 7/33 [00:00<00:00, 31.01it/s]Training:  33%|███▎      | 11/33 [00:00<00:00, 31.47it/s]Training:  48%|████▊     | 16/33 [00:00<00:00, 35.42it/s]Training:  64%|██████▎   | 21/33 [00:00<00:00, 37.78it/s]Training:  79%|███████▉  | 26/33 [00:00<00:00, 39.00it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 39.12it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 36.80it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 138.72it/s]
+Train Loss: 2652.9097, R²: 0.1466, RMSE: 51.9187, MAE: 36.0192
+Val Loss: 4958.5461, R²: -0.5415, RMSE: 70.4169, MAE: 55.4678
+
+Epoch 5/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  12%|█▏        | 4/33 [00:00<00:00, 36.49it/s]Training:  27%|██▋       | 9/33 [00:00<00:00, 39.56it/s]Training:  39%|███▉      | 13/33 [00:00<00:00, 38.06it/s]Training:  52%|█████▏    | 17/33 [00:00<00:00, 30.38it/s]Training:  64%|██████▎   | 21/33 [00:00<00:00, 32.20it/s]Training:  79%|███████▉  | 26/33 [00:00<00:00, 35.41it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 36.14it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 35.85it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 140.96it/s]
+Train Loss: 2629.6945, R²: 0.1668, RMSE: 51.3006, MAE: 33.9587
+Val Loss: 5047.1155, R²: -0.5690, RMSE: 71.0431, MAE: 58.4543
+
+Epoch 6/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 42.65it/s]Training:  30%|███       | 10/33 [00:00<00:00, 40.83it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 40.00it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 31.41it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 28.65it/s]Training:  88%|████████▊ | 29/33 [00:00<00:00, 32.43it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 34.18it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 134.75it/s]
+Train Loss: 2592.5363, R²: 0.1599, RMSE: 51.5133, MAE: 35.0175
+Val Loss: 2729.6371, R²: 0.1514, RMSE: 52.2459, MAE: 37.6178
+✅ Best model saved!
+
+Epoch 7/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  12%|█▏        | 4/33 [00:00<00:00, 36.65it/s]Training:  27%|██▋       | 9/33 [00:00<00:00, 39.69it/s]Training:  39%|███▉      | 13/33 [00:00<00:00, 31.53it/s]Training:  52%|█████▏    | 17/33 [00:00<00:00, 32.03it/s]Training:  64%|██████▎   | 21/33 [00:00<00:00, 32.17it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 24.88it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 29.44it/s]Training: 100%|██████████| 33/33 [00:01<00:00, 28.83it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 136.32it/s]
+Train Loss: 2130.8636, R²: 0.3071, RMSE: 46.7827, MAE: 31.0713
+Val Loss: 2818.9534, R²: 0.1236, RMSE: 53.0938, MAE: 36.2932
+
+Epoch 8/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 42.38it/s]Training:  30%|███       | 10/33 [00:00<00:00, 28.86it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 33.71it/s]Training:  58%|█████▊    | 19/33 [00:00<00:00, 35.63it/s]Training:  70%|██████▉   | 23/33 [00:00<00:00, 36.84it/s]Training:  82%|████████▏ | 27/33 [00:00<00:00, 33.29it/s]Training:  97%|█████████▋| 32/33 [00:00<00:00, 35.65it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 35.24it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 137.30it/s]
+Train Loss: 2045.3716, R²: 0.3387, RMSE: 45.7041, MAE: 29.9227
+Val Loss: 2509.4484, R²: 0.2199, RMSE: 50.0944, MAE: 34.5064
+✅ Best model saved!
+
+Epoch 9/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 41.00it/s]Training:  30%|███       | 10/33 [00:00<00:00, 41.79it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 42.04it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 41.41it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 41.48it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 41.41it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 41.83it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 136.42it/s]
+Train Loss: 2323.6698, R²: 0.2447, RMSE: 48.8451, MAE: 32.6550
+Val Loss: 2572.2188, R²: 0.2004, RMSE: 50.7170, MAE: 36.2718
+
+Epoch 10/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  12%|█▏        | 4/33 [00:00<00:00, 37.03it/s]Training:  27%|██▋       | 9/33 [00:00<00:00, 40.16it/s]Training:  42%|████▏     | 14/33 [00:00<00:00, 39.95it/s]Training:  58%|█████▊    | 19/33 [00:00<00:00, 40.73it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 38.00it/s]Training:  88%|████████▊ | 29/33 [00:00<00:00, 39.46it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 36.61it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 38.10it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 138.37it/s]
+Train Loss: 2332.5137, R²: 0.3277, RMSE: 46.0820, MAE: 30.6594
+Val Loss: 2774.5616, R²: 0.1374, RMSE: 52.6741, MAE: 37.3099
+
+Epoch 11/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 42.51it/s]Training:  30%|███       | 10/33 [00:00<00:00, 42.24it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 41.72it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 41.13it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 41.33it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 41.70it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 39.19it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 93.21it/s]
+Train Loss: 1885.0898, R²: 0.4343, RMSE: 42.2699, MAE: 26.7799
+Val Loss: 2642.3986, R²: 0.1785, RMSE: 51.4043, MAE: 37.1390
+
+Epoch 12/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  12%|█▏        | 4/33 [00:00<00:00, 37.50it/s]Training:  24%|██▍       | 8/33 [00:00<00:00, 33.97it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 33.85it/s]Training:  52%|█████▏    | 17/33 [00:00<00:00, 37.12it/s]Training:  67%|██████▋   | 22/33 [00:00<00:00, 38.89it/s]Training:  82%|████████▏ | 27/33 [00:00<00:00, 39.50it/s]Training:  94%|█████████▍| 31/33 [00:00<00:00, 36.88it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 36.66it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 138.37it/s]
+Train Loss: 1884.9741, R²: 0.4082, RMSE: 43.2367, MAE: 27.4967
+Val Loss: 2478.9278, R²: 0.2294, RMSE: 49.7888, MAE: 36.2113
+✅ Best model saved!
+
+Epoch 13/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 41.17it/s]Training:  30%|███       | 10/33 [00:00<00:00, 41.36it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 41.75it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 42.20it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 42.38it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 42.55it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 42.00it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 88.76it/s]
+Train Loss: 1794.3645, R²: 0.4166, RMSE: 42.9253, MAE: 27.8573
+Val Loss: 2442.3808, R²: 0.2407, RMSE: 49.4204, MAE: 36.5582
+✅ Best model saved!
+
+Epoch 14/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 42.49it/s]Training:  30%|███       | 10/33 [00:00<00:00, 42.57it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 42.66it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 41.91it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 41.36it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 41.65it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 42.15it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 136.64it/s]
+Train Loss: 1747.4719, R²: 0.4365, RMSE: 42.1870, MAE: 29.3351
+Val Loss: 2490.7561, R²: 0.2257, RMSE: 49.9075, MAE: 35.5641
+
+Epoch 15/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 42.37it/s]Training:  30%|███       | 10/33 [00:00<00:00, 34.29it/s]Training:  42%|████▏     | 14/33 [00:00<00:00, 35.24it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 34.99it/s]Training:  67%|██████▋   | 22/33 [00:00<00:00, 35.43it/s]Training:  82%|████████▏ | 27/33 [00:00<00:00, 37.98it/s]Training:  97%|█████████▋| 32/33 [00:00<00:00, 39.56it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 37.96it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 138.95it/s]
+Train Loss: 1962.9183, R²: 0.3640, RMSE: 44.8199, MAE: 30.3786
+Val Loss: 3284.2671, R²: -0.0210, RMSE: 57.3085, MAE: 46.5120
+
+Epoch 16/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 43.20it/s]Training:  30%|███       | 10/33 [00:00<00:00, 43.01it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 41.08it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 41.24it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 37.37it/s]Training:  88%|████████▊ | 29/33 [00:00<00:00, 35.23it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 38.60it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 139.55it/s]
+Train Loss: 1812.3782, R²: 0.4187, RMSE: 42.8484, MAE: 27.7937
+Val Loss: 2810.3420, R²: 0.1263, RMSE: 53.0127, MAE: 41.2193
+
+Epoch 17/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  12%|█▏        | 4/33 [00:00<00:00, 37.33it/s]Training:  27%|██▋       | 9/33 [00:00<00:00, 34.86it/s]Training:  42%|████▏     | 14/33 [00:00<00:00, 38.08it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 36.48it/s]Training:  67%|██████▋   | 22/33 [00:00<00:00, 37.47it/s]Training:  79%|███████▉  | 26/33 [00:00<00:00, 37.98it/s]Training:  94%|█████████▍| 31/33 [00:00<00:00, 38.97it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 38.23it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 138.31it/s]
+Train Loss: 1815.6431, R²: 0.4097, RMSE: 43.1816, MAE: 28.4539
+Val Loss: 2191.5071, R²: 0.3187, RMSE: 46.8135, MAE: 31.6504
+✅ Best model saved!
+
+Epoch 18/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  12%|█▏        | 4/33 [00:00<00:00, 39.71it/s]Training:  27%|██▋       | 9/33 [00:00<00:00, 41.35it/s]Training:  42%|████▏     | 14/33 [00:00<00:00, 41.97it/s]Training:  58%|█████▊    | 19/33 [00:00<00:00, 40.95it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 34.90it/s]Training:  85%|████████▍ | 28/33 [00:00<00:00, 34.05it/s]Training:  97%|█████████▋| 32/33 [00:00<00:00, 35.10it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 37.08it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 138.01it/s]
+Train Loss: 1762.9884, R²: 0.4315, RMSE: 42.3742, MAE: 28.2297
+Val Loss: 3067.6464, R²: 0.0463, RMSE: 55.3863, MAE: 42.6925
+
+Epoch 19/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 42.69it/s]Training:  30%|███       | 10/33 [00:00<00:00, 41.14it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 38.98it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 40.27it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 38.63it/s]Training:  88%|████████▊ | 29/33 [00:00<00:00, 27.02it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 33.68it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 138.35it/s]
+Train Loss: 1745.4250, R²: 0.4356, RMSE: 42.2220, MAE: 26.3233
+Val Loss: 2788.7029, R²: 0.1331, RMSE: 52.8082, MAE: 38.1978
+
+Epoch 20/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:   9%|▉         | 3/33 [00:00<00:01, 24.81it/s]Training:  24%|██▍       | 8/33 [00:00<00:00, 35.02it/s]Training:  39%|███▉      | 13/33 [00:00<00:00, 31.99it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 35.53it/s]Training:  70%|██████▉   | 23/33 [00:00<00:00, 37.45it/s]Training:  82%|████████▏ | 27/33 [00:00<00:00, 36.40it/s]Training:  97%|█████████▋| 32/33 [00:00<00:00, 38.01it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 36.43it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 137.44it/s]
+Train Loss: 1654.8354, R²: 0.4638, RMSE: 41.1543, MAE: 25.0606
+Val Loss: 2689.6799, R²: 0.1638, RMSE: 51.8621, MAE: 37.2860
+
+Epoch 21/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 41.68it/s]Training:  30%|███       | 10/33 [00:00<00:00, 40.71it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 40.03it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 34.67it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 34.79it/s]Training:  85%|████████▍ | 28/33 [00:01<00:00, 21.06it/s]Training:  97%|█████████▋| 32/33 [00:01<00:00, 24.31it/s]Training: 100%|██████████| 33/33 [00:01<00:00, 28.84it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 136.86it/s]
+Train Loss: 1600.1801, R²: 0.4866, RMSE: 40.2690, MAE: 25.7018
+Val Loss: 2950.5490, R²: 0.0827, RMSE: 54.3190, MAE: 41.1881
+
+Epoch 22/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 35.20it/s]Training:  27%|██▋       | 9/33 [00:00<00:00, 37.32it/s]Training:  42%|████▏     | 14/33 [00:00<00:00, 38.96it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 37.47it/s]Training:  67%|██████▋   | 22/33 [00:00<00:00, 35.79it/s]Training:  82%|████████▏ | 27/33 [00:00<00:00, 37.65it/s]Training:  97%|█████████▋| 32/33 [00:00<00:00, 38.69it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 38.14it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 139.98it/s]
+Train Loss: 1675.9163, R²: 0.4645, RMSE: 41.1287, MAE: 26.6789
+Val Loss: 3099.9873, R²: 0.0363, RMSE: 55.6775, MAE: 42.1451
+
+Epoch 23/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 41.17it/s]Training:  30%|███       | 10/33 [00:00<00:00, 40.64it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 40.69it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 22.45it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 25.96it/s]Training:  88%|████████▊ | 29/33 [00:00<00:00, 29.89it/s]Training: 100%|██████████| 33/33 [00:01<00:00, 31.41it/s]Training: 100%|██████████| 33/33 [00:01<00:00, 30.60it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 135.71it/s]
+Train Loss: 1947.6158, R²: 0.3736, RMSE: 44.4807, MAE: 31.6573
+Val Loss: 2230.0884, R²: 0.3067, RMSE: 47.2238, MAE: 31.4208
+
+Epoch 24/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  12%|█▏        | 4/33 [00:00<00:00, 39.48it/s]Training:  27%|██▋       | 9/33 [00:00<00:00, 40.41it/s]Training:  42%|████▏     | 14/33 [00:00<00:00, 40.59it/s]Training:  58%|█████▊    | 19/33 [00:00<00:00, 40.42it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 40.18it/s]Training:  88%|████████▊ | 29/33 [00:00<00:00, 40.47it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 40.73it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 138.07it/s]
+Train Loss: 1636.8859, R²: 0.4697, RMSE: 40.9251, MAE: 26.3322
+Val Loss: 2687.4150, R²: 0.1645, RMSE: 51.8403, MAE: 38.6434
+
+Epoch 25/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 40.90it/s]Training:  30%|███       | 10/33 [00:00<00:00, 40.67it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 40.30it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 40.58it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 40.82it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 37.91it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 39.70it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 139.11it/s]
+Train Loss: 1560.6245, R²: 0.4931, RMSE: 40.0126, MAE: 25.3929
+Val Loss: 2298.8242, R²: 0.2853, RMSE: 47.9461, MAE: 32.3591
+
+Epoch 26/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 41.09it/s]Training:  30%|███       | 10/33 [00:00<00:00, 40.35it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 39.21it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 39.97it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 40.43it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 40.58it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 40.72it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 38.86it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 38.67it/s]
+Train Loss: 1600.7410, R²: 0.4805, RMSE: 40.5078, MAE: 26.1318
+Val Loss: 2417.5455, R²: 0.2484, RMSE: 49.1685, MAE: 34.4021
+
+Epoch 27/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  12%|█▏        | 4/33 [00:00<00:00, 29.56it/s]Training:  27%|██▋       | 9/33 [00:00<00:00, 36.32it/s]Training:  39%|███▉      | 13/33 [00:00<00:00, 35.12it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 37.48it/s]Training:  70%|██████▉   | 23/33 [00:00<00:00, 38.57it/s]Training:  85%|████████▍ | 28/33 [00:00<00:00, 39.33it/s]Training:  97%|█████████▋| 32/33 [00:00<00:00, 36.50it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 37.08it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 79.01it/s]
+Train Loss: 1721.9886, R²: 0.4541, RMSE: 41.5241, MAE: 26.3621
+Val Loss: 2778.7142, R²: 0.1362, RMSE: 52.7135, MAE: 38.6915
+
+Epoch 28/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  12%|█▏        | 4/33 [00:00<00:00, 31.37it/s]Training:  24%|██▍       | 8/33 [00:00<00:00, 31.49it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 33.83it/s]Training:  48%|████▊     | 16/33 [00:00<00:00, 34.71it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 32.92it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 33.97it/s]Training:  85%|████████▍ | 28/33 [00:00<00:00, 34.16it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 35.86it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 34.39it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 67.08it/s]
+Train Loss: 1640.1251, R²: 0.4674, RMSE: 41.0137, MAE: 29.4378
+Val Loss: 2252.4982, R²: 0.2997, RMSE: 47.4605, MAE: 33.2833
+
+Epoch 29/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 41.02it/s]Training:  30%|███       | 10/33 [00:00<00:00, 41.32it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 41.12it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 41.17it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 40.36it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 40.74it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 41.18it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 140.09it/s]
+Train Loss: 1481.8816, R²: 0.5283, RMSE: 38.5981, MAE: 24.6856
+Val Loss: 2315.9802, R²: 0.2800, RMSE: 48.1246, MAE: 35.5477
+
+Epoch 30/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  12%|█▏        | 4/33 [00:00<00:00, 39.26it/s]Training:  24%|██▍       | 8/33 [00:00<00:00, 36.05it/s]Training:  39%|███▉      | 13/33 [00:00<00:00, 34.45it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 37.16it/s]Training:  70%|██████▉   | 23/33 [00:00<00:00, 38.67it/s]Training:  85%|████████▍ | 28/33 [00:00<00:00, 39.69it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 40.93it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 39.00it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 138.99it/s]
+Train Loss: 1346.5126, R²: 0.5739, RMSE: 36.6861, MAE: 23.2988
+Val Loss: 2601.6380, R²: 0.1912, RMSE: 51.0063, MAE: 36.6648
+
+Epoch 31/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 41.88it/s]Training:  30%|███       | 10/33 [00:00<00:00, 40.27it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 39.69it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 40.46it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 36.83it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 38.28it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 39.27it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 137.54it/s]
+Train Loss: 1297.3625, R²: 0.5801, RMSE: 36.4171, MAE: 22.2906
+Val Loss: 2099.4282, R²: 0.3473, RMSE: 45.8195, MAE: 33.3233
+✅ Best model saved!
+
+Epoch 32/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:   9%|▉         | 3/33 [00:00<00:01, 20.61it/s]Training:  21%|██        | 7/33 [00:00<00:00, 27.23it/s]Training:  33%|███▎      | 11/33 [00:00<00:00, 31.44it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 26.24it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 26.77it/s]Training:  70%|██████▉   | 23/33 [00:00<00:00, 31.35it/s]Training:  82%|████████▏ | 27/33 [00:00<00:00, 33.43it/s]Training:  94%|█████████▍| 31/33 [00:01<00:00, 33.95it/s]Training: 100%|██████████| 33/33 [00:01<00:00, 31.37it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 55.25it/s]
+Train Loss: 1308.6293, R²: 0.5748, RMSE: 36.6489, MAE: 22.9330
+Val Loss: 2096.9976, R²: 0.3481, RMSE: 45.7930, MAE: 32.5095
+✅ Best model saved!
+
+Epoch 33/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  12%|█▏        | 4/33 [00:00<00:00, 33.48it/s]Training:  24%|██▍       | 8/33 [00:00<00:00, 32.05it/s]Training:  39%|███▉      | 13/33 [00:00<00:00, 36.32it/s]Training:  52%|█████▏    | 17/33 [00:00<00:00, 35.34it/s]Training:  64%|██████▎   | 21/33 [00:00<00:00, 33.27it/s]Training:  79%|███████▉  | 26/33 [00:00<00:00, 35.86it/s]Training:  94%|█████████▍| 31/33 [00:00<00:00, 37.56it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 36.05it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 137.91it/s]
+Train Loss: 1496.8415, R²: 0.5597, RMSE: 37.2942, MAE: 23.4946
+Val Loss: 2316.7689, R²: 0.2798, RMSE: 48.1328, MAE: 31.4033
+
+Epoch 34/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 34.91it/s]Training:  27%|██▋       | 9/33 [00:00<00:00, 34.95it/s]Training:  39%|███▉      | 13/33 [00:00<00:00, 35.06it/s]Training:  52%|█████▏    | 17/33 [00:00<00:00, 34.53it/s]Training:  64%|██████▎   | 21/33 [00:00<00:00, 36.20it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 37.17it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 38.60it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 37.33it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 138.72it/s]
+Train Loss: 2158.4630, R²: 0.5530, RMSE: 37.5737, MAE: 23.8291
+Val Loss: 2502.9309, R²: 0.2219, RMSE: 50.0293, MAE: 36.5915
+
+Epoch 35/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  12%|█▏        | 4/33 [00:00<00:00, 38.47it/s]Training:  27%|██▋       | 9/33 [00:00<00:00, 40.28it/s]Training:  42%|████▏     | 14/33 [00:00<00:00, 35.71it/s]Training:  58%|█████▊    | 19/33 [00:00<00:00, 37.82it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 38.96it/s]Training:  88%|████████▊ | 29/33 [00:00<00:00, 39.44it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 39.26it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 139.36it/s]
+Train Loss: 1394.4793, R²: 0.5561, RMSE: 37.4440, MAE: 24.9992
+Val Loss: 2323.5461, R²: 0.2777, RMSE: 48.2032, MAE: 33.2355
+
+Epoch 36/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 41.36it/s]Training:  30%|███       | 10/33 [00:00<00:00, 41.01it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 39.23it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 39.89it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 34.54it/s]Training:  85%|████████▍ | 28/33 [00:00<00:00, 30.04it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 33.72it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 35.19it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 137.88it/s]
+Train Loss: 1421.4362, R²: 0.5674, RMSE: 36.9639, MAE: 24.2319
+Val Loss: 2178.5084, R²: 0.3227, RMSE: 46.6745, MAE: 33.5541
+
+Epoch 37/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  12%|█▏        | 4/33 [00:00<00:00, 39.63it/s]Training:  27%|██▋       | 9/33 [00:00<00:00, 40.96it/s]Training:  42%|████▏     | 14/33 [00:00<00:00, 41.17it/s]Training:  58%|█████▊    | 19/33 [00:00<00:00, 41.08it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 40.79it/s]Training:  88%|████████▊ | 29/33 [00:00<00:00, 41.04it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 41.30it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 139.56it/s]
+Train Loss: 1130.4940, R²: 0.6337, RMSE: 34.0147, MAE: 22.5604
+Val Loss: 2198.9546, R²: 0.3164, RMSE: 46.8930, MAE: 33.4587
+
+Epoch 38/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 41.64it/s]Training:  30%|███       | 10/33 [00:00<00:00, 41.50it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 40.05it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 36.62it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 38.08it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 39.09it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 38.41it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 138.59it/s]
+Train Loss: 1299.5697, R²: 0.6035, RMSE: 35.3873, MAE: 22.4952
+Val Loss: 2624.1118, R²: 0.1842, RMSE: 51.2261, MAE: 38.6316
+
+Epoch 39/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  12%|█▏        | 4/33 [00:00<00:00, 39.97it/s]Training:  24%|██▍       | 8/33 [00:00<00:00, 38.12it/s]Training:  39%|███▉      | 13/33 [00:00<00:00, 39.34it/s]Training:  52%|█████▏    | 17/33 [00:00<00:00, 37.23it/s]Training:  67%|██████▋   | 22/33 [00:00<00:00, 38.73it/s]Training:  82%|████████▏ | 27/33 [00:00<00:00, 39.52it/s]Training:  94%|█████████▍| 31/33 [00:00<00:00, 35.18it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 37.56it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 139.47it/s]
+Train Loss: 1503.2299, R²: 0.5143, RMSE: 39.1671, MAE: 25.3377
+Val Loss: 2431.6642, R²: 0.2440, RMSE: 49.3119, MAE: 35.9427
+
+Epoch 40/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  12%|█▏        | 4/33 [00:00<00:00, 35.23it/s]Training:  24%|██▍       | 8/33 [00:00<00:00, 36.40it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 35.87it/s]Training:  48%|████▊     | 16/33 [00:00<00:00, 33.94it/s]Training:  64%|██████▎   | 21/33 [00:00<00:00, 36.62it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 31.64it/s]Training:  88%|████████▊ | 29/33 [00:00<00:00, 33.22it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 33.09it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 33.83it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 94.24it/s]
+Train Loss: 1219.7297, R²: 0.6043, RMSE: 35.3555, MAE: 22.7995
+Val Loss: 2149.8955, R²: 0.3316, RMSE: 46.3670, MAE: 31.7007
+
+Epoch 41/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:   6%|▌         | 2/33 [00:00<00:01, 19.53it/s]Training:  18%|█▊        | 6/33 [00:00<00:00, 31.43it/s]Training:  30%|███       | 10/33 [00:00<00:00, 33.07it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 36.42it/s]Training:  58%|█████▊    | 19/33 [00:00<00:00, 35.62it/s]Training:  70%|██████▉   | 23/33 [00:00<00:00, 36.09it/s]Training:  82%|████████▏ | 27/33 [00:00<00:00, 36.23it/s]Training:  94%|█████████▍| 31/33 [00:00<00:00, 36.02it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 35.11it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 76.70it/s]
+Train Loss: 1382.2520, R²: 0.5640, RMSE: 37.1103, MAE: 23.9900
+Val Loss: 2452.7572, R²: 0.2375, RMSE: 49.5253, MAE: 33.1331
+
+Epoch 42/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  12%|█▏        | 4/33 [00:00<00:00, 37.03it/s]Training:  24%|██▍       | 8/33 [00:00<00:00, 37.02it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 35.96it/s]Training:  48%|████▊     | 16/33 [00:00<00:00, 35.49it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 36.04it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 36.49it/s]Training:  85%|████████▍ | 28/33 [00:00<00:00, 37.12it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 39.15it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 37.43it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 134.46it/s]
+Train Loss: 1222.7983, R²: 0.6038, RMSE: 35.3767, MAE: 22.9143
+Val Loss: 1972.4248, R²: 0.3868, RMSE: 44.4120, MAE: 30.0992
+✅ Best model saved!
+
+Epoch 43/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:   9%|▉         | 3/33 [00:00<00:01, 25.06it/s]Training:  21%|██        | 7/33 [00:00<00:00, 30.71it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 35.41it/s]Training:  48%|████▊     | 16/33 [00:00<00:00, 30.15it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 30.71it/s]Training:  73%|███████▎  | 24/33 [00:00<00:00, 32.74it/s]Training:  85%|████████▍ | 28/33 [00:00<00:00, 27.37it/s]Training: 100%|██████████| 33/33 [00:01<00:00, 31.61it/s]Training: 100%|██████████| 33/33 [00:01<00:00, 30.94it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 135.04it/s]
+Train Loss: 1230.6799, R²: 0.6132, RMSE: 34.9540, MAE: 22.6658
+Val Loss: 2139.2808, R²: 0.3349, RMSE: 46.2524, MAE: 30.4663
+
+Epoch 44/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:   9%|▉         | 3/33 [00:00<00:01, 26.29it/s]Training:  21%|██        | 7/33 [00:00<00:00, 30.54it/s]Training:  33%|███▎      | 11/33 [00:00<00:00, 22.69it/s]Training:  42%|████▏     | 14/33 [00:00<00:00, 24.50it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 28.17it/s]Training:  67%|██████▋   | 22/33 [00:00<00:00, 29.86it/s]Training:  79%|███████▉  | 26/33 [00:00<00:00, 28.36it/s]Training:  94%|█████████▍| 31/33 [00:01<00:00, 32.15it/s]Training: 100%|██████████| 33/33 [00:01<00:00, 27.95it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 134.22it/s]
+Train Loss: 1080.6837, R²: 0.6567, RMSE: 32.9280, MAE: 21.6716
+Val Loss: 2419.1380, R²: 0.2479, RMSE: 49.1847, MAE: 32.7420
+
+Epoch 45/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 41.55it/s]Training:  30%|███       | 10/33 [00:00<00:00, 41.25it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 41.06it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 41.04it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 40.60it/s]Training:  91%|█████████ | 30/33 [00:01<00:00, 20.80it/s]Training: 100%|██████████| 33/33 [00:01<00:00, 28.76it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 56.30it/s]
+Train Loss: 1192.9344, R²: 0.6227, RMSE: 34.5206, MAE: 22.2837
+Val Loss: 2347.4793, R²: 0.2702, RMSE: 48.4508, MAE: 33.3535
+
+Epoch 46/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 41.64it/s]Training:  30%|███       | 10/33 [00:00<00:00, 41.63it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 41.53it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 41.15it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 41.06it/s]Training:  91%|█████████ | 30/33 [00:00<00:00, 29.00it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 34.92it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 134.96it/s]
+Train Loss: 1224.5419, R²: 0.6286, RMSE: 34.2526, MAE: 21.7157
+Val Loss: 2406.9723, R²: 0.2517, RMSE: 49.0609, MAE: 33.2194
+
+Epoch 47/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 41.62it/s]Training:  30%|███       | 10/33 [00:00<00:00, 40.90it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 41.05it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 40.99it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 39.32it/s]Training:  88%|████████▊ | 29/33 [00:00<00:00, 38.78it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 40.18it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 140.02it/s]
+Train Loss: 1027.6063, R²: 0.6660, RMSE: 32.4785, MAE: 22.0909
+Val Loss: 2626.4602, R²: 0.1835, RMSE: 51.2490, MAE: 36.5502
+
+Epoch 48/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  12%|█▏        | 4/33 [00:00<00:00, 39.93it/s]Training:  24%|██▍       | 8/33 [00:00<00:00, 39.85it/s]Training:  39%|███▉      | 13/33 [00:00<00:00, 40.80it/s]Training:  55%|█████▍    | 18/33 [00:00<00:00, 39.42it/s]Training:  67%|██████▋   | 22/33 [00:00<00:00, 35.76it/s]Training:  79%|███████▉  | 26/33 [00:00<00:00, 34.84it/s]Training:  94%|█████████▍| 31/33 [00:00<00:00, 36.35it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 36.71it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 135.58it/s]
+Train Loss: 1157.4887, R²: 0.6236, RMSE: 34.4821, MAE: 23.2000
+Val Loss: 2093.1469, R²: 0.3493, RMSE: 45.7509, MAE: 28.7710
+
+Epoch 49/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  12%|█▏        | 4/33 [00:00<00:00, 38.36it/s]Training:  24%|██▍       | 8/33 [00:00<00:00, 34.73it/s]Training:  36%|███▋      | 12/33 [00:00<00:00, 31.11it/s]Training:  52%|█████▏    | 17/33 [00:00<00:00, 33.78it/s]Training:  64%|██████▎   | 21/33 [00:00<00:00, 33.42it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 32.54it/s]Training:  88%|████████▊ | 29/33 [00:00<00:00, 32.92it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 34.13it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 135.59it/s]
+Train Loss: 1185.4549, R²: 0.6327, RMSE: 34.0588, MAE: 22.0319
+Val Loss: 2023.3663, R²: 0.3710, RMSE: 44.9818, MAE: 27.9172
+
+Epoch 50/50
+Training:   0%|          | 0/33 [00:00<?, ?it/s]Training:  15%|█▌        | 5/33 [00:00<00:00, 40.47it/s]Training:  30%|███       | 10/33 [00:00<00:00, 38.42it/s]Training:  45%|████▌     | 15/33 [00:00<00:00, 39.19it/s]Training:  61%|██████    | 20/33 [00:00<00:00, 40.13it/s]Training:  76%|███████▌  | 25/33 [00:00<00:00, 39.17it/s]Training:  88%|████████▊ | 29/33 [00:00<00:00, 38.44it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 38.37it/s]Training: 100%|██████████| 33/33 [00:00<00:00, 38.82it/s]
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 38.68it/s]Evaluating: 100%|██████████| 4/4 [00:00<00:00, 38.46it/s]
+train.py:404: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(model_dir / "transformer_best_model.pth"))
+Train Loss: 1115.2546, R²: 0.6476, RMSE: 33.3649, MAE: 22.2462
+Val Loss: 2606.1357, R²: 0.1898, RMSE: 51.0503, MAE: 36.9605
+
+================================================================================
+Test Evaluation
+================================================================================
+Evaluating:   0%|          | 0/3 [00:00<?, ?it/s]Evaluating: 100%|██████████| 3/3 [00:00<00:00, 112.43it/s]
+Test Loss: 857.9412
+Test R²: 0.6249
+Test RMSE: 34.9086 GPa
+Test MAE: 26.1668 GPa
+
+================================================================================
+Model Comparison
+================================================================================
+GNN - R²: -0.1405, RMSE: 60.8680 GPa
+Transformer - R²: 0.6249, RMSE: 34.9086 GPa
+
+✅ 結果を保存しました: /home/nishioka/LUH/AI_metallurgy/gnn_transformer_models/results/model_comparison.json
+
+==========================================
+訓練完了
+==========================================

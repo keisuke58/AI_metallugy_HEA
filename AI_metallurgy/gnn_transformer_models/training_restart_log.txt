@@ -1,0 +1,19 @@
+✅ hea_gnn環境が見つかりました
+
+==========================================
+訓練を再開します
+==========================================
+
+✅ データファイル: ../data_collection/processed_data/data_with_features.csv
+Traceback (most recent call last):
+  File "train.py", line 595, in <module>
+    main()
+  File "train.py", line 509, in main
+    args = parse_args()
+  File "train.py", line 474, in parse_args
+    parser.add_argument('--data_path', type=str, default=str(DEFAULT_DATA_PATH),
+NameError: name 'DEFAULT_DATA_PATH' is not defined
+
+==========================================
+訓練完了
+==========================================

@@ -1,0 +1,26 @@
+✅ hea_gnn環境が見つかりました
+
+==========================================
+訓練を再開します
+==========================================
+
+✅ データファイル: ../data_collection/processed_data/data_with_features.csv
+================================================================================
+HEA Elastic Modulus Prediction: GNN & Transformer Training
+================================================================================
+📊 データファイル: /home/nishioka/LUH/AI_metallurgy/data_collection/processed_data/data_with_features.csv
+📁 出力ディレクトリ: /home/nishioka/LUH/AI_metallurgy/gnn_transformer_models/results
+💾 モデルディレクトリ: /home/nishioka/LUH/AI_metallurgy/gnn_transformer_models/models
+⚙️  デバイス: cpu
+📦 モデルタイプ: 軽量版
+================================================================================
+Traceback (most recent call last):
+  File "train.py", line 601, in <module>
+    main()
+  File "train.py", line 575, in main
+    gnn_results = train_gnn(CONFIG, data_path, output_dir, model_dir)
+TypeError: train_gnn() takes 0 positional arguments but 4 were given
+
+==========================================
+訓練完了
+==========================================

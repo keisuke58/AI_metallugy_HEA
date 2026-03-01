@@ -1,0 +1,33 @@
+✅ hea_gnn環境が見つかりました
+
+==========================================
+訓練を再開します
+==========================================
+
+✅ データファイル: ../data_collection/processed_data/data_with_features.csv
+================================================================================
+HEA Elastic Modulus Prediction: GNN & Transformer Training
+================================================================================
+📊 データファイル: /home/nishioka/LUH/AI_metallurgy/data_collection/processed_data/data_with_features.csv
+📁 出力ディレクトリ: /home/nishioka/LUH/AI_metallurgy/gnn_transformer_models/results
+💾 モデルディレクトリ: /home/nishioka/LUH/AI_metallurgy/gnn_transformer_models/models
+⚙️  デバイス: cpu
+📦 モデルタイプ: 軽量版
+================================================================================
+================================================================================
+GNN Model Training
+================================================================================
+✅ 322サンプルを読み込みました
+📊 組成特徴量: 17個
+Traceback (most recent call last):
+  File "train.py", line 601, in <module>
+    main()
+  File "train.py", line 575, in main
+    gnn_results = train_gnn()
+  File "train.py", line 154, in train_gnn
+    train_dataset, batch_size=config['batch_size'], 
+NameError: name 'config' is not defined
+
+==========================================
+訓練完了
+==========================================
