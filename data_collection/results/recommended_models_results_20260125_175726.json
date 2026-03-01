@@ -1,0 +1,23 @@
+{
+  "gradient_boosting": {
+    "best_params": {
+      "learning_rate": 0.034359184426449335,
+      "loss": "huber",
+      "max_depth": 12,
+      "max_features": null,
+      "min_samples_leaf": 2,
+      "min_samples_split": 26,
+      "n_estimators": 707,
+      "subsample": 0.9652962210225885
+    },
+    "cv_r2": 0.4805749120065096,
+    "test_r2": 0.4955571161698983,
+    "test_rmse": 40.418605387724575,
+    "test_mae": 25.13996613545951
+  },
+  "ensemble": {
+    "test_r2": 0.47965262611792236,
+    "test_rmse": 41.050836200897876,
+    "test_mae": 26.301567267287126
+  }
+}
