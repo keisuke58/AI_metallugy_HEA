@@ -1,0 +1,15 @@
+{
+  "score": 42,
+  "total_issues": 1,
+  "total_warnings": 4,
+  "issues": [
+    "❌ 予測エラー: The feature names should match those that were passed during fit.\nFeature names unseen at fit time:\n- comp_Al\n- comp_Cr\n- comp_Cu\n- comp_Fe\n- comp_Hf\n- ...\nFeature names seen at fit time, yet now missing:\n- entropy_enthalpy_ratio\n- radius_cv\n- vec_per_element\n"
+  ],
+  "warnings": [
+    "⚠️  特徴量 'density' の欠損率が高い: 100.0%",
+    "⚠️  特徴量 'hardness' の欠損率が高い: 100.0%",
+    "⚠️  特徴量 'yield_strength' の欠損率が高い: 100.0%",
+    "⚠️  R²スコアのばらつきが大きい（最適化の効果が不明確）"
+  ],
+  "status": "needs_improvement"
+}

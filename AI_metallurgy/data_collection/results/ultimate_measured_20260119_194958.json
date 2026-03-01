@@ -1,0 +1,135 @@
+{
+  "timestamp": "20260119_194958",
+  "best_model": "Stacking",
+  "feature_count_original": 42,
+  "feature_count_advanced": 54,
+  "feature_count_selected": 16,
+  "results": {
+    "GB_advanced": {
+      "test_r2": 0.5978153771068508,
+      "test_rmse": 55.23431405750078,
+      "test_mae": 40.37738671149561,
+      "train_r2": 0.9895156263306792,
+      "train_rmse": 7.269060953193024,
+      "train_mae": 5.070119540377132,
+      "cv_r2": 0.1144590827314121,
+      "best_params": {
+        "learning_rate": 0.03178873420373792,
+        "max_depth": 3,
+        "max_features": "sqrt",
+        "min_samples_leaf": 6,
+        "min_samples_split": 17,
+        "n_estimators": 648,
+        "subsample": 0.943343521925488
+      },
+      "top_features": {
+        "comp_V": 0.09935464627474888,
+        "diff_electronegativity": 0.09714509380863344,
+        "estimated_density": 0.08888604428362738,
+        "mean_electronegativity": 0.08248916750415304,
+        "valence_electron": 0.07040873764311235,
+        "diff_in_atomic_radii": 0.06804089475550942,
+        "comp_Co": 0.06789331044751513,
+        "vec_per_element": 0.06574535450719081,
+        "std_atomic_mass": 0.06305166386825163,
+        "lambda": 0.05919296086650043
+      }
+    },
+    "XGB_advanced": {
+      "test_r2": 0.3651974182859521,
+      "test_rmse": 69.39298608691162,
+      "test_mae": 46.18577606201172,
+      "train_r2": 0.8293862079249787,
+      "train_rmse": 29.3233870549364,
+      "train_mae": 17.398424227308954,
+      "cv_r2": 0.02868566226271101,
+      "best_params": {
+        "colsample_bytree": 0.6943939678995823,
+        "gamma": 0.25606832276132396,
+        "learning_rate": 0.007021679476921568,
+        "max_depth": 9,
+        "n_estimators": 314,
+        "reg_alpha": 0.11089082081183133,
+        "reg_lambda": 1.3786730037315402,
+        "subsample": 0.6806876809341584
+      },
+      "top_features": {
+        "comp_V": 0.22554762661457062,
+        "std_atomic_mass": 0.0856618881225586,
+        "vec_per_element": 0.06965769827365875,
+        "comp_Co": 0.06790746003389359,
+        "lambda": 0.06458765268325806,
+        "comp_Ni": 0.0586872361600399,
+        "mean_electronegativity": 0.05731071159243584,
+        "radius_cv": 0.05435987189412117,
+        "estimated_density": 0.05039869248867035,
+        "diff_in_atomic_radii": 0.04591356962919235
+      }
+    },
+    "RF_advanced": {
+      "test_r2": -0.261804379625336,
+      "test_rmse": 97.83454944832997,
+      "test_mae": 61.87604191662797,
+      "train_r2": 0.80713476788953,
+      "train_rmse": 31.176979482178577,
+      "train_mae": 21.676942528735395,
+      "cv_r2": 0.06061609532094821,
+      "best_params": {
+        "bootstrap": false,
+        "max_depth": 20,
+        "max_features": null,
+        "min_samples_leaf": 3,
+        "min_samples_split": 8,
+        "n_estimators": 788
+      },
+      "top_features": {
+        "diff_in_atomic_radii": 0.239219908895648,
+        "comp_V": 0.17489547727675916,
+        "mixing_enthalpy": 0.15750763907433907,
+        "diff_electronegativity": 0.1284995613726473,
+        "mean_electronegativity": 0.07767397364751634,
+        "valence_electron": 0.05058911634600232,
+        "lambda": 0.04873230658398791,
+        "estimated_density": 0.03717262400111107,
+        "entropy_enthalpy_ratio": 0.028624404392870697,
+        "comp_Co": 0.0180946859785525
+      }
+    },
+    "ET_advanced": {
+      "test_r2": 0.5967504573408062,
+      "test_rmse": 55.30739147566597,
+      "test_mae": 35.16670705099778,
+      "train_r2": 0.8853483971985727,
+      "train_rmse": 24.037933547790516,
+      "train_mae": 15.996195080700044,
+      "cv_r2": 0.31462848239517277,
+      "best_params": {
+        "max_depth": null,
+        "max_features": null,
+        "min_samples_leaf": 1,
+        "min_samples_split": 8,
+        "n_estimators": 820
+      },
+      "top_features": {
+        "comp_V": 0.15887628481169566,
+        "estimated_density": 0.10792859196384964,
+        "comp_Co": 0.09450616078447921,
+        "mixing_enthalpy": 0.09018597148051972,
+        "valence_electron": 0.07443823334124344,
+        "comp_Nb": 0.07417651891389625,
+        "diff_in_atomic_radii": 0.06438127786854948,
+        "lambda": 0.05687579051515489,
+        "mean_electronegativity": 0.05670221786957971,
+        "diff_electronegativity": 0.04409770225981864
+      }
+    },
+    "Stacking": {
+      "test_r2": 0.6295906176283491,
+      "test_rmse": 53.007487967650746,
+      "test_mae": 33.89681480602806,
+      "train_r2": 0.8555933388325936,
+      "train_rmse": 26.977436465599745,
+      "train_mae": 18.563831612050244
+    }
+  }
+}

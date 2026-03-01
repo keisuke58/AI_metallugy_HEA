@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEA Elastic Modulus Prediction Project - Presentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', 'Times New Roman', 'Palatino', serif;
+            background: #f5f5f5;
+            color: #2c3e50;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .slide {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            padding: 60px 80px;
+            margin: 40px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            min-height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            page-break-after: always;
+        }
+        
+        h1 {
+            color: #1a237e;
+            font-size: 2.8em;
+            margin-bottom: 30px;
+            text-align: center;
+            border-bottom: 3px solid #1a237e;
+            padding-bottom: 20px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+        
+        h2 {
+            color: #283593;
+            font-size: 2em;
+            margin-bottom: 25px;
+            border-left: 4px solid #283593;
+            padding-left: 20px;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+        }
+        
+        h3 {
+            color: #424242;
+            font-size: 1.4em;
+            margin: 25px 0 15px 0;
+            font-weight: 600;
+        }
+        
+        .highlight {
+            background: #e3f2fd;
+            padding: 2px 6px;
+            border-left: 3px solid #1976d2;
+            font-weight: 500;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 1.1em;
+        }
+        
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+        
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .metric-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .metric-value {
+            font-size: 3em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .metric-label {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .success {
+            color: #2e7d32;
+            font-weight: 600;
+        }
+        
+        .improvement {
+            color: #f57c00;
+            font-weight: 600;
+        }
+        
+        ul {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin: 10px 0;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .card h3 {
+            color: #667eea;
+            margin-top: 0;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            font-size: 1.1em;
+        }
+        
+        .slide-number {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #eceff1;
+            color: #546e7a;
+            padding: 8px 16px;
+            border: 1px solid #b0bec5;
+            font-weight: 500;
+            font-size: 0.9em;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .slide {
+            position: relative;
+        }
+        
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            margin: 10px 0;
+        }
+        
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .image-card {
+            background: #fafafa;
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .image-card img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .image-caption {
+            text-align: center;
+            font-size: 0.85em;
+            color: #546e7a;
+            margin-top: 10px;
+            font-style: italic;
+            font-family: 'Georgia', serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Slide 1: Title -->
+        <div class="slide">
+            <div class="slide-number">Slide 1/18</div>
+            <h1>HEA Elastic Modulus Prediction Project</h1>
+            <div style="text-align: center; margin-top: 50px;">
+                <h2 style="border: none; text-align: center;">Presentation</h2>
+                <p style="font-size: 1.3em; margin-top: 30px; color: #666;">
+                    Machine Learning-based Prediction of Elastic Modulus for High Entropy Alloys
+                </p>
+            </div>
+        </div>
+        
+        <!-- Slide 2: Project Overview -->
+        <div class="slide">
+            <div class="slide-number">Slide 2/18</div>
+            <h2>Project Overview</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Objective</h3>
+                    <p>Predict elastic modulus (Young's Modulus) of High Entropy Alloys (HEA) using machine learning</p>
+                </div>
+                <div class="card">
+                    <h3>Achievements</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>Collected and integrated 322 data points</li>
+                        <li>Developed and evaluated 8 different models</li>
+                        <li>Achieved <span class="highlight">best performance: R² = 0.67</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 3: Data Collection Results -->
+        <div class="slide">
+            <div class="slide-number">Slide 3/18</div>
+            <h2>Data Collection Results</h2>
+            <h3>Data Sources</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Source</th>
+                        <th>Data Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>DOE/OSTI</td>
+                        <td>107</td>
+                    </tr>
+                    <tr>
+                        <td>Gorsse Dataset</td>
+                        <td>211</td>
+                    </tr>
+                    <tr>
+                        <td>Latest Research</td>
+                        <td>4</td>
+                    </tr>
+                    <tr style="background-color: #e8f4f8;">
+                        <td><strong>Total</strong></td>
+                        <td><strong>322</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 style="margin-top: 30px;">Data Characteristics</h3>
+            <ul>
+                <li>Elastic modulus range: <span class="highlight">27-466 GPa</span></li>
+                <li>Mean: <span class="highlight">165.4 GPa</span></li>
+                <li>Includes biomedical applications data (30-90 GPa)</li>
+            </ul>
+            <div class="image-container">
+                <img src="figures/data_distribution.png" alt="Data Distribution">
+                <div class="image-caption">Figure: Distribution of elastic modulus data</div>
+            </div>
+        </div>
+        
+        <!-- Slide 4: Feature Engineering -->
+        <div class="slide">
+            <div class="slide-number">Slide 4/13</div>
+            <h2>Feature Engineering</h2>
+            <div class="metric-box">
+                <div class="metric-label">Number of Features</div>
+                <div class="metric-value">29</div>
+            </div>
+            <h3>Top 5 Most Important Features</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Feature</th>
+                        <th>Importance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1st</td>
+                        <td><strong>Ti Composition</strong></td>
+                        <td>16.6%</td>
+                    </tr>
+                    <tr>
+                        <td>2nd</td>
+                        <td>Mean Electronegativity</td>
+                        <td>8.8%</td>
+                    </tr>
+                    <tr>
+                        <td>3rd</td>
+                        <td>Valence Electron Concentration</td>
+                        <td>8.0%</td>
+                    </tr>
+                    <tr>
+                        <td>4th</td>
+                        <td>Co Composition</td>
+                        <td>6.8%</td>
+                    </tr>
+                    <tr>
+                        <td>5th</td>
+                        <td>Density</td>
+                        <td>6.4%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="margin-top: 20px; font-size: 1.05em; color: #1565c0; font-weight: 600; font-style: italic;">
+                Key Finding: Ti composition is the most important predictive factor
+            </p>
+            <div class="image-container">
+                <img src="figures/feature_importance.png" alt="Feature Importance">
+                <div class="image-caption">Figure: Feature importance analysis</div>
+            </div>
+        </div>
+        
+        <!-- Slide 10: Model Performance Comparison -->
+        <div class="slide">
+            <div class="slide-number">Slide 10/18</div>
+            <h2>Model Performance Comparison</h2>
+            <h3>All Models Performance (Initial Training)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Model</th>
+                        <th>R²</th>
+                        <th>RMSE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #e8eaf6;">
+                        <td>1st</td>
+                        <td><strong>Random Forest</strong></td>
+                        <td><strong>0.57</strong></td>
+                        <td><strong>37.5 GPa</strong></td>
+                    </tr>
+                    <tr style="background-color: #f3e5f5;">
+                        <td>2nd</td>
+                        <td><strong>MLFFNN</strong></td>
+                        <td><strong>0.49</strong></td>
+                        <td><strong>40.5 GPa</strong></td>
+                    </tr>
+                    <tr>
+                        <td>3rd</td>
+                        <td>Lasso</td>
+                        <td>0.37</td>
+                        <td>45.1 GPa</td>
+                    </tr>
+                    <tr>
+                        <td>4th</td>
+                        <td>Linear</td>
+                        <td>0.36</td>
+                        <td>45.5 GPa</td>
+                    </tr>
+                    <tr>
+                        <td>5th</td>
+                        <td>SVR</td>
+                        <td>0.36</td>
+                        <td>45.6 GPa</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="margin-top: 20px; text-align: center; font-size: 1.2em;">
+                <span class="highlight">Best: Random Forest (R² = 0.57)</span>
+            </p>
+            <div class="image-container">
+                <img src="figures/model_performance_comparison.png" alt="Model Performance Comparison">
+                <div class="image-caption">Figure: Comparison of all 8 model performances</div>
+            </div>
+        </div>
+        
+        <!-- Slide 11: Optimization Results -->
+        <div class="slide">
+            <div class="slide-number">Slide 11/18</div>
+            <h2>Optimization Results</h2>
+            <h3>Performance Improvement through Optimization</h3>
+            <div class="grid">
+                <div class="card">
+                    <h3>Using Full Dataset</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><strong>SVR (Optimized)</strong></li>
+                        <li>R² = <span class="improvement">0.59</span></li>
+                        <li><span class="improvement">+67%</span></li>
+                        <li style="margin-top: 15px;">Random Forest</li>
+                        <li>R² = 0.57</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Using Measured Data Only</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><strong>Gradient Boosting</strong></li>
+                        <li>R² = <span class="improvement">0.67</span></li>
+                        <li>⬆️ <span class="improvement">+37%</span></li>
+                        <li style="margin-top: 15px;">Test RMSE: 49.7 GPa</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 30px; padding: 20px; background: #e3f2fd; border: 1px solid #90caf9;">
+                <p style="font-size: 1.1em; font-weight: 600; color: #1565c0;">
+                    Conclusion: Significant performance improvement achieved through optimization
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="figures/performance_improvement.png" alt="Performance Improvement">
+                <div class="image-caption">Figure: Performance improvement through optimization</div>
+            </div>
+        </div>
+        
+        <!-- Slide 12: Best Model Performance -->
+        <div class="slide">
+            <div class="slide-number">Slide 12/18</div>
+            <h2>Best Model Performance</h2>
+            <h3>Gradient Boosting (Measured Data Only)</h3>
+            <div class="grid">
+                <div class="metric-box">
+                    <div class="metric-label">Test R²</div>
+                    <div class="metric-value">0.6744</div>
+                </div>
+                <div class="metric-box">
+                    <div class="metric-label">Test RMSE</div>
+                    <div class="metric-value">49.70</div>
+                    <div class="metric-label">GPa</div>
+                </div>
+                <div class="metric-box">
+                    <div class="metric-label">Test MAE</div>
+                    <div class="metric-value">37.07</div>
+                    <div class="metric-label">GPa</div>
+                </div>
+            </div>
+            <h3 style="margin-top: 30px;">Improvement Trajectory</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stage</th>
+                        <th>R²</th>
+                        <th>Improvement</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Initial</td>
+                        <td>0.49</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Basic Optimization</td>
+                        <td>0.62</td>
+                        <td class="improvement">+25.9%</td>
+                    </tr>
+                    <tr>
+                        <td>Advanced Optimization</td>
+                        <td>0.63</td>
+                        <td class="improvement">+27.6%</td>
+                    </tr>
+                    <tr style="background-color: #e8eaf6;">
+                        <td><strong>Final Optimization</strong></td>
+                        <td><strong>0.67</strong></td>
+                        <td class="improvement"><strong>+36.7%</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Slide 8: Key Findings -->
+        <div class="slide">
+            <div class="slide-number">Slide 13/18</div>
+            <h2>Key Findings</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>1. Data-related Findings</h3>
+                    <ul>
+                        <li>✅ 322 data points sufficient for practical model building</li>
+                        <li>✅ Good performance even with measured data only (109 points)</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>2. Feature-related Findings</h3>
+                    <ul>
+                        <li><strong>Ti composition</strong> is most important (16.6%)</li>
+                        <li>Material descriptors (electronegativity, VEC) are effective</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>3. Model-related Findings</h3>
+                    <ul>
+                        <li>Non-linear models (SVR, GB, RF) perform well</li>
+                        <li>67% performance improvement through optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 14: Visualization Results -->
+        <div class="slide">
+            <div class="slide-number">Slide 14/18</div>
+            <h2>Visualization Results</h2>
+            <div class="metric-box">
+                <div class="metric-label">Created Visualizations</div>
+                <div class="metric-value">21</div>
+            </div>
+            <h3>Predicted vs Actual Values</h3>
+            <div class="image-grid">
+                <div class="image-card">
+                    <img src="figures/predicted_vs_actual.png" alt="Predicted vs Actual (All Data)">
+                    <div class="image-caption">Predicted vs Actual (All Data)</div>
+                </div>
+                <div class="image-card">
+                    <img src="figures/predicted_vs_actual_(measured_data_only).png" alt="Predicted vs Actual (Measured Only)">
+                    <div class="image-caption">Predicted vs Actual (Measured Data Only)</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 10: Residual Analysis -->
+        <div class="slide">
+            <div class="slide-number">Slide 10/13</div>
+            <h2>Residual Analysis</h2>
+            <div class="image-grid">
+                <div class="image-card">
+                    <img src="figures/residuals_analysis.png" alt="Residuals Analysis (All Data)">
+                    <div class="image-caption">Residuals Analysis (All Data)</div>
+                </div>
+                <div class="image-card">
+                    <img src="figures/residuals_analysis_(measured_data_only).png" alt="Residuals Analysis (Measured Only)">
+                    <div class="image-caption">Residuals Analysis (Measured Data Only)</div>
+                </div>
+            </div>
+            <div class="image-container" style="margin-top: 20px;">
+                <img src="figures/error_distribution.png" alt="Error Distribution">
+                <div class="image-caption">Figure: Error distribution analysis</div>
+            </div>
+        </div>
+        
+        <!-- Slide 16: Learning Curves and Optimization -->
+        <div class="slide">
+            <div class="slide-number">Slide 16/18</div>
+            <h2>Learning Curves and Optimization</h2>
+            <div class="image-grid">
+                <div class="image-card">
+                    <img src="figures/learning_curves.png" alt="Learning Curves">
+                    <div class="image-caption">Learning Curves</div>
+                </div>
+                <div class="image-card">
+                    <img src="figures/optimization_history.png" alt="Optimization History">
+                    <div class="image-caption">Optimization History</div>
+                </div>
+            </div>
+            <div class="image-container" style="margin-top: 20px;">
+                <img src="figures/learning_curves_detailed.png" alt="Detailed Learning Curves">
+                <div class="image-caption">Figure: Detailed learning curves analysis</div>
+            </div>
+        </div>
+        
+        <!-- Slide 17: Practical Applications -->
+        <div class="slide">
+            <div class="slide-number">Slide 17/18</div>
+            <h2>Practical Applications</h2>
+            <h3>Application Possibilities</h3>
+            <div class="grid">
+                <div class="card">
+                    <h3>1. Material Design Efficiency</h3>
+                    <ul>
+                        <li>Predict elastic modulus of new HEA alloys in advance</li>
+                        <li>Reduce experimental costs</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>2. Composition Optimization</h3>
+                    <ul>
+                        <li>Explore compositions that achieve target elastic modulus</li>
+                        <li>Efficient exploration of design space</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>3. Quality Control</h3>
+                    <ul>
+                        <li>Evaluate manufacturing process quality</li>
+                        <li>Verify consistency between batches</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="image-container" style="margin-top: 30px;">
+                <img src="figures/elastic_modulus_comparison.png" alt="Elastic Modulus Comparison">
+                <div class="image-caption">Figure: Comparison of elastic modulus across different alloys</div>
+            </div>
+        </div>
+        
+        <!-- Slide 18: Conclusions -->
+        <div class="slide">
+            <div class="slide-number">Slide 18/18</div>
+            <h2>Conclusions</h2>
+            <h3>Project Achievements</h3>
+            <div class="grid">
+                <div class="card">
+                    <ul style="list-style: none; padding: 0;">
+                        <li><strong>Data Collection</strong>: Integrated 322 data points</li>
+                        <li><strong>Features</strong>: Generated 29 features</li>
+                        <li><strong>Models</strong>: Implemented 8 different models</li>
+                        <li><strong>Performance</strong>: Achieved R² = 0.67</li>
+                        <li><strong>Visualizations</strong>: Created 21 figures</li>
+                    </ul>
+                </div>
+            </div>
+            <h3 style="margin-top: 30px;">Practical Value</h3>
+            <div style="background: #e8f4f8; padding: 25px; border-radius: 10px; margin-top: 20px;">
+                <ul style="font-size: 1.2em;">
+                    <li>Enables prediction of elastic modulus for new HEA alloys</li>
+                    <li>Contributes to material design efficiency</li>
+                    <li>Reduces experimental costs</li>
+                </ul>
+            </div>
+            <div class="image-container" style="margin-top: 30px;">
+                <img src="figures/all_results_summary.png" alt="All Results Summary">
+                <div class="image-caption">Figure: Summary of all results</div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="footer">
+        <p>HEA Elastic Modulus Prediction Project - Presentation</p>
+        <p>Created: January 20, 2026</p>
+    </div>
+</body>
+</html>

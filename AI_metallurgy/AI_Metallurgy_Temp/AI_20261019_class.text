@@ -1,0 +1,62 @@
+Inplant 
+Safety integrated implants
+
+orthopedic implant
+
+infection
+
+aesptic loosening
+
+3 periprosthetic ftacture 
+
+Bone 30GPa
+210 GPa implant 
+
+Purpose:
+find the biomedical hea compositions with the lowest elastic modulus for enhanced mechanical compatibility 
+with the human body
+
+LIN KNN RF SVR.L .R .P MLFFNN
+
+predicted Elastic and experimental elastic modulsus diffecence 10GPa 
+
+Why 10GPa difference?
+- Limited training data (small dataset)
+- Missing features (processing conditions, microstructure, heat treatment)
+- Model limitations (non-linear relationships not fully captured)
+- Experimental measurement variations
+- Model needs improvement (try ensemble, more features, hyperparameter tuning)
+
+What is it?
+
+SEM microstructure refers to the structure of the material as seen through a Scanning Electron Microscope (SEM),
+ revealing details about the surface and internal features at a high magnification.
+
+"Nominal and Actual" typically compares the intended (designed or theoretical) values or composition (nominal) to the real, 
+measured, or achieved values (actual) in the sample under analysis using SEM.
+
+HEA-Ti23（ヘア・ティーアイ23）はどんな金属ですか？
+
+この高エントロピー合金（HEA）に含まれる各元素の主な特性は以下の通りです：
+- Ti（チタン）：軽量で強度が高く、耐食性に優れ、生体適合性が良い。
+- Hf（ハフニウム）：高い耐食性と高温での安定性を持つ。
+- Nb（ニオブ）：強度と延性があり、耐食性や生体適合性にも優れる。
+- Ta（タンタル）：耐食性・生体適合性が非常に高く、安定した金属。
+- Zr（ジルコニウム）：強度と靭性があり、耐食性にも優れている。
+
+これらの元素をほぼ等しい割合で組み合わせることで、従来の合金に比べて強度、耐食性、靱性、生体適合性などの特性が向上します。
+
+HEA（高エントロピー合金）は、特に生体用インプラント、航空宇宙部品、高温部材、耐食性を要求される機器など、厳しい環境への適用が期待されています。
+
+Biocompatibility
+- Refers to how well the implant material is accepted by the body without causing adverse reactions.
+
+immersion duration 
+- The amount of time the implant or sample is immersed in a solution, usually to test for corrosion resistance, ion release, or biocompatibility in simulated body fluids.
+
+
+
+To achieve a patient-specific, durable material for biomedical applications, it is essential to select the optimum manufacturing method that tailors the properties of the material to match the unique requirements of each individual. This involves considering factors such as mechanical compatibility, biocompatibility, and long-term stability within the body.
+
+"Best optional conditions" refers to determining and applying the ideal processing parameters—such as temperature, pressure, cooling rate, and atmospheric environment—during manufacturing. Carefully optimizing these conditions ensures the material attains the desired microstructure and performance characteristics, leading to improved outcomes for patient-specific implants.
+

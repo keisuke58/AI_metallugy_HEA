@@ -1,0 +1,768 @@
+alloy_name,elastic_modulus,source,data_type,formula,reference_id
+Al0.25 Co1 Fe1 Ni1,192.0,MPEA Nano-indentation (calculated),calculated,Al0.25 Co1 Fe1 Ni1,27
+Al1 Co1 Fe1 Ni1,162.0,MPEA Nano-indentation (calculated),calculated,Al1 Co1 Fe1 Ni1,27
+Co1 Fe1 Ni1,207.0,MPEA Nano-indentation (calculated),calculated,Co1 Fe1 Ni1,27
+Co1 Fe1 Ni1,207.0,MPEA Nano-indentation (calculated),calculated,Co1 Fe1 Ni1,27
+Co1 Fe1 Ni1 Si0.25,186.0,MPEA Nano-indentation (calculated),calculated,Co1 Fe1 Ni1 Si0.25,27
+Co1 Cr1 Fe1 Ni1,226.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Ni1,37
+Co1 Cr1 Mn1 Ni1,222.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Mn1 Ni1,37
+Co1 Cr1 Ni1,231.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Ni1,37
+Co1 Fe1 Mn1 Ni1,204.0,MPEA Nano-indentation (calculated),calculated,Co1 Fe1 Mn1 Ni1,37
+Co1 Fe1 Ni1,207.0,MPEA Nano-indentation (calculated),calculated,Co1 Fe1 Ni1,37
+Co1 Mn1 Ni1,202.0,MPEA Nano-indentation (calculated),calculated,Co1 Mn1 Ni1,37
+Fe1 Mn1 Ni1,203.0,MPEA Nano-indentation (calculated),calculated,Fe1 Mn1 Ni1,37
+Co1 Cr1 Fe1 Ni1,226.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Ni1,46
+Al0.25 Co1 Cr1 Fe1 Ni1,213.0,MPEA Nano-indentation (calculated),calculated,Al0.25 Co1 Cr1 Fe1 Ni1,54
+Al0.25 Co1 Cr1 Fe1 Ni1,213.0,MPEA Nano-indentation (calculated),calculated,Al0.25 Co1 Cr1 Fe1 Ni1,54
+Al0.375 Co1 Cr1 Fe1 Ni1,207.0,MPEA Nano-indentation (calculated),calculated,Al0.375 Co1 Cr1 Fe1 Ni1,54
+Al0.375 Co1 Cr1 Fe1 Ni1,207.0,MPEA Nano-indentation (calculated),calculated,Al0.375 Co1 Cr1 Fe1 Ni1,54
+Al0.875 Co1 Cr1 Fe1 Ni1,188.0,MPEA Nano-indentation (calculated),calculated,Al0.875 Co1 Cr1 Fe1 Ni1,54
+Al1 Co0.8 Cr0.8 Fe0.8 Ni0.8,177.0,MPEA Nano-indentation (calculated),calculated,Al1 Co0.8 Cr0.8 Fe0.8 Ni0.8,54
+Al1 Co0.8 Cr0.8 Fe0.8 Ni0.8,177.0,MPEA Nano-indentation (calculated),calculated,Al1 Co0.8 Cr0.8 Fe0.8 Ni0.8,54
+Al1 Co0.667 Cr0.667 Fe0.667 Ni0.667,171.0,MPEA Nano-indentation (calculated),calculated,Al1 Co0.667 Cr0.667 Fe0.667 Ni0.667,54
+Al1 Co0.667 Cr0.667 Fe0.667 Ni0.667,171.0,MPEA Nano-indentation (calculated),calculated,Al1 Co0.667 Cr0.667 Fe0.667 Ni0.667,54
+Al1 Co0.5 Cr0.5 Fe0.5 Ni0.5,160.0,MPEA Nano-indentation (calculated),calculated,Al1 Co0.5 Cr0.5 Fe0.5 Ni0.5,54
+Al1 Co0.5 Cr0.5 Fe0.5 Ni0.5,160.0,MPEA Nano-indentation (calculated),calculated,Al1 Co0.5 Cr0.5 Fe0.5 Ni0.5,54
+Al1 Co1 Cr1 Fe1 Ni1,184.0,MPEA Nano-indentation (calculated),calculated,Al1 Co1 Cr1 Fe1 Ni1,54
+Co1 Cr1 Fe1 Ni1,226.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Ni1,54
+Co1 Cr1 Fe1 Ni1,226.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Ni1,54
+Al0.5 Co1 Cr1 Fe1 Ni1 Ti1,107.0,MPEA Nano-indentation (experimental),experimental,Al0.5 Co1 Cr1 Fe1 Ni1 Ti1,66
+Al1 Co0.667 Cr0.667 Fe0.667 Ni0.667 Ti0.667,133.0,MPEA Nano-indentation (experimental),experimental,Al1 Co0.667 Cr0.667 Fe0.667 Ni0.667 Ti0.667,66
+Al1 Co0.5 Cr0.5 Fe0.5 Ni0.5 Ti0.5,94.0,MPEA Nano-indentation (experimental),experimental,Al1 Co0.5 Cr0.5 Fe0.5 Ni0.5 Ti0.5,66
+Al1 Co1 Cr1 Fe1 Ni1 Ti1,148.0,MPEA Nano-indentation (experimental),experimental,Al1 Co1 Cr1 Fe1 Ni1 Ti1,66
+Co1 Cr1 Fe1 Ni1 Ti1,135.0,MPEA Nano-indentation (experimental),experimental,Co1 Cr1 Fe1 Ni1 Ti1,66
+Al0.133 Co1 Cr0.667 Fe0.667 Ni1 Ti0.333,201.0,MPEA Nano-indentation (calculated),calculated,Al0.133 Co1 Cr0.667 Fe0.667 Ni1 Ti0.333,1
+Al1 Co0.667 Cr0.667 Fe0.667 Ni0.667,171.0,MPEA Nano-indentation (calculated),calculated,Al1 Co0.667 Cr0.667 Fe0.667 Ni0.667,4
+Al1 Co0.4 Cr0.4 Fe0.4 Ni0.4,152.0,MPEA Nano-indentation (calculated),calculated,Al1 Co0.4 Cr0.4 Fe0.4 Ni0.4,4
+Al1 Co0.5 Cr0.5 Fe0.5 Ni0.5,160.0,MPEA Nano-indentation (calculated),calculated,Al1 Co0.5 Cr0.5 Fe0.5 Ni0.5,4
+Al1 Co0.333 Cr0.333 Fe0.333 Ni0.333,145.0,MPEA Nano-indentation (calculated),calculated,Al1 Co0.333 Cr0.333 Fe0.333 Ni0.333,4
+Al1 Co1 Cr1 Fe1 Ni1,184.0,MPEA Nano-indentation (calculated),calculated,Al1 Co1 Cr1 Fe1 Ni1,4
+Co1 Cr1 Cu1 Fe1 Ni1,206.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Cu1 Fe1 Ni1,4
+Cr1 Cu1 Fe1 Mo1 Ni1,236.0,MPEA Nano-indentation (calculated),calculated,Cr1 Cu1 Fe1 Mo1 Ni1,4
+Al1 Co1 Cr1 Fe1 Ni1,184.0,MPEA Nano-indentation (calculated),calculated,Al1 Co1 Cr1 Fe1 Ni1,5
+Al1 C0.1 Co1 Cr1 Fe1 Ni1,213.0,MPEA Nano-indentation (experimental),experimental,Al1 C0.1 Co1 Cr1 Fe1 Ni1,6
+Al1 C0.2 Co1 Cr1 Fe1 Ni1,151.0,MPEA Nano-indentation (experimental),experimental,Al1 C0.2 Co1 Cr1 Fe1 Ni1,6
+Al1 C0.3 Co1 Cr1 Fe1 Ni1,137.0,MPEA Nano-indentation (experimental),experimental,Al1 C0.3 Co1 Cr1 Fe1 Ni1,6
+Al1 C0.4 Co1 Cr1 Fe1 Ni1,156.0,MPEA Nano-indentation (experimental),experimental,Al1 C0.4 Co1 Cr1 Fe1 Ni1,6
+Al1 C0.5 Co1 Cr1 Fe1 Ni1,181.0,MPEA Nano-indentation (experimental),experimental,Al1 C0.5 Co1 Cr1 Fe1 Ni1,6
+Al0.667 C1 Co0.667 Cr0.667 Fe0.667 Ni0.667,73.0,MPEA Nano-indentation (experimental),experimental,Al0.667 C1 Co0.667 Cr0.667 Fe0.667 Ni0.667,6
+Al1 C1 Co1 Cr1 Fe1 Ni1,75.0,MPEA Nano-indentation (experimental),experimental,Al1 C1 Co1 Cr1 Fe1 Ni1,6
+Al1 Co1 Cr1 Fe1 Ni1,184.0,MPEA Nano-indentation (calculated),calculated,Al1 Co1 Cr1 Fe1 Ni1,6
+Al1 Co1 Cr1 Fe1 Mo0.1 Ni1,188.0,MPEA Nano-indentation (calculated),calculated,Al1 Co1 Cr1 Fe1 Mo0.1 Ni1,7
+Al1 Co1 Cr1 Fe1 Ni1,184.0,MPEA Nano-indentation (calculated),calculated,Al1 Co1 Cr1 Fe1 Ni1,7
+Al1 Co1 Cr1 Fe1 Nb0.1 Ni1,182.0,MPEA Nano-indentation (calculated),calculated,Al1 Co1 Cr1 Fe1 Nb0.1 Ni1,8
+Al1 Co1 Cr1 Fe1 Ni1,184.0,MPEA Nano-indentation (calculated),calculated,Al1 Co1 Cr1 Fe1 Ni1,8
+Al1 Co1 Cr1 Fe1 Ni1,184.0,MPEA Nano-indentation (calculated),calculated,Al1 Co1 Cr1 Fe1 Ni1,12
+Al1 Co1 Cr1 Fe1 Ni1 Si0.2,176.0,MPEA Nano-indentation (calculated),calculated,Al1 Co1 Cr1 Fe1 Ni1 Si0.2,12
+Al1 Co1 Cr1 Fe1 Ni1 Si0.4,169.0,MPEA Nano-indentation (calculated),calculated,Al1 Co1 Cr1 Fe1 Ni1 Si0.4,12
+Al1 Co1 Cr1 Fe1 Ni1 Si0.6,162.0,MPEA Nano-indentation (calculated),calculated,Al1 Co1 Cr1 Fe1 Ni1 Si0.6,12
+Al0.25 Co1 Cr1 Cu0.5 Fe1 Ni1 Ti0.5,192.0,MPEA Nano-indentation (calculated),calculated,Al0.25 Co1 Cr1 Cu0.5 Fe1 Ni1 Ti0.5,13
+Al0.25 Co1 Cr1 Cu0.75 Fe1 Ni1 Ti0.5,103.0,MPEA Nano-indentation (experimental),experimental,Al0.25 Co1 Cr1 Cu0.75 Fe1 Ni1 Ti0.5,13
+Al0.5 Co1 Cr1 Cu0.5 Fe1 Ni1 Ti0.5,161.0,MPEA Nano-indentation (experimental),experimental,Al0.5 Co1 Cr1 Cu0.5 Fe1 Ni1 Ti0.5,13
+Al0.75 Co1 Cr1 Cu0.25 Fe1 Ni1 Ti0.5,164.0,MPEA Nano-indentation (experimental),experimental,Al0.75 Co1 Cr1 Cu0.25 Fe1 Ni1 Ti0.5,13
+Co1 Cr1 Cu1 Fe1 Ni1 Ti0.5,93.0,MPEA Nano-indentation (experimental),experimental,Co1 Cr1 Cu1 Fe1 Ni1 Ti0.5,13
+Al1 Co1 Cr1 Fe1 Ni1 Ti1,90.0,MPEA Nano-indentation (experimental),experimental,Al1 Co1 Cr1 Fe1 Ni1 Ti1,14
+Al1 Co1 Cr1 Fe1 Ni1 Ti0.5,178.0,MPEA Nano-indentation (experimental),experimental,Al1 Co1 Cr1 Fe1 Ni1 Ti0.5,14
+Al0.667 Co0.667 Cr0.667 Fe0.667 Ni0.667 Ti1,160.0,MPEA Nano-indentation (experimental),experimental,Al0.667 Co0.667 Cr0.667 Fe0.667 Ni0.667 Ti1,14
+Al1 Co1 Fe1 Ni1 Ti1 V1 Zr1,129.0,MPEA Nano-indentation (calculated),calculated,Al1 Co1 Fe1 Ni1 Ti1 V1 Zr1,15
+Al1 Fe1 Ni1 Ti1 V1 Zr1,119.0,MPEA Nano-indentation (calculated),calculated,Al1 Fe1 Ni1 Ti1 V1 Zr1,15
+Al0.1 Co1 Cr1 Fe1 Mn1 Ni1,216.0,MPEA Nano-indentation (calculated),calculated,Al0.1 Co1 Cr1 Fe1 Mn1 Ni1,16
+Al0.2 Co1 Cr1 Fe1 Mn1 Ni1,212.0,MPEA Nano-indentation (calculated),calculated,Al0.2 Co1 Cr1 Fe1 Mn1 Ni1,16
+Al0.38 Co1 Cr1 Fe1 Mn1 Ni1,205.0,MPEA Nano-indentation (calculated),calculated,Al0.38 Co1 Cr1 Fe1 Mn1 Ni1,16
+Al1 Co0.8 Cr0.8 Fe0.8 Mn0.8 Ni0.8,180.0,MPEA Nano-indentation (calculated),calculated,Al1 Co0.8 Cr0.8 Fe0.8 Mn0.8 Ni0.8,16
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,16
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,17
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,17
+Co1 Cr1 Fe1 Mn1 Ni1 V0.25,215.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1 V0.25,17
+Co1 Cr1 Fe1 Mn1 Ni1 V0.5,210.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1 V0.5,17
+Co1 Cr1 Fe1 Mn1 Ni1 V0.5,210.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1 V0.5,17
+Al0.333 Cr0.667 Fe1 Mn0.667 Ni0.333,201.0,MPEA Nano-indentation (calculated),calculated,Al0.333 Cr0.667 Fe1 Mn0.667 Ni0.333,18
+Al0.3 Co1 Cr1 Cu1 Fe1,194.0,MPEA Nano-indentation (calculated),calculated,Al0.3 Co1 Cr1 Cu1 Fe1,20
+Al0.5 Co1 Cr1 Cu1 Fe1,187.0,MPEA Nano-indentation (calculated),calculated,Al0.5 Co1 Cr1 Cu1 Fe1,20
+Al1 Co0.357 Cr0.357 Cu0.357 Fe0.357,139.0,MPEA Nano-indentation (calculated),calculated,Al1 Co0.357 Cr0.357 Cu0.357 Fe0.357,20
+Al1 Co0.333 Cr0.333 Cu0.333 Fe0.333,136.0,MPEA Nano-indentation (calculated),calculated,Al1 Co0.333 Cr0.333 Cu0.333 Fe0.333,20
+Co1 Cr1 Cu1 Fe1,208.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Cu1 Fe1,20
+Co1 Cr1 Cu0.5 Fe1 Ni1,215.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Cu0.5 Fe1 Ni1,21
+Co1 Cr1 Cu1 Fe1 Ni1 Ti1,185.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Cu1 Fe1 Ni1 Ti1,22
+Co1 Cr1 Cu1 Fe1 Ni1 Ti0.5,194.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Cu1 Fe1 Ni1 Ti0.5,22
+Al0.5 Co1 Cr1 Cu1 Fe1 Ni1,189.0,MPEA Nano-indentation (calculated),calculated,Al0.5 Co1 Cr1 Cu1 Fe1 Ni1,24
+Al0.5 Co1 Cr1 Cu1 Fe1 Ni1 Ti0.2,185.0,MPEA Nano-indentation (calculated),calculated,Al0.5 Co1 Cr1 Cu1 Fe1 Ni1 Ti0.2,24
+Al0.5 Co1 Cr1 Cu1 Fe1 Ni1 Ti0.4,182.0,MPEA Nano-indentation (calculated),calculated,Al0.5 Co1 Cr1 Cu1 Fe1 Ni1 Ti0.4,24
+Al0.5 Co1 Cr1 Cu1 Fe1 Ni1,189.0,MPEA Nano-indentation (calculated),calculated,Al0.5 Co1 Cr1 Cu1 Fe1 Ni1,25
+Al0.5 Co1 Cr1 Cu1 Fe1 Ni1 V0.2,186.0,MPEA Nano-indentation (calculated),calculated,Al0.5 Co1 Cr1 Cu1 Fe1 Ni1 V0.2,25
+Al0.417 Co0.833 Cr0.833 Cu0.833 Fe0.833 Ni0.833 V1,177.0,MPEA Nano-indentation (calculated),calculated,Al0.417 Co0.833 Cr0.833 Cu0.833 Fe0.833 Ni0.833 V1,25
+Al0.357 Co0.714 Cr0.714 Cu0.714 Fe0.714 Ni0.714 V1,175.0,MPEA Nano-indentation (calculated),calculated,Al0.357 Co0.714 Cr0.714 Cu0.714 Fe0.714 Ni0.714 V1,25
+Al0.312 Co0.625 Cr0.625 Cu0.625 Fe0.625 Ni0.625 V1,174.0,MPEA Nano-indentation (calculated),calculated,Al0.312 Co0.625 Cr0.625 Cu0.625 Fe0.625 Ni0.625 V1,25
+Al0.278 Co0.556 Cr0.556 Cu0.556 Fe0.556 Ni0.556 V1,172.0,MPEA Nano-indentation (calculated),calculated,Al0.278 Co0.556 Cr0.556 Cu0.556 Fe0.556 Ni0.556 V1,25
+Al0.25 Co0.5 Cr0.5 Cu0.5 Fe0.5 Ni0.5 V1,171.0,MPEA Nano-indentation (calculated),calculated,Al0.25 Co0.5 Cr0.5 Cu0.5 Fe0.5 Ni0.5 V1,25
+Al1 Co1 Cr1 Cu1 Ni1 Ti1,36.0,MPEA Nano-indentation (experimental),experimental,Al1 Co1 Cr1 Cu1 Ni1 Ti1,29
+Al1 Co1 Cr1 Cu1 Ni1 Ti1 Y1,37.0,MPEA Nano-indentation (experimental),experimental,Al1 Co1 Cr1 Cu1 Ni1 Ti1 Y1,29
+Al1 Co1 Cr1 Cu1 Ni1 Ti1 Y0.5,36.0,MPEA Nano-indentation (experimental),experimental,Al1 Co1 Cr1 Cu1 Ni1 Ti1 Y0.5,29
+Al1 Co1 Cr1 Cu1 Ni1 Ti1 Y0.8,38.0,MPEA Nano-indentation (experimental),experimental,Al1 Co1 Cr1 Cu1 Ni1 Ti1 Y0.8,29
+Co1 Cu1 Fe1 Ni1,187.0,MPEA Nano-indentation (calculated),calculated,Co1 Cu1 Fe1 Ni1,30
+Co1 Cu1 Fe1 Ni1 Sn0.02,185.0,MPEA Nano-indentation (calculated),calculated,Co1 Cu1 Fe1 Ni1 Sn0.02,30
+Co1 Cu1 Fe1 Mn1 Ni1,189.0,MPEA Nano-indentation (calculated),calculated,Co1 Cu1 Fe1 Mn1 Ni1,31
+Co1 Cu1 Fe1 Mn1 Ni1 Sn0.03,187.0,MPEA Nano-indentation (calculated),calculated,Co1 Cu1 Fe1 Mn1 Ni1 Sn0.03,31
+Co1 Cr1 Cu1 Fe1 Ni1,206.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Cu1 Fe1 Ni1,32
+Al0.1 Cr0.5 Cu0.5 Fe0.5 Ni1,197.0,MPEA Nano-indentation (calculated),calculated,Al0.1 Cr0.5 Cu0.5 Fe0.5 Ni1,33
+Al0.2 Cr0.5 Cu0.5 Fe0.5 Ni1,190.0,MPEA Nano-indentation (calculated),calculated,Al0.2 Cr0.5 Cu0.5 Fe0.5 Ni1,33
+Al0.3 Cr0.5 Cu0.5 Fe0.5 Ni1,185.0,MPEA Nano-indentation (calculated),calculated,Al0.3 Cr0.5 Cu0.5 Fe0.5 Ni1,33
+Al0.4 Cr0.5 Cu0.5 Fe0.5 Ni1,179.0,MPEA Nano-indentation (calculated),calculated,Al0.4 Cr0.5 Cu0.5 Fe0.5 Ni1,33
+Al1 Cu0.889 Fe0.667 Ni0.889 Ti1,145.0,MPEA Nano-indentation (experimental),experimental,Al1 Cu0.889 Fe0.667 Ni0.889 Ti1,35
+Al1 Cu0.889 Fe0.667 Ni0.889 Ti1,145.0,MPEA Nano-indentation (experimental),experimental,Al1 Cu0.889 Fe0.667 Ni0.889 Ti1,35
+Al1 Cu1 Fe1 Ni1 Ti1,146.0,MPEA Nano-indentation (experimental),experimental,Al1 Cu1 Fe1 Ni1 Ti1,35
+Al1 Cu1 Ni1 Ti1,108.0,MPEA Nano-indentation (experimental),experimental,Al1 Cu1 Ni1 Ti1,35
+Al0.214 Nb0.714 Ta0.571 Ti1 V0.143 Zr0.929,107.0,MPEA Nano-indentation (calculated),calculated,Al0.214 Nb0.714 Ta0.571 Ti1 V0.143 Zr0.929,39
+Al0.214 Nb0.714 Ta0.571 Ti1 V0.143 Zr0.929,107.0,MPEA Nano-indentation (calculated),calculated,Al0.214 Nb0.714 Ta0.571 Ti1 V0.143 Zr0.929,39
+Al0.214 Nb0.714 Ta0.571 Ti1 V0.143 Zr0.929,107.0,MPEA Nano-indentation (calculated),calculated,Al0.214 Nb0.714 Ta0.571 Ti1 V0.143 Zr0.929,39
+Al0.214 Nb0.714 Ta0.714 Ti1 Zr0.929,110.0,MPEA Nano-indentation (calculated),calculated,Al0.214 Nb0.714 Ta0.714 Ti1 Zr0.929,39
+Al0.214 Nb0.714 Ta0.714 Ti1 Zr0.929,110.0,MPEA Nano-indentation (calculated),calculated,Al0.214 Nb0.714 Ta0.714 Ti1 Zr0.929,39
+Al0.214 Nb0.714 Ta0.714 Ti1 Zr0.929,110.0,MPEA Nano-indentation (calculated),calculated,Al0.214 Nb0.714 Ta0.714 Ti1 Zr0.929,39
+Al0.4 Hf0.6 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Al0.4 Hf0.6 Nb1 Ta1 Ti1 Zr1,39
+Al0.4 Hf0.6 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Al0.4 Hf0.6 Nb1 Ta1 Ti1 Zr1,39
+Al0.4 Hf0.6 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Al0.4 Hf0.6 Nb1 Ta1 Ti1 Zr1,39
+Al0.333 Nb0.667 Ta0.533 Ti1 V0.133 Zr0.667,109.0,MPEA Nano-indentation (calculated),calculated,Al0.333 Nb0.667 Ta0.533 Ti1 V0.133 Zr0.667,39
+Al0.333 Nb0.667 Ta0.533 Ti1 V0.133 Zr0.667,109.0,MPEA Nano-indentation (calculated),calculated,Al0.333 Nb0.667 Ta0.533 Ti1 V0.133 Zr0.667,39
+Al0.333 Nb0.667 Ta0.533 Ti1 V0.133 Zr0.667,109.0,MPEA Nano-indentation (calculated),calculated,Al0.333 Nb0.667 Ta0.533 Ti1 V0.133 Zr0.667,39
+Al0.667 Nb1 Ta0.333 Ti1 Zr0.333,105.0,MPEA Nano-indentation (calculated),calculated,Al0.667 Nb1 Ta0.333 Ti1 Zr0.333,39
+Al0.667 Nb1 Ta0.333 Ti1 Zr0.333,105.0,MPEA Nano-indentation (calculated),calculated,Al0.667 Nb1 Ta0.333 Ti1 Zr0.333,39
+Al0.667 Nb1 Ta0.333 Ti1 Zr0.333,105.0,MPEA Nano-indentation (calculated),calculated,Al0.667 Nb1 Ta0.333 Ti1 Zr0.333,39
+Al0.3 Hf1 Nb1 Ta1 Ti1 Zr1,63.0,MPEA Nano-indentation (experimental),experimental,Al0.3 Hf1 Nb1 Ta1 Ti1 Zr1,40
+Al0.5 Hf1 Nb1 Ta1 Ti1 Zr1,97.0,MPEA Nano-indentation (experimental),experimental,Al0.5 Hf1 Nb1 Ta1 Ti1 Zr1,40
+Al0.75 Hf1 Nb1 Ta1 Ti1 Zr1,102.0,MPEA Nano-indentation (experimental),experimental,Al0.75 Hf1 Nb1 Ta1 Ti1 Zr1,40
+Al1 Hf1 Nb1 Ta1 Ti1 Zr1,103.0,MPEA Nano-indentation (experimental),experimental,Al1 Hf1 Nb1 Ta1 Ti1 Zr1,40
+Hf1 Nb1 Ta1 Ti1 Zr1,55.0,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,40
+Al0.25 Mo1 Nb1 Ti1 V1,161.0,MPEA Nano-indentation (calculated),calculated,Al0.25 Mo1 Nb1 Ti1 V1,41
+Al0.5 Mo1 Nb1 Ti1 V1,156.0,MPEA Nano-indentation (calculated),calculated,Al0.5 Mo1 Nb1 Ti1 V1,41
+Al0.75 Mo1 Nb1 Ti1 V1,151.0,MPEA Nano-indentation (calculated),calculated,Al0.75 Mo1 Nb1 Ti1 V1,41
+Al1 Mo1 Nb1 Ti1 V1,147.0,MPEA Nano-indentation (calculated),calculated,Al1 Mo1 Nb1 Ti1 V1,41
+Mo1 Nb1 Ti1 V1,167.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ti1 V1,41
+Al0.25 Nb1 Ta1 Ti1 V1,130.0,MPEA Nano-indentation (calculated),calculated,Al0.25 Nb1 Ta1 Ti1 V1,42
+Al0.5 Nb1 Ta1 Ti1 V1,127.0,MPEA Nano-indentation (calculated),calculated,Al0.5 Nb1 Ta1 Ti1 V1,42
+Al1 Nb1 Ta1 Ti1 V1,122.0,MPEA Nano-indentation (calculated),calculated,Al1 Nb1 Ta1 Ti1 V1,42
+Nb1 Ta1 Ti1 V1,134.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ta1 Ti1 V1,42
+Al1 Nb1 Ti1 V1,104.0,MPEA Nano-indentation (calculated),calculated,Al1 Nb1 Ti1 V1,43
+Al1 Nb1 Ti1 V1,104.0,MPEA Nano-indentation (calculated),calculated,Al1 Nb1 Ti1 V1,43
+Al1 Nb1 Ti1 V1,104.0,MPEA Nano-indentation (calculated),calculated,Al1 Nb1 Ti1 V1,43
+Al1 Nb1 Ti1 V1,104.0,MPEA Nano-indentation (calculated),calculated,Al1 Nb1 Ti1 V1,43
+Nb0.5 Ti0.5 V1 Zr0.5,105.0,MPEA Nano-indentation (calculated),calculated,Nb0.5 Ti0.5 V1 Zr0.5,45
+Nb0.5 Ti0.5 V1 Zr0.5,105.0,MPEA Nano-indentation (calculated),calculated,Nb0.5 Ti0.5 V1 Zr0.5,45
+Nb0.5 Ti0.5 V1 Zr0.5,105.0,MPEA Nano-indentation (calculated),calculated,Nb0.5 Ti0.5 V1 Zr0.5,45
+Nb0.5 Ti0.5 V1 Zr0.5,105.0,MPEA Nano-indentation (calculated),calculated,Nb0.5 Ti0.5 V1 Zr0.5,45
+Nb1 Ti1 V1 Zr1,100.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ti1 V1 Zr1,45
+Nb1 Ti1 V1 Zr1,100.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ti1 V1 Zr1,45
+Nb1 Ti1 V1 Zr1,100.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ti1 V1 Zr1,45
+Nb1 Ti1 V1 Zr1,100.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ti1 V1 Zr1,45
+Hf0.5 Mo0.5 Nb1 Ti1 Zr1,115.0,MPEA Nano-indentation (calculated),calculated,Hf0.5 Mo0.5 Nb1 Ti1 Zr1,47
+Hf1 Mo0.25 Nb1 Ta1 Ti1 Zr1,96.0,MPEA Nano-indentation (experimental),experimental,Hf1 Mo0.25 Nb1 Ta1 Ti1 Zr1,48
+Hf1 Mo0.5 Nb1 Ta1 Ti1 Zr1,102.0,MPEA Nano-indentation (experimental),experimental,Hf1 Mo0.5 Nb1 Ta1 Ti1 Zr1,48
+Hf1 Mo0.75 Nb1 Ta1 Ti1 Zr1,109.0,MPEA Nano-indentation (experimental),experimental,Hf1 Mo0.75 Nb1 Ta1 Ti1 Zr1,48
+Hf1 Mo1 Nb1 Ta1 Ti1 Zr1,115.0,MPEA Nano-indentation (experimental),experimental,Hf1 Mo1 Nb1 Ta1 Ti1 Zr1,48
+Hf1 Nb1 Ta1 Ti1 Zr1,85.0,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,48
+Hf1 Mo1 Nb1 Ta1 Ti1 Zr1,137.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ta1 Ti1 Zr1,49
+Hf1 Mo1 Nb1 Ta1 Ti1 Zr1,137.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ta1 Ti1 Zr1,49
+Hf1 Mo1 Nb1 Ta1 Ti1 Zr1,137.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ta1 Ti1 Zr1,49
+Hf1 Mo1 Nb1 Ta1 Ti1 Zr1,137.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ta1 Ti1 Zr1,49
+Hf1 Mo1 Ta1 Ti1 Zr1,143.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Ta1 Ti1 Zr1,49
+Hf1 Mo1 Ta1 Ti1 Zr1,143.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Ta1 Ti1 Zr1,49
+Hf1 Mo1 Ta1 Ti1 Zr1,143.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Ta1 Ti1 Zr1,49
+Hf1 Mo1 Ta1 Ti1 Zr1,143.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Ta1 Ti1 Zr1,49
+Hf1 Mo1 Nb1 Ti1 Zr1,128.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ti1 Zr1,50
+Hf1 Mo1 Nb1 Ti1 Zr1,128.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ti1 Zr1,50
+Hf1 Mo1 Nb1 Ti1 Zr1,128.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ti1 Zr1,50
+Hf1 Mo1 Nb1 Ti1 Zr1,128.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ti1 Zr1,50
+Hf1 Mo1 Nb1 Ti1 Zr1,128.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ti1 Zr1,50
+Hf0.333 Nb0.333 Ta0.333 Ti1 Zr0.667,103.0,MPEA Nano-indentation (calculated),calculated,Hf0.333 Nb0.333 Ta0.333 Ti1 Zr0.667,52
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,53
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,53
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,53
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,53
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,53
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,53
+Hf1 Nb1 Ti1 Zr1,89.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ti1 Zr1,55
+Mo1 Nb1 Ta1 V1,186.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 V1,56
+Mo1 Nb1 Ta1 V1 W1,229.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 V1 W1,57
+Mo1 Nb1 Ta1 V1 W1,229.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 V1 W1,57
+Mo1 Nb1 Ta1 V1 W1,229.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 V1 W1,57
+Mo1 Nb1 Ta1 V1 W1,229.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 V1 W1,57
+Mo1 Nb1 Ta1 V1 W1,229.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 V1 W1,57
+Mo1 Nb1 Ta1 V1 W1,229.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 V1 W1,57
+Mo1 Nb1 Ta1 V1 W1,229.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 V1 W1,57
+Mo1 Nb1 Ta1 W1,250.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 W1,57
+Mo1 Nb1 Ta1 W1,250.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 W1,57
+Mo1 Nb1 Ta1 W1,250.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 W1,57
+Mo1 Nb1 Ta1 W1,250.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 W1,57
+Mo1 Nb1 Ta1 W1,250.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 W1,57
+Mo1 Nb1 Ta1 W1,250.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 W1,57
+Mo1 Nb1 Ta1 W1,250.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 W1,57
+Mo0.3 Nb1 Ti1 V1 Zr1,114.0,MPEA Nano-indentation (calculated),calculated,Mo0.3 Nb1 Ti1 V1 Zr1,58
+Mo0.5 Nb1 Ti1 V1 Zr1,122.0,MPEA Nano-indentation (calculated),calculated,Mo0.5 Nb1 Ti1 V1 Zr1,58
+Mo0.7 Nb1 Ti1 V1 Zr1,130.0,MPEA Nano-indentation (calculated),calculated,Mo0.7 Nb1 Ti1 V1 Zr1,58
+Mo1 Nb0.769 Ti0.769 V0.769 Zr0.769,150.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb0.769 Ti0.769 V0.769 Zr0.769,58
+Mo1 Nb0.667 Ti0.667 V0.667 Zr0.667,156.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb0.667 Ti0.667 V0.667 Zr0.667,58
+Mo1 Nb0.588 Ti0.588 V0.588 Zr0.588,161.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb0.588 Ti0.588 V0.588 Zr0.588,58
+Mo1 Nb0.5 Ti0.5 V0.5 Zr0.5,169.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb0.5 Ti0.5 V0.5 Zr0.5,58
+Mo1 Nb1 Ti1 V1 Zr1,141.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ti1 V1 Zr1,58
+Mo1 Nb1 Ti1 V0.3 Zr1,142.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ti1 V0.3 Zr1,58
+Mo0.1 Nb1 Ti1 V0.3 Zr1,102.0,MPEA Nano-indentation (calculated),calculated,Mo0.1 Nb1 Ti1 V0.3 Zr1,58
+Mo0.3 Nb1 Ti1 V0.3 Zr1,112.0,MPEA Nano-indentation (calculated),calculated,Mo0.3 Nb1 Ti1 V0.3 Zr1,58
+Mo0.5 Nb1 Ti1 V0.3 Zr1,122.0,MPEA Nano-indentation (calculated),calculated,Mo0.5 Nb1 Ti1 V0.3 Zr1,58
+Mo0.7 Nb1 Ti1 V0.3 Zr1,130.0,MPEA Nano-indentation (calculated),calculated,Mo0.7 Nb1 Ti1 V0.3 Zr1,58
+Mo1 Nb0.769 Ti0.769 V0.231 Zr0.769,153.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb0.769 Ti0.769 V0.231 Zr0.769,58
+Mo1 Nb0.667 Ti0.667 V0.2 Zr0.667,159.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb0.667 Ti0.667 V0.2 Zr0.667,58
+Nb1 Ti1 V0.3 Zr1,96.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ti1 V0.3 Zr1,58
+Nb1 Ti1 V1 Zr1,100.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ti1 V1 Zr1,58
+Mo1 Nb1 Ti1 V0.25 Zr1,142.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ti1 V0.25 Zr1,59
+Mo1 Nb1 Ti1 V0.5 Zr1,142.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ti1 V0.5 Zr1,59
+Mo1 Nb1 Ti1 V0.75 Zr1,141.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ti1 V0.75 Zr1,59
+Mo1 Nb1 Ti1 V1 Zr1,141.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ti1 V1 Zr1,59
+Mo0.667 Nb0.667 Ti0.667 V1 Zr0.667,140.0,MPEA Nano-indentation (calculated),calculated,Mo0.667 Nb0.667 Ti0.667 V1 Zr0.667,59
+Mo0.5 Nb0.5 Ti0.5 V1 Zr0.5,139.0,MPEA Nano-indentation (calculated),calculated,Mo0.5 Nb0.5 Ti0.5 V1 Zr0.5,59
+Mo0.333 Nb0.333 Ti0.333 V1 Zr0.333,138.0,MPEA Nano-indentation (calculated),calculated,Mo0.333 Nb0.333 Ti0.333 V1 Zr0.333,59
+Mo1 Nb1 Ti1 Zr1,143.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ti1 Zr1,59
+Co1 Fe1 Ni1 V1,184.0,MPEA Nano-indentation (calculated),calculated,Co1 Fe1 Ni1 V1,60
+Al0.125 Co1 Cr1 Cu1 Fe1 Mn1 Ni1 Ti1 V1,164.0,MPEA Nano-indentation (experimental),experimental,Al0.125 Co1 Cr1 Cu1 Fe1 Mn1 Ni1 Ti1 V1,61
+Al0.25 Co1 Cr1 Cu1 Fe1 Mn1 Ni1 Ti1 V1,190.0,MPEA Nano-indentation (experimental),experimental,Al0.25 Co1 Cr1 Cu1 Fe1 Mn1 Ni1 Ti1 V1,61
+Al0.667 Co1 Cr1 Cu1 Fe1 Mn1 Ni1 Ti1 V1,163.0,MPEA Nano-indentation (experimental),experimental,Al0.667 Co1 Cr1 Cu1 Fe1 Mn1 Ni1 Ti1 V1,61
+Co1 Cr1 Cu1 Fe1 Mn1 Ni1 Ti1 V1,74.0,MPEA Nano-indentation (experimental),experimental,Co1 Cr1 Cu1 Fe1 Mn1 Ni1 Ti1 V1,61
+Cu1 Mn1 Ni1 Zn0.333,167.0,MPEA Nano-indentation (calculated),calculated,Cu1 Mn1 Ni1 Zn0.333,62
+Cu1 Mn1 Ni1 Zn0.25,169.0,MPEA Nano-indentation (calculated),calculated,Cu1 Mn1 Ni1 Zn0.25,62
+Al0.053 Cu1 Mn1 Ni1,173.0,MPEA Nano-indentation (calculated),calculated,Al0.053 Cu1 Mn1 Ni1,62
+Al0.5 Co1 Cr1 Cu1 Fe1 Ni1,189.0,MPEA Nano-indentation (calculated),calculated,Al0.5 Co1 Cr1 Cu1 Fe1 Ni1,64
+Al0.5 Co1 Cr1 Cu1 Fe1 Ni1,189.0,MPEA Nano-indentation (calculated),calculated,Al0.5 Co1 Cr1 Cu1 Fe1 Ni1,64
+Al0.5 Co1 Cr1 Cu1 Fe1 Ni1,189.0,MPEA Nano-indentation (calculated),calculated,Al0.5 Co1 Cr1 Cu1 Fe1 Ni1,64
+Al0.5 Co1 Cr1 Cu1 Fe1 Ni1,189.0,MPEA Nano-indentation (calculated),calculated,Al0.5 Co1 Cr1 Cu1 Fe1 Ni1,64
+Al0.5 Co1 Cr1 Cu1 Fe1 Ni1,189.0,MPEA Nano-indentation (calculated),calculated,Al0.5 Co1 Cr1 Cu1 Fe1 Ni1,64
+Al0.5 Co1 Cr1 Cu1 Fe1 Ni1,189.0,MPEA Nano-indentation (calculated),calculated,Al0.5 Co1 Cr1 Cu1 Fe1 Ni1,64
+Al0.5 Co1 Cr1 Cu1 Fe1 Ni1,189.0,MPEA Nano-indentation (calculated),calculated,Al0.5 Co1 Cr1 Cu1 Fe1 Ni1,64
+Al1 Co0.5 Cr0.5 Cu0.5 Fe0.5 Ni0.5,156.0,MPEA Nano-indentation (calculated),calculated,Al1 Co0.5 Cr0.5 Cu0.5 Fe0.5 Ni0.5,64
+Al1 Co0.5 Cr0.5 Cu0.5 Fe0.5 Ni0.5,156.0,MPEA Nano-indentation (calculated),calculated,Al1 Co0.5 Cr0.5 Cu0.5 Fe0.5 Ni0.5,64
+Al1 Co0.5 Cr0.5 Cu0.5 Fe0.5 Ni0.5,156.0,MPEA Nano-indentation (calculated),calculated,Al1 Co0.5 Cr0.5 Cu0.5 Fe0.5 Ni0.5,64
+Al1 Co0.5 Cr0.5 Cu0.5 Fe0.5 Ni0.5,156.0,MPEA Nano-indentation (calculated),calculated,Al1 Co0.5 Cr0.5 Cu0.5 Fe0.5 Ni0.5,64
+Al1 Co0.5 Cr0.5 Cu0.5 Fe0.5 Ni0.5,156.0,MPEA Nano-indentation (calculated),calculated,Al1 Co0.5 Cr0.5 Cu0.5 Fe0.5 Ni0.5,64
+Al1 Co0.5 Cr0.5 Cu0.5 Fe0.5 Ni0.5,156.0,MPEA Nano-indentation (calculated),calculated,Al1 Co0.5 Cr0.5 Cu0.5 Fe0.5 Ni0.5,64
+Al1 Co0.5 Cr0.5 Cu0.5 Fe0.5 Ni0.5,156.0,MPEA Nano-indentation (calculated),calculated,Al1 Co0.5 Cr0.5 Cu0.5 Fe0.5 Ni0.5,64
+Al1 Co0.5 Cr0.5 Cu0.5 Fe0.5 Ni0.5,156.0,MPEA Nano-indentation (calculated),calculated,Al1 Co0.5 Cr0.5 Cu0.5 Fe0.5 Ni0.5,64
+Al1 Cr1 Mo1 Nb1 Ti1,170.0,MPEA Nano-indentation (calculated),calculated,Al1 Cr1 Mo1 Nb1 Ti1,65
+Al1 Cr1 Mo1 Nb1 Ti1,170.0,MPEA Nano-indentation (calculated),calculated,Al1 Cr1 Mo1 Nb1 Ti1,65
+Al1 Cr1 Mo1 Nb1 Ti1,170.0,MPEA Nano-indentation (calculated),calculated,Al1 Cr1 Mo1 Nb1 Ti1,65
+Al1 Cr1 Mo1 Nb1 Ti1,170.0,MPEA Nano-indentation (calculated),calculated,Al1 Cr1 Mo1 Nb1 Ti1,65
+Al1 Cr1 Mo1 Nb1 Ti1,170.0,MPEA Nano-indentation (calculated),calculated,Al1 Cr1 Mo1 Nb1 Ti1,65
+Al1 Cr1 Mo1 Nb1 Ti1,170.0,MPEA Nano-indentation (calculated),calculated,Al1 Cr1 Mo1 Nb1 Ti1,65
+Al1 Cr1 Mo1 Nb1 Ti1,170.0,MPEA Nano-indentation (calculated),calculated,Al1 Cr1 Mo1 Nb1 Ti1,67
+Al1 Cr1 Mo1 Nb1 Ti1,170.0,MPEA Nano-indentation (calculated),calculated,Al1 Cr1 Mo1 Nb1 Ti1,67
+Al1 Cr1 Mo1 Nb1 Ti1,170.0,MPEA Nano-indentation (calculated),calculated,Al1 Cr1 Mo1 Nb1 Ti1,67
+Al1 Cr1 Mo1 Nb1 Ti1,170.0,MPEA Nano-indentation (calculated),calculated,Al1 Cr1 Mo1 Nb1 Ti1,67
+Al1 Cr1 Mo1 Ti1,189.0,MPEA Nano-indentation (calculated),calculated,Al1 Cr1 Mo1 Ti1,67
+Al1 Cr1 Mo1 Ti1,189.0,MPEA Nano-indentation (calculated),calculated,Al1 Cr1 Mo1 Ti1,67
+Al1 Cr1 Mo1 Ti1,189.0,MPEA Nano-indentation (calculated),calculated,Al1 Cr1 Mo1 Ti1,67
+Al1 Cr1 Mo1 Ti1,189.0,MPEA Nano-indentation (calculated),calculated,Al1 Cr1 Mo1 Ti1,67
+Al1 Cr1 Mo1 Ti1,189.0,MPEA Nano-indentation (calculated),calculated,Al1 Cr1 Mo1 Ti1,67
+Al1 Mo1 Nb1 Ti1,151.0,MPEA Nano-indentation (calculated),calculated,Al1 Mo1 Nb1 Ti1,67
+Al1 Mo1 Nb1 Ti1,151.0,MPEA Nano-indentation (calculated),calculated,Al1 Mo1 Nb1 Ti1,67
+Al1 Mo1 Nb1 Ti1,151.0,MPEA Nano-indentation (calculated),calculated,Al1 Mo1 Nb1 Ti1,67
+Al1 Mo1 Nb1 Ti1,151.0,MPEA Nano-indentation (calculated),calculated,Al1 Mo1 Nb1 Ti1,67
+Co1 Cr1 Mo1 Nb1 Ti0.4,212.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Mo1 Nb1 Ti0.4,69
+Hf1 Nb1 Ti1 V1 Zr1,95.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ti1 V1 Zr1,70
+Hf1 Nb1 Ti1 V1 Zr1,95.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ti1 V1 Zr1,70
+Hf1 Nb1 Ti1 V1 Zr1,95.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ti1 V1 Zr1,70
+Hf0.26 Nb1 Ta1 Ti0.578 Zr0.416,122.0,MPEA Nano-indentation (calculated),calculated,Hf0.26 Nb1 Ta1 Ti0.578 Zr0.416,72
+Hf0.26 Nb1 Ta1 Ti0.578 Zr0.416,122.0,MPEA Nano-indentation (calculated),calculated,Hf0.26 Nb1 Ta1 Ti0.578 Zr0.416,72
+Hf0.26 Nb1 Ta1 Ti0.578 Zr0.416,122.0,MPEA Nano-indentation (calculated),calculated,Hf0.26 Nb1 Ta1 Ti0.578 Zr0.416,72
+Hf0.26 Nb1 Ta1 Ti0.578 Zr0.416,122.0,MPEA Nano-indentation (calculated),calculated,Hf0.26 Nb1 Ta1 Ti0.578 Zr0.416,72
+Hf0.26 Nb1 Ta1 Ti0.578 Zr0.416,122.0,MPEA Nano-indentation (calculated),calculated,Hf0.26 Nb1 Ta1 Ti0.578 Zr0.416,72
+Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,74
+Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,74
+Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,74
+Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,74
+Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,74
+Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,74
+Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,74
+Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,74
+Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,74
+Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,74
+Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,74
+Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,74
+Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,74
+Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,74
+Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,74
+Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,74
+Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,74
+Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,74
+Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,74
+Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,74
+Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.5 Nb0.667 Ta0.333 Ti1 Zr0.833,74
+Hf1 Mo0.5 Nb1 Ti1 V0.5,126.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo0.5 Nb1 Ti1 V0.5,75
+Hf1 Mo0.5 Nb1 Ti1 V0.5,126.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo0.5 Nb1 Ti1 V0.5,75
+Hf1 Mo0.5 Nb1 Ti1 V0.5,126.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo0.5 Nb1 Ti1 V0.5,75
+Hf0.787 Nb0.142 Ta0.142 Ti1 Zr0.787,92.0,MPEA Nano-indentation (calculated),calculated,Hf0.787 Nb0.142 Ta0.142 Ti1 Zr0.787,76
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,79
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,79
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,80
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,80
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,81
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,81
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,81
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,82
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,83
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,84
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,85
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,85
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,85
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,85
+Al0.2 Mo1 Ta1 Ti1 V1,183.0,MPEA Nano-indentation (calculated),calculated,Al0.2 Mo1 Ta1 Ti1 V1,86
+Al0.6 Mo1 Ta1 Ti1 V1,173.0,MPEA Nano-indentation (calculated),calculated,Al0.6 Mo1 Ta1 Ti1 V1,86
+Al1 Mo1 Ta1 Ti1 V1,165.0,MPEA Nano-indentation (calculated),calculated,Al1 Mo1 Ta1 Ti1 V1,86
+Mo1 Ta1 Ti1 V1,189.0,MPEA Nano-indentation (calculated),calculated,Mo1 Ta1 Ti1 V1,86
+Hf1 Nb1 Ta1 Zr1,105.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Zr1,87
+Hf1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Ta1 Ti1 Zr1,88
+Mo1 Nb1 Ta1 Ti0.25 W1,242.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti0.25 W1,89
+Mo1 Nb1 Ta1 Ti0.5 W1,234.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti0.5 W1,89
+Mo1 Nb1 Ta1 Ti0.75 W1,228.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti0.75 W1,89
+Mo1 Nb1 Ta1 Ti1 W1,222.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1 W1,89
+Mo1 Nb1 Ta1 W1,250.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 W1,89
+Mo1 Nb1 Ta1 Ti1 V1,171.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1 V1,90
+Mo1 Nb1 Ta1 Ti1 V1 W1,209.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1 V1 W1,91
+Mo1 Nb1 Ta1 Ti1 V1 W1,209.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1 V1 W1,91
+Mo1 Nb1 Ta1 Ti1 V1 W1,209.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1 V1 W1,91
+Mo1 Nb1 Ta1 Ti1 V1 W1,209.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1 V1 W1,91
+Mo1 Nb1 Ta1 Ti1 V1 W1,209.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1 V1 W1,91
+Mo1 Nb1 Ta1 Ti1 W1,222.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1 W1,91
+Mo1 Nb1 Ta1 Ti1 W1,222.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1 W1,91
+Mo1 Nb1 Ta1 Ti1 W1,222.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1 W1,91
+Mo1 Nb1 Ta1 Ti1 W1,222.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1 W1,91
+Mo1 Nb1 Ta1 Ti1 W1,222.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1 W1,91
+Mo1 Nb1 Ta1 V1 W1,229.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 V1 W1,94
+Nb1 Ta1 Ti1 V1,134.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ta1 Ti1 V1,95
+Nb1 Ta1 Ti1 V1 W1,187.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ta1 Ti1 V1 W1,95
+Nb1 Ta1 V1 W1,206.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ta1 V1 W1,95
+Al0.25 Cr0.5 Nb0.5 Ti1 V0.25,134.0,MPEA Nano-indentation (calculated),calculated,Al0.25 Cr0.5 Nb0.5 Ti1 V0.25,96
+Al1 Cr0.5 Nb1 Ti1 V1,119.0,MPEA Nano-indentation (calculated),calculated,Al1 Cr0.5 Nb1 Ti1 V1,97
+Al1 Cr0.5 Nb1 Ti1 V1,119.0,MPEA Nano-indentation (calculated),calculated,Al1 Cr0.5 Nb1 Ti1 V1,97
+Al1 Cr0.5 Nb1 Ti1 V1,119.0,MPEA Nano-indentation (calculated),calculated,Al1 Cr0.5 Nb1 Ti1 V1,97
+Al1 Cr0.5 Nb1 Ti1 V1,119.0,MPEA Nano-indentation (calculated),calculated,Al1 Cr0.5 Nb1 Ti1 V1,97
+Al1 Nb1 Ti1 V1,104.0,MPEA Nano-indentation (calculated),calculated,Al1 Nb1 Ti1 V1,97
+Al1 Nb1 Ti1 V1,104.0,MPEA Nano-indentation (calculated),calculated,Al1 Nb1 Ti1 V1,97
+Al1 Nb1 Ti1 V1,104.0,MPEA Nano-indentation (calculated),calculated,Al1 Nb1 Ti1 V1,97
+Al1 Nb1 Ti1 V1,104.0,MPEA Nano-indentation (calculated),calculated,Al1 Nb1 Ti1 V1,97
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,198
+Al0.304 Co1 Cr1 Fe1 Ni1,210.0,MPEA Nano-indentation (calculated),calculated,Al0.304 Co1 Cr1 Fe1 Ni1,183
+Al0.304 Co1 Cr1 Fe1 Ni1,210.0,MPEA Nano-indentation (calculated),calculated,Al0.304 Co1 Cr1 Fe1 Ni1,179
+Al0.304 Co1 Cr1 Fe1 Ni1,210.0,MPEA Nano-indentation (calculated),calculated,Al0.304 Co1 Cr1 Fe1 Ni1,178
+Al0.304 Co1 Cr1 Fe1 Ni1,210.0,MPEA Nano-indentation (calculated),calculated,Al0.304 Co1 Cr1 Fe1 Ni1,178
+Al0.304 Co1 Cr1 Fe1 Ni1,210.0,MPEA Nano-indentation (calculated),calculated,Al0.304 Co1 Cr1 Fe1 Ni1,186
+Al0.304 Co1 Cr1 Fe1 Ni1,210.0,MPEA Nano-indentation (calculated),calculated,Al0.304 Co1 Cr1 Fe1 Ni1,186
+Co1 Cr0.429 Fe0.571 Mo0.286 Ni0.571,234.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr0.429 Fe0.571 Mo0.286 Ni0.571,199
+Co1 Cr0.429 Fe0.571 Mo0.286 Ni0.571,234.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr0.429 Fe0.571 Mo0.286 Ni0.571,199
+Co1 Cr1 Fe1 Ni1,226.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Ni1,197
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,177
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,177
+Co1 Cr1 Fe1 Ni1,226.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Ni1,196
+Al0.167 Co1 Cr1 Fe1 Ni1 Ti0.083,214.0,MPEA Nano-indentation (calculated),calculated,Al0.167 Co1 Cr1 Fe1 Ni1 Ti0.083,196
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,202
+Al0.304 Co1 Cr1 Fe1 Ni1,210.0,MPEA Nano-indentation (calculated),calculated,Al0.304 Co1 Cr1 Fe1 Ni1,170
+Co1 Cr1 Fe1 Ni1,226.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Ni1,171
+Al0.108 Co0.514 Cr0.514 Cu0.108 Fe0.514 Ni1,209.0,MPEA Nano-indentation (calculated),calculated,Al0.108 Co0.514 Cr0.514 Cu0.108 Fe0.514 Ni1,194
+Al0.5 Co1 Cr1 Cu1 Fe1 Ni1,189.0,MPEA Nano-indentation (calculated),calculated,Al0.5 Co1 Cr1 Cu1 Fe1 Ni1,173
+Al0.5 Co1 Cr1 Cu1 Fe1 Ni1,189.0,MPEA Nano-indentation (calculated),calculated,Al0.5 Co1 Cr1 Cu1 Fe1 Ni1,173
+Co1 Cr1 Fe1 Ni1 Ti0.2,218.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Ni1 Ti0.2,214
+Co1 Cr1 Fe1 Ni1 Ti0.2,218.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Ni1 Ti0.2,214
+Al0.1 Co1 Cr1 Fe1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Al0.1 Co1 Cr1 Fe1 Ni1,222
+Al0.1 Co1 Cr1 Fe1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Al0.1 Co1 Cr1 Fe1 Ni1,222
+Al0.1 Co1 Cr1 Fe1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Al0.1 Co1 Cr1 Fe1 Ni1,222
+Al0.1 Co1 Cr1 Fe1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Al0.1 Co1 Cr1 Fe1 Ni1,222
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,236
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,236
+Al0.25 Cr0.417 Fe0.417 Ni1,196.0,MPEA Nano-indentation (calculated),calculated,Al0.25 Cr0.417 Fe0.417 Ni1,245
+Co1 Cr1 Ni1,231.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Ni1,98
+Co1 Cr1 Ni1,231.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Ni1,98
+Co1 Cr1 Ni1,231.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Ni1,98
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,115
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,115
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,115
+Nb1 Ta1 Ti1 V1,134.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ta1 Ti1 V1,125
+Nb1 Ta1 Ti1 V1,134.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ta1 Ti1 V1,125
+Nb1 Ta1 Ti1 V1,134.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ta1 Ti1 V1,125
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,135
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,135
+Co1 Cr1 Fe1 Ni1,189.0,MPEA Nano-indentation (experimental),experimental,Co1 Cr1 Fe1 Ni1,137
+Co1 Cr1 Fe1 Ni1,194.0,MPEA Nano-indentation (experimental),experimental,Co1 Cr1 Fe1 Ni1,137
+Co1 Cr1 Fe1 Ni1,204.0,MPEA Nano-indentation (experimental),experimental,Co1 Cr1 Fe1 Ni1,137
+Co1 Cr1 Fe1 Ni1,226.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Ni1,137
+Co1 Cr1 Fe1 Ni1,226.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Ni1,137
+Co1 Cr1 Fe1 Ni1,221.0,MPEA Nano-indentation (experimental),experimental,Co1 Cr1 Fe1 Ni1,137
+Co1 Cr1 Fe1 Ni1,226.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Ni1,138
+Al0.3 Co1 Cr1 Fe1 Ni1,210.0,MPEA Nano-indentation (calculated),calculated,Al0.3 Co1 Cr1 Fe1 Ni1,138
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,139
+Co1 Cr1 Fe1 Mn1 Mo0.042 Ni1,221.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Mo0.042 Ni1,139
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,143
+Co1 Cr0.588 Fe0.176 Mo0.176 Ni1,231.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr0.588 Fe0.176 Mo0.176 Ni1,144
+Co1 Cr0.588 Fe0.176 Mo0.176 Ni1,231.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr0.588 Fe0.176 Mo0.176 Ni1,144
+Co1 Cr0.588 Fe0.176 Mo0.176 Ni1,231.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr0.588 Fe0.176 Mo0.176 Ni1,144
+Co1 Cr0.588 Fe0.176 Mo0.176 Ni1,231.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr0.588 Fe0.176 Mo0.176 Ni1,144
+Co1 Cr0.588 Fe0.176 Mo0.176 Ni1,231.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr0.588 Fe0.176 Mo0.176 Ni1,144
+Co1 Cr0.588 Fe0.176 Mo0.176 Ni1,231.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr0.588 Fe0.176 Mo0.176 Ni1,144
+Co1 Cr0.588 Fe0.176 Mo0.176 Ni1,231.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr0.588 Fe0.176 Mo0.176 Ni1,144
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,145
+Al0.5 Co1 Cr1 Cu1 Fe1 Ni1,189.0,MPEA Nano-indentation (calculated),calculated,Al0.5 Co1 Cr1 Cu1 Fe1 Ni1,149
+Al0.3 Co1 Cr1 Fe1 Ni1,210.0,MPEA Nano-indentation (calculated),calculated,Al0.3 Co1 Cr1 Fe1 Ni1,152
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,154
+Co0.5 Cr0.5 Fe1 Ni1,219.0,MPEA Nano-indentation (calculated),calculated,Co0.5 Cr0.5 Fe1 Ni1,155
+Co0.875 Cr0.625 Fe1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co0.875 Cr0.625 Fe1 Ni1,155
+Co1 Cr0.556 Fe0.667 Ni0.667,222.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr0.556 Fe0.667 Ni0.667,155
+Hf1 Nb1 Ti1 Zr1,69.7,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ti1 Zr1,156
+Co1 Cr1 Fe1 Mn1 Ni1,202.0,MPEA Nano-indentation (experimental),experimental,Co1 Cr1 Fe1 Mn1 Ni1,157
+Co1 Cr1 Fe1 Mn1 Ni1,202.2,MPEA Nano-indentation (experimental),experimental,Co1 Cr1 Fe1 Mn1 Ni1,158
+Co1 Cr1 Fe1 Ni1,204.0,MPEA Nano-indentation (experimental),experimental,Co1 Cr1 Fe1 Ni1,159
+Co1 Fe1 Ni1,174.0,MPEA Nano-indentation (experimental),experimental,Co1 Fe1 Ni1,160
+Co1 Cr1 Ni1,222.0,MPEA Nano-indentation (experimental),experimental,Co1 Cr1 Ni1,161
+Co1 Cr1 Ni1,229.0,MPEA Nano-indentation (experimental),experimental,Co1 Cr1 Ni1,162
+Co1 Cr1 Ni1,234.0,MPEA Nano-indentation (experimental),experimental,Co1 Cr1 Ni1,160
+Co0.986 Cr0.952 Fe0.933 Mn0.914 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co0.986 Cr0.952 Fe0.933 Mn0.914 Ni1,164
+Co0.986 Cr0.952 Fe0.933 Mn0.914 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co0.986 Cr0.952 Fe0.933 Mn0.914 Ni1,164
+Al0.4 Hf0.6 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Al0.4 Hf0.6 Nb1 Ta1 Ti1 Zr1,165
+Al1 Cr1 Mo1 Ti1,189.0,MPEA Nano-indentation (calculated),calculated,Al1 Cr1 Mo1 Ti1,165
+Al1 Mo1 Nb1 Ti1,151.0,MPEA Nano-indentation (calculated),calculated,Al1 Mo1 Nb1 Ti1,165
+Hf1 Mo0.5 Nb1 Ti1 V0.5,126.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo0.5 Nb1 Ti1 V0.5,165
+Hf1 Mo1 Nb1 Ta1 Ti1 Zr1,137.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ta1 Ti1 Zr1,165
+Hf1 Mo1 Nb1 Ti1 Zr1,128.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ti1 Zr1,165
+Hf1 Mo1 Ta1 Ti1 Zr1,143.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Ta1 Ti1 Zr1,165
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,165
+Mo1 Nb1 Ta1 Ti1 V1 W1,209.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1 V1 W1,165
+Mo1 Nb1 Ta1 Ti1 W1,222.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1 W1,165
+Mo1 Nb1 Ta1 V1 W1,229.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 V1 W1,165
+Mo1 Nb1 Ta1 W1,250.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 W1,165
+Mo1 Nb1 Ti1,177.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ti1,165
+Nb1 Ta0.3 Ti1 Zr1,101.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ta0.3 Ti1 Zr1,165
+Nb1 Ti1 Zr1,94.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ti1 Zr1,165
+Al0.4 Hf0.6 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Al0.4 Hf0.6 Nb1 Ta1 Ti1 Zr1,165
+Al1 Cr1 Mo1 Ti1,189.0,MPEA Nano-indentation (calculated),calculated,Al1 Cr1 Mo1 Ti1,165
+Al1 Mo1 Nb1 Ti1,151.0,MPEA Nano-indentation (calculated),calculated,Al1 Mo1 Nb1 Ti1,165
+Hf1 Mo0.5 Nb1 Ti1 V0.5,126.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo0.5 Nb1 Ti1 V0.5,165
+Hf1 Mo1 Nb1 Ta1 Ti1 Zr1,137.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ta1 Ti1 Zr1,165
+Hf1 Mo1 Nb1 Ti1 Zr1,128.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ti1 Zr1,165
+Hf1 Mo1 Ta1 Ti1 Zr1,143.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Ta1 Ti1 Zr1,165
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,165
+Mo1 Nb1 Ta1 Ti1 V1 W1,209.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1 V1 W1,165
+Mo1 Nb1 Ta1 Ti1 W1,222.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1 W1,165
+Mo1 Nb1 Ta1 V1 W1,229.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 V1 W1,165
+Mo1 Nb1 Ta1 W1,250.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 W1,165
+Mo1 Nb1 Ti1,177.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ti1,165
+Nb1 Ta0.3 Ti1 Zr1,101.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ta0.3 Ti1 Zr1,165
+Nb1 Ti1 Zr1,94.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ti1 Zr1,165
+Al0.4 Hf0.6 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Al0.4 Hf0.6 Nb1 Ta1 Ti1 Zr1,165
+Al1 Cr1 Mo1 Ti1,189.0,MPEA Nano-indentation (calculated),calculated,Al1 Cr1 Mo1 Ti1,165
+Al1 Mo1 Nb1 Ti1,151.0,MPEA Nano-indentation (calculated),calculated,Al1 Mo1 Nb1 Ti1,165
+Hf1 Mo0.5 Nb1 Ti1 V0.5,126.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo0.5 Nb1 Ti1 V0.5,165
+Hf1 Mo1 Nb1 Ta1 Ti1 Zr1,137.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ta1 Ti1 Zr1,165
+Hf1 Mo1 Nb1 Ti1 Zr1,128.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ti1 Zr1,165
+Hf1 Mo1 Ta1 Ti1 Zr1,143.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Ta1 Ti1 Zr1,165
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,165
+Mo1 Nb1 Ta1 Ti1 V1 W1,209.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1 V1 W1,165
+Mo1 Nb1 Ta1 Ti1 W1,222.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1 W1,165
+Mo1 Nb1 Ta1 V1 W1,229.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 V1 W1,165
+Mo1 Nb1 Ta1 W1,250.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 W1,165
+Mo1 Nb1 Ti1,177.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ti1,165
+Nb1 Ta0.3 Ti1 Zr1,101.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ta0.3 Ti1 Zr1,165
+Nb1 Ti1 Zr1,94.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ti1 Zr1,165
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,166
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,203
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,203
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,203
+Co1 Fe1 Ni1,207.0,MPEA Nano-indentation (calculated),calculated,Co1 Fe1 Ni1,204
+Co1 Fe1 Ni1,207.0,MPEA Nano-indentation (calculated),calculated,Co1 Fe1 Ni1,204
+Co1 Fe1 Ni1,207.0,MPEA Nano-indentation (calculated),calculated,Co1 Fe1 Ni1,204
+Co1 Fe1 Ni1,207.0,MPEA Nano-indentation (calculated),calculated,Co1 Fe1 Ni1,204
+Hf1 Mo1 Nb1 Ti1 Zr1,128.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ti1 Zr1,207
+Co1 Fe1 Ni1,161.0,MPEA Nano-indentation (experimental),experimental,Co1 Fe1 Ni1,208
+Co1 Cr0.053 Ni1,219.0,MPEA Nano-indentation (experimental),experimental,Co1 Cr0.053 Ni1,208
+Fe1 Mn1 Ni1,182.0,MPEA Nano-indentation (experimental),experimental,Fe1 Mn1 Ni1,208
+Fe1 Mn1 Ni1,182.0,MPEA Nano-indentation (experimental),experimental,Fe1 Mn1 Ni1,208
+Fe1 Mn1 Ni1,182.0,MPEA Nano-indentation (experimental),experimental,Fe1 Mn1 Ni1,208
+Fe1 Mn1 Ni1,182.0,MPEA Nano-indentation (experimental),experimental,Fe1 Mn1 Ni1,208
+Fe1 Mn1 Ni1,182.0,MPEA Nano-indentation (experimental),experimental,Fe1 Mn1 Ni1,208
+Fe1 Mn1 Ni1,182.0,MPEA Nano-indentation (experimental),experimental,Fe1 Mn1 Ni1,208
+Co1 Mn1 Ni1,190.0,MPEA Nano-indentation (experimental),experimental,Co1 Mn1 Ni1,208
+Co1 Mn1 Ni1,190.0,MPEA Nano-indentation (experimental),experimental,Co1 Mn1 Ni1,208
+Co1 Mn1 Ni1,190.0,MPEA Nano-indentation (experimental),experimental,Co1 Mn1 Ni1,208
+Co1 Mn1 Ni1,190.0,MPEA Nano-indentation (experimental),experimental,Co1 Mn1 Ni1,208
+Co1 Cr0.25 Ni1,223.0,MPEA Nano-indentation (experimental),experimental,Co1 Cr0.25 Ni1,208
+Co1 Cr0.25 Ni1,223.0,MPEA Nano-indentation (experimental),experimental,Co1 Cr0.25 Ni1,208
+Co1 Cr0.25 Ni1,223.0,MPEA Nano-indentation (experimental),experimental,Co1 Cr0.25 Ni1,208
+Co1 Cr0.25 Ni1,223.0,MPEA Nano-indentation (experimental),experimental,Co1 Cr0.25 Ni1,208
+Co1 Cr1 Fe1 Ni1,210.0,MPEA Nano-indentation (experimental),experimental,Co1 Cr1 Fe1 Ni1,208
+Co1 Cr1 Fe1 Ni1,210.0,MPEA Nano-indentation (experimental),experimental,Co1 Cr1 Fe1 Ni1,208
+Co1 Cr1 Fe1 Ni1,210.0,MPEA Nano-indentation (experimental),experimental,Co1 Cr1 Fe1 Ni1,208
+Co1 Cr1 Fe1 Ni1,210.0,MPEA Nano-indentation (experimental),experimental,Co1 Cr1 Fe1 Ni1,208
+Co1 Cr1 Fe1 Ni1,210.0,MPEA Nano-indentation (experimental),experimental,Co1 Cr1 Fe1 Ni1,208
+Co0.25 Cr1 Ni1,240.0,MPEA Nano-indentation (experimental),experimental,Co0.25 Cr1 Ni1,208
+Co0.25 Cr1 Ni1,240.0,MPEA Nano-indentation (experimental),experimental,Co0.25 Cr1 Ni1,208
+Co0.25 Cr1 Ni1,240.0,MPEA Nano-indentation (experimental),experimental,Co0.25 Cr1 Ni1,208
+Co0.25 Cr1 Ni1,240.0,MPEA Nano-indentation (experimental),experimental,Co0.25 Cr1 Ni1,208
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,211
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,211
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,211
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,211
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,211
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,211
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,211
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,211
+Co0.5 Fe0.5 Mo0.1 Ni1 V0.25,202.0,MPEA Nano-indentation (calculated),calculated,Co0.5 Fe0.5 Mo0.1 Ni1 V0.25,212
+Co0.5 Fe0.5 Mo0.1 Ni1 V0.25,202.0,MPEA Nano-indentation (calculated),calculated,Co0.5 Fe0.5 Mo0.1 Ni1 V0.25,212
+Co0.5 Fe0.5 Mo0.1 Ni1 V0.25,202.0,MPEA Nano-indentation (calculated),calculated,Co0.5 Fe0.5 Mo0.1 Ni1 V0.25,212
+Co0.5 Fe0.5 Mo0.1 Ni1 V0.25,202.0,MPEA Nano-indentation (calculated),calculated,Co0.5 Fe0.5 Mo0.1 Ni1 V0.25,212
+Co0.5 Fe0.5 Mo0.1 Ni1 V0.25,202.0,MPEA Nano-indentation (calculated),calculated,Co0.5 Fe0.5 Mo0.1 Ni1 V0.25,212
+Co0.5 Fe0.5 Mo0.1 Ni1 V0.25,202.0,MPEA Nano-indentation (calculated),calculated,Co0.5 Fe0.5 Mo0.1 Ni1 V0.25,212
+Al0.3 Co1 Cr1 Fe1 Ni1,210.0,MPEA Nano-indentation (calculated),calculated,Al0.3 Co1 Cr1 Fe1 Ni1,213
+Al0.3 Co1 Cr1 Fe1 Ni1,210.0,MPEA Nano-indentation (calculated),calculated,Al0.3 Co1 Cr1 Fe1 Ni1,213
+Al0.3 Co1 Cr1 Fe1 Ni1,210.0,MPEA Nano-indentation (calculated),calculated,Al0.3 Co1 Cr1 Fe1 Ni1,213
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,217
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,217
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,217
+Mo1 Nb1 Re0.5 W1,298.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Re0.5 W1,219
+Al0.278 Co0.694 Cr0.222 Fe0.417 Ni1 Ti0.167,185.0,MPEA Nano-indentation (calculated),calculated,Al0.278 Co0.694 Cr0.222 Fe0.417 Ni1 Ti0.167,220
+Al0.278 Co0.694 Cr0.222 Fe0.417 Ni1 Ti0.167,185.0,MPEA Nano-indentation (calculated),calculated,Al0.278 Co0.694 Cr0.222 Fe0.417 Ni1 Ti0.167,220
+Al0.278 Co0.694 Cr0.222 Fe0.417 Ni1 Ti0.167,185.0,MPEA Nano-indentation (calculated),calculated,Al0.278 Co0.694 Cr0.222 Fe0.417 Ni1 Ti0.167,220
+Al0.278 Co0.694 Cr0.222 Fe0.417 Ni1 Ti0.167,185.0,MPEA Nano-indentation (calculated),calculated,Al0.278 Co0.694 Cr0.222 Fe0.417 Ni1 Ti0.167,220
+Al0.278 Co0.694 Cr0.222 Fe0.417 Ni1 Ti0.167,185.0,MPEA Nano-indentation (calculated),calculated,Al0.278 Co0.694 Cr0.222 Fe0.417 Ni1 Ti0.167,220
+Al0.278 Co0.694 Cr0.222 Fe0.417 Ni1 Ti0.167,185.0,MPEA Nano-indentation (calculated),calculated,Al0.278 Co0.694 Cr0.222 Fe0.417 Ni1 Ti0.167,220
+Al0.278 Co0.694 Cr0.222 Fe0.417 Ni1 Ti0.167,185.0,MPEA Nano-indentation (calculated),calculated,Al0.278 Co0.694 Cr0.222 Fe0.417 Ni1 Ti0.167,220
+Al0.278 Co0.694 Cr0.222 Fe0.417 Ni1 Ti0.167,185.0,MPEA Nano-indentation (calculated),calculated,Al0.278 Co0.694 Cr0.222 Fe0.417 Ni1 Ti0.167,220
+Al0.278 Co0.694 Cr0.222 Fe0.417 Ni1 Ti0.167,185.0,MPEA Nano-indentation (calculated),calculated,Al0.278 Co0.694 Cr0.222 Fe0.417 Ni1 Ti0.167,220
+Al0.278 Co0.694 Cr0.222 Fe0.417 Ni1 Ti0.167,185.0,MPEA Nano-indentation (calculated),calculated,Al0.278 Co0.694 Cr0.222 Fe0.417 Ni1 Ti0.167,220
+Co0.286 Cr0.429 Fe1 Mn0.143 Ni0.714 V0.286,208.0,MPEA Nano-indentation (calculated),calculated,Co0.286 Cr0.429 Fe1 Mn0.143 Ni0.714 V0.286,221
+Co0.286 Cr0.429 Fe1 Mn0.143 Ni0.714 V0.286,208.0,MPEA Nano-indentation (calculated),calculated,Co0.286 Cr0.429 Fe1 Mn0.143 Ni0.714 V0.286,221
+Co0.286 Cr0.429 Fe1 Mn0.143 Ni0.714 V0.286,208.0,MPEA Nano-indentation (calculated),calculated,Co0.286 Cr0.429 Fe1 Mn0.143 Ni0.714 V0.286,221
+Co0.286 Cr0.429 Fe1 Mn0.143 Ni0.714 V0.286,208.0,MPEA Nano-indentation (calculated),calculated,Co0.286 Cr0.429 Fe1 Mn0.143 Ni0.714 V0.286,221
+Co0.286 Cr0.429 Fe1 Mn0.143 Ni0.714 V0.286,208.0,MPEA Nano-indentation (calculated),calculated,Co0.286 Cr0.429 Fe1 Mn0.143 Ni0.714 V0.286,221
+Co1 Cr1 Fe1 Mn1 Ni1,184.0,MPEA Nano-indentation (experimental),experimental,Co1 Cr1 Fe1 Mn1 Ni1,223
+Nb1 Ti1 Zr1,94.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ti1 Zr1,231
+Hf1 Nb1 Ti1 Zr1,89.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ti1 Zr1,231
+Nb1 Ti1 Zr1,94.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ti1 Zr1,231
+Hf1 Nb1 Ti1 Zr1,89.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ti1 Zr1,231
+Nb1 Ti1 Zr1,94.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ti1 Zr1,231
+Hf1 Nb1 Ti1 Zr1,89.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ti1 Zr1,231
+Nb1 Ti1 Zr1,94.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ti1 Zr1,231
+Hf1 Nb1 Ti1 Zr1,89.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ti1 Zr1,231
+Co1 Cr1 Fe1 Ni1,226.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Ni1,232
+Co1 Cr1 Fe1 Ni1 W0.2,238.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Ni1 W0.2,232
+Al0.15 Cr0.5 Cu0.25 Fe0.5 Ni1,16.6,MPEA Nano-indentation (experimental),experimental,Al0.15 Cr0.5 Cu0.25 Fe0.5 Ni1,234
+Al0.15 Cr0.5 Cu0.25 Fe0.5 Ni1,47.0,MPEA Nano-indentation (experimental),experimental,Al0.15 Cr0.5 Cu0.25 Fe0.5 Ni1,234
+Al0.15 Cr0.5 Cu0.25 Fe0.5 Ni1,35.2,MPEA Nano-indentation (experimental),experimental,Al0.15 Cr0.5 Cu0.25 Fe0.5 Ni1,234
+Al0.15 Cr0.5 Cu0.25 Fe0.5 Ni1,51.4,MPEA Nano-indentation (experimental),experimental,Al0.15 Cr0.5 Cu0.25 Fe0.5 Ni1,234
+Hf1 Nb1 Ta1 Ti1 Zr1,88.9,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,88.6,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,88.4,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,88.1,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,87.9,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,87.7,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,87.5,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,87.3,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,87.1,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,86.9,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,86.7,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,86.5,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,86.3,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,86.1,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,85.8,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,85.5,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,85.2,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,84.9,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,84.5,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,84.2,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,83.8,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,83.5,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,83.1,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,82.7,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,82.3,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,81.9,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,81.6,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,81.3,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,81.0,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,80.7,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,80.4,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,80.2,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,80.0,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,79.8,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,79.6,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,79.3,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,79.0,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,78.7,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,78.4,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,78.1,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,77.7,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Hf1 Nb1 Ta1 Ti1 Zr1,77.4,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,235
+Co1 Cr1 Fe1 Ni1 Ti0.3,214.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Ni1 Ti0.3,237
+Co1 Cr1 Fe1 Ni1 Ti0.3,214.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Ni1 Ti0.3,237
+Co0.333 Cr0.667 Fe0.667 Ni1 Ti0.2,213.0,MPEA Nano-indentation (calculated),calculated,Co0.333 Cr0.667 Fe0.667 Ni1 Ti0.2,237
+Co0.333 Cr0.667 Fe0.667 Ni1 Ti0.2,213.0,MPEA Nano-indentation (calculated),calculated,Co0.333 Cr0.667 Fe0.667 Ni1 Ti0.2,237
+Cr0.5 Fe0.5 Ni1 Ti0.15,212.0,MPEA Nano-indentation (calculated),calculated,Cr0.5 Fe0.5 Ni1 Ti0.15,237
+Cr0.5 Fe0.5 Ni1 Ti0.15,212.0,MPEA Nano-indentation (calculated),calculated,Cr0.5 Fe0.5 Ni1 Ti0.15,237
+Nb1 Ta1 Ti1,136.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ta1 Ti1,238
+Nb1 Ta1 Ti1,136.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ta1 Ti1,238
+Nb1 Ta1 Ti1,136.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ta1 Ti1,238
+Nb1 Ta1 Ti1,136.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ta1 Ti1,238
+Nb1 Ta1 Ti1,136.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ta1 Ti1,238
+Nb1 Ta1 Ti1,136.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ta1 Ti1,238
+Nb1 Ta1 Ti1,136.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ta1 Ti1,238
+Nb1 Ta1 Ti1,136.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ta1 Ti1,238
+Al1 Nb1 Ta1 Ti1,120.0,MPEA Nano-indentation (calculated),calculated,Al1 Nb1 Ta1 Ti1,238
+Al1 Nb1 Ta1 Ti1,120.0,MPEA Nano-indentation (calculated),calculated,Al1 Nb1 Ta1 Ti1,238
+Al1 Nb1 Ta1 Ti1,120.0,MPEA Nano-indentation (calculated),calculated,Al1 Nb1 Ta1 Ti1,238
+Mo1 Nb1 Ta1 Ti1,179.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1,238
+Mo1 Nb1 Ta1 Ti1,179.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1,238
+Mo1 Nb1 Ta1 Ti1,179.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1,238
+Mo1 Nb1 Ta1 Ti1,179.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1,238
+Mo1 Nb1 Ta1 Ti1,179.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1,238
+Mo1 Nb1 Ta1 Ti1,179.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1,238
+Mo1 Nb1 Ta1 Ti1,179.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1,238
+Mo1 Nb1 Ta1 Ti1,179.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1,238
+Mo1 Nb1 Ta1 Ti1,179.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1,238
+Nb1 Ta1 Ti1 W1,198.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ta1 Ti1 W1,238
+Nb1 Ta1 Ti1 W1,198.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ta1 Ti1 W1,238
+Nb1 Ta1 Ti1 W1,198.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ta1 Ti1 W1,238
+Nb1 Ta1 Ti1 W1,198.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ta1 Ti1 W1,238
+Nb1 Ta1 Ti1 W1,198.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ta1 Ti1 W1,238
+Nb1 Ta1 Ti1 W1,198.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ta1 Ti1 W1,238
+Nb1 Ta1 Ti1 W1,198.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ta1 Ti1 W1,238
+Nb1 Ta1 Ti1 W1,198.0,MPEA Nano-indentation (calculated),calculated,Nb1 Ta1 Ti1 W1,238
+Hf1 Nb1 Ta1 Ti1,119.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1,238
+Hf1 Nb1 Ta1 Ti1,119.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1,238
+Hf1 Nb1 Ta1 Ti1,119.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1,238
+Hf1 Nb1 Ta1 Ti1,119.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1,238
+Cr1 Mo1 Nb1 Ti1,196.0,MPEA Nano-indentation (calculated),calculated,Cr1 Mo1 Nb1 Ti1,238
+Cr1 Mo1 Nb1 Ti1,196.0,MPEA Nano-indentation (calculated),calculated,Cr1 Mo1 Nb1 Ti1,238
+Cr1 Mo1 Nb1 Ti1,196.0,MPEA Nano-indentation (calculated),calculated,Cr1 Mo1 Nb1 Ti1,238
+Cr1 Mo1 Nb1 Ti1,196.0,MPEA Nano-indentation (calculated),calculated,Cr1 Mo1 Nb1 Ti1,238
+Cr1 Mo1 Nb1 Ti1,196.0,MPEA Nano-indentation (calculated),calculated,Cr1 Mo1 Nb1 Ti1,238
+Hf0.25 Ti1 V0.5 Zr0.5,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.25 Ti1 V0.5 Zr0.5,239
+Hf0.25 Ti1 V0.5 Zr0.5,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.25 Ti1 V0.5 Zr0.5,239
+Hf0.25 Ti1 V0.5 Zr0.5,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.25 Ti1 V0.5 Zr0.5,239
+Hf0.25 Nb0.125 Ti1 V0.5 Zr0.5,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.25 Nb0.125 Ti1 V0.5 Zr0.5,239
+Hf0.25 Nb0.25 Ti1 V0.5 Zr0.5,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.25 Nb0.25 Ti1 V0.5 Zr0.5,239
+Hf0.25 Nb0.25 Ti1 V0.5 Zr0.5,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.25 Nb0.25 Ti1 V0.5 Zr0.5,239
+Hf0.25 Nb0.25 Ti1 V0.5 Zr0.5,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.25 Nb0.25 Ti1 V0.5 Zr0.5,239
+Hf0.25 Nb0.375 Ti1 V0.5 Zr0.5,100.0,MPEA Nano-indentation (calculated),calculated,Hf0.25 Nb0.375 Ti1 V0.5 Zr0.5,239
+Hf0.25 Nb0.5 Ti1 V0.5 Zr0.5,101.0,MPEA Nano-indentation (calculated),calculated,Hf0.25 Nb0.5 Ti1 V0.5 Zr0.5,239
+Hf0.25 Nb0.5 Ti1 V0.5 Zr0.5,101.0,MPEA Nano-indentation (calculated),calculated,Hf0.25 Nb0.5 Ti1 V0.5 Zr0.5,239
+Hf0.25 Nb0.5 Ti1 V0.5 Zr0.5,101.0,MPEA Nano-indentation (calculated),calculated,Hf0.25 Nb0.5 Ti1 V0.5 Zr0.5,239
+Cr1 Fe1 Mn1 Ni1,222.0,MPEA Nano-indentation (calculated),calculated,Cr1 Fe1 Mn1 Ni1,247
+Co0.25 Cr0.25 Fe1 Mn1,212.0,MPEA Nano-indentation (calculated),calculated,Co0.25 Cr0.25 Fe1 Mn1,248
+Co0.25 Cr0.25 Fe1 Mn1,212.0,MPEA Nano-indentation (calculated),calculated,Co0.25 Cr0.25 Fe1 Mn1,248
+Co0.25 Cr0.25 Fe1 Mn1,212.0,MPEA Nano-indentation (calculated),calculated,Co0.25 Cr0.25 Fe1 Mn1,248
+Co0.25 Cr0.25 Fe1 Mn1,212.0,MPEA Nano-indentation (calculated),calculated,Co0.25 Cr0.25 Fe1 Mn1,248
+Co0.25 Cr0.25 Fe1 Mn1,212.0,MPEA Nano-indentation (calculated),calculated,Co0.25 Cr0.25 Fe1 Mn1,248
+Co0.25 Cr0.25 Fe1 Mn1,212.0,MPEA Nano-indentation (calculated),calculated,Co0.25 Cr0.25 Fe1 Mn1,248
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,249
+Al0.5 Nb1 Ta0.5 Ti1 Zr1,102.0,MPEA Nano-indentation (calculated),calculated,Al0.5 Nb1 Ta0.5 Ti1 Zr1,250
+Mo1 Nb1 Ta1 W1,250.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 W1,251
+Mo1 Nb1 Ta1 W1,250.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 W1,251
+Mo1 Nb1 Ta1 W1,250.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 W1,251
+Mo1 Nb1 Ta1 W1,250.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 W1,251
+Mo1 Nb1 Ta1 W1,250.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 W1,251
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,252
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,252
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,252
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,252
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,252
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,252
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,252
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,252
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,252
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,252
+Co1 Cr1 Fe1 Mn1 Ni1,220.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mn1 Ni1,252
+Co1 Cr1 Fe1 Ni1,226.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Ni1,255
+Al1 Co1 Cr1 Fe1 Ni1,184.0,MPEA Nano-indentation (calculated),calculated,Al1 Co1 Cr1 Fe1 Ni1,255
+Al1 Co0.5 Cr0.5 Fe0.5 Ni0.5,160.0,MPEA Nano-indentation (calculated),calculated,Al1 Co0.5 Cr0.5 Fe0.5 Ni0.5,255
+Al0.3 Co1 Cr1 Fe1 Ni1,210.0,MPEA Nano-indentation (calculated),calculated,Al0.3 Co1 Cr1 Fe1 Ni1,258
+Al0.3 Co1 Cr1 Fe1 Mo0.1 Ni1,214.0,MPEA Nano-indentation (calculated),calculated,Al0.3 Co1 Cr1 Fe1 Mo0.1 Ni1,258
+Al0.143 Cr0.343 Fe1 Mn0.8 Ni0.571,204.0,MPEA Nano-indentation (calculated),calculated,Al0.143 Cr0.343 Fe1 Mn0.8 Ni0.571,254
+Al0.286 Cr0.343 Fe1 Mn0.657 Ni0.571,195.0,MPEA Nano-indentation (calculated),calculated,Al0.286 Cr0.343 Fe1 Mn0.657 Ni0.571,254
+Al0.143 Cr0.343 Fe1 Mn0.8 Ni0.571,204.0,MPEA Nano-indentation (calculated),calculated,Al0.143 Cr0.343 Fe1 Mn0.8 Ni0.571,254
+Al0.286 Cr0.343 Fe1 Mn0.657 Ni0.571,195.0,MPEA Nano-indentation (calculated),calculated,Al0.286 Cr0.343 Fe1 Mn0.657 Ni0.571,254
+Co1 Cu1 Fe1 Mn1 Ni1,189.0,MPEA Nano-indentation (calculated),calculated,Co1 Cu1 Fe1 Mn1 Ni1,259
+Co1 Cu1 Fe1 Mn1 Ni1,189.0,MPEA Nano-indentation (calculated),calculated,Co1 Cu1 Fe1 Mn1 Ni1,259
+Co1 Cu1 Fe1 Mn1 Ni1,189.0,MPEA Nano-indentation (calculated),calculated,Co1 Cu1 Fe1 Mn1 Ni1,259
+Co1 Cr1 Fe1 Mo0.15 Ni1,231.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mo0.15 Ni1,260
+Co1 Cr1 Fe1 Mo0.15 Ni1,231.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mo0.15 Ni1,260
+Co1 Cr1 Fe1 Mo0.15 Ni1,231.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mo0.15 Ni1,260
+Al0.333 Co0.333 Cu0.333 Fe0.333 Ni1,167.0,MPEA Nano-indentation (calculated),calculated,Al0.333 Co0.333 Cu0.333 Fe0.333 Ni1,263
+Co1 Cr0.2 Fe1 Ni1 Si0.2,195.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr0.2 Fe1 Ni1 Si0.2,100
+Co1 Cr0.2 Fe1 Ni1 Si0.2,195.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr0.2 Fe1 Ni1 Si0.2,100
+Co1 Cr0.2 Fe1 Ni1 Si0.2,195.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr0.2 Fe1 Ni1 Si0.2,100
+Al1 Cu0.077 Fe0.077 Mg0.077 Si0.231 Zn0.077,88.7,MPEA Nano-indentation (experimental),experimental,Al1 Cu0.077 Fe0.077 Mg0.077 Si0.231 Zn0.077,101
+Al1 Cu0.077 Mg0.077 Ni0.077 Si0.231 Zn0.077,107.8,MPEA Nano-indentation (experimental),experimental,Al1 Cu0.077 Mg0.077 Ni0.077 Si0.231 Zn0.077,101
+Al1 Cr0.077 Cu0.077 Mg0.077 Si0.231 Zn0.077,78.4,MPEA Nano-indentation (experimental),experimental,Al1 Cr0.077 Cu0.077 Mg0.077 Si0.231 Zn0.077,101
+Al1 Cu0.077 Mg0.077 Mn0.077 Si0.231 Zn0.077,114.1,MPEA Nano-indentation (experimental),experimental,Al1 Cu0.077 Mg0.077 Mn0.077 Si0.231 Zn0.077,101
+Al1 Cu0.077 Mg0.077 Si0.231 Zn0.077 Zr0.077,105.1,MPEA Nano-indentation (experimental),experimental,Al1 Cu0.077 Mg0.077 Si0.231 Zn0.077 Zr0.077,101
+Co1 Cr1 Fe1 Mo0.2 Ni1,232.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mo0.2 Ni1,102
+Co1 Cr1 Fe1 Mo0.2 Ni1,232.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mo0.2 Ni1,102
+Co1 Cr1 Fe1 Mo0.2 Ni1,232.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mo0.2 Ni1,102
+Co1 Cr1 Fe1 Mo0.2 Ni1,232.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mo0.2 Ni1,102
+Co1 Cr1 Fe1 Mo0.2 Ni1,232.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mo0.2 Ni1,102
+Co1 Cr1 Fe1 Mo0.2 Ni1,232.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mo0.2 Ni1,102
+Co1 Cr1 Fe1 Mo0.2 Ni1,232.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mo0.2 Ni1,102
+Co1 Cr1 Fe1 Mo0.2 Ni1,232.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mo0.2 Ni1,102
+Co1 Cr1 Fe1 Mo0.2 Ni1,232.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mo0.2 Ni1,102
+Co1 Cr1 Fe1 Mo0.2 Ni1,232.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mo0.2 Ni1,102
+Co1 Cr1 Fe1 Mo0.2 Ni1,232.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Mo0.2 Ni1,102
+Co1 Cr1 Fe1 Ni1 Pd1,201.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Ni1 Pd1,104
+Cr1 Fe1 Ni1 Ti0.4,212.0,MPEA Nano-indentation (calculated),calculated,Cr1 Fe1 Ni1 Ti0.4,107
+Cr1 Fe1 Ni1 Ti0.5,208.0,MPEA Nano-indentation (calculated),calculated,Cr1 Fe1 Ni1 Ti0.5,107
+Cr1 Fe1 Ni1 Ti0.6,204.0,MPEA Nano-indentation (calculated),calculated,Cr1 Fe1 Ni1 Ti0.6,107
+Co1 Cr1 Cu1 Fe1 Ni1,206.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Cu1 Fe1 Ni1,117
+Hf1 Nb1 Ta1 Ti1 Zr1,59.0,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,119
+Nb1 Ta1 Ti1 Zr1,98.0,MPEA Nano-indentation (experimental),experimental,Nb1 Ta1 Ti1 Zr1,119
+Nb1 Ta1 Ti1,143.0,MPEA Nano-indentation (experimental),experimental,Nb1 Ta1 Ti1,119
+Ta1 Ti1 Zr1,157.0,MPEA Nano-indentation (experimental),experimental,Ta1 Ti1 Zr1,119
+Nb1 Ti1 Zr1,88.0,MPEA Nano-indentation (experimental),experimental,Nb1 Ti1 Zr1,119
+Nb1 Ta0.667 Ti0.667 Zr0.333,127.0,MPEA Nano-indentation (experimental),experimental,Nb1 Ta0.667 Ti0.667 Zr0.333,119
+Nb0.333 Ta0.667 Ti0.667 Zr1,93.0,MPEA Nano-indentation (experimental),experimental,Nb0.333 Ta0.667 Ti0.667 Zr1,119
+Al0.5 Cr1 Cu1 Fe1 Ni1,185.0,MPEA Nano-indentation (calculated),calculated,Al0.5 Cr1 Cu1 Fe1 Ni1,126
+Al0.5 Cr1 Cu1 Fe1 Ni1,185.0,MPEA Nano-indentation (calculated),calculated,Al0.5 Cr1 Cu1 Fe1 Ni1,126
+Hf1 Mo1 Nb1 Ta1 Ti1 Zr1,137.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ta1 Ti1 Zr1,127
+Hf1 Mo1 Ta1 Ti1 Zr1,143.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Ta1 Ti1 Zr1,127
+Hf1 Mo1 Nb1 Ti1 Zr1,128.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ti1 Zr1,127
+Hf1 Mo1 Nb1 Ta1 Zr1,141.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ta1 Zr1,127
+Hf1 Mo1 Nb1 Ta1 Ti1,155.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ta1 Ti1,127
+Hf1 Mo1 Nb1 Ta1 Ti1 Zr1,137.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ta1 Ti1 Zr1,127
+Hf1 Mo1 Ta1 Ti1 Zr1,143.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Ta1 Ti1 Zr1,127
+Hf1 Mo1 Nb1 Ti1 Zr1,128.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ti1 Zr1,127
+Hf1 Mo1 Nb1 Ta1 Zr1,141.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ta1 Zr1,127
+Hf1 Mo1 Nb1 Ta1 Ti1,155.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ta1 Ti1,127
+Hf1 Mo1 Nb1 Ta1 Ti1 Zr1,137.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ta1 Ti1 Zr1,127
+Hf1 Mo1 Ta1 Ti1 Zr1,143.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Ta1 Ti1 Zr1,127
+Hf1 Mo1 Nb1 Ti1 Zr1,128.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ti1 Zr1,127
+Hf1 Mo1 Nb1 Ta1 Zr1,141.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ta1 Zr1,127
+Hf1 Mo1 Nb1 Ta1 Ti1,155.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ta1 Ti1,127
+Hf1 Mo1 Nb1 Ta1 Ti1 Zr1,137.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ta1 Ti1 Zr1,127
+Hf1 Mo1 Ta1 Ti1 Zr1,143.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Ta1 Ti1 Zr1,127
+Hf1 Mo1 Nb1 Ti1 Zr1,128.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ti1 Zr1,127
+Hf1 Mo1 Nb1 Ta1 Zr1,141.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ta1 Zr1,127
+Hf1 Mo1 Nb1 Ta1 Ti1,155.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ta1 Ti1,127
+Hf1 Mo1 Nb1 Ta1 Zr1,141.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ta1 Zr1,127
+Hf1 Mo1 Nb1 Ta1 Ti1,155.0,MPEA Nano-indentation (calculated),calculated,Hf1 Mo1 Nb1 Ta1 Ti1,127
+Co1 Cr1 Fe1 Ni1,226.0,MPEA Nano-indentation (calculated),calculated,Co1 Cr1 Fe1 Ni1,128
+Hf1 Nb1 Ta1 Ti1 Zr1,91.5,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,130
+Hf1 Nb1 Ta1 Ti1 Zr1,99.2,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,130
+Hf1 Nb1 Ta1 Ti1 Zr1,109.1,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,130
+Hf1 Nb1 Ta1 Ti1 Zr1,105.3,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,130
+Hf1 Nb1 Ta1 Ti1 Zr1,91.6,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,130
+Hf1 Nb1 Ta1 Ti1 Zr1,92.6,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,130
+Hf1 Nb1 Ta1 Ti1 Zr1,92.6,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,130
+Hf1 Nb1 Ta1 Ti1 Zr1,101.3,MPEA Nano-indentation (experimental),experimental,Hf1 Nb1 Ta1 Ti1 Zr1,130
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,130
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,130
+Hf1 Nb1 Ta1 Ti1 Zr1,107.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1 Zr1,130
+Al1 Mo1 Nb1 Ti1,151.0,MPEA Nano-indentation (calculated),calculated,Al1 Mo1 Nb1 Ti1,265
+Al1 Nb1 Ta1 Ti1,120.0,MPEA Nano-indentation (calculated),calculated,Al1 Nb1 Ta1 Ti1,265
+Cr1 Mo1 Ta1 Ti1,219.0,MPEA Nano-indentation (calculated),calculated,Cr1 Mo1 Ta1 Ti1,265
+Cr1 Mo1 Ta1 Ti1,219.0,MPEA Nano-indentation (calculated),calculated,Cr1 Mo1 Ta1 Ti1,265
+Cr1 Nb1 Ta1 Ti1,162.0,MPEA Nano-indentation (calculated),calculated,Cr1 Nb1 Ta1 Ti1,265
+Cr1 Nb1 Ti1 W1,217.0,MPEA Nano-indentation (calculated),calculated,Cr1 Nb1 Ti1 W1,265
+Hf1 Nb1 Ta1 Ti1,119.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1,265
+Hf1 Nb1 Ta1 Ti1,119.0,MPEA Nano-indentation (calculated),calculated,Hf1 Nb1 Ta1 Ti1,265
+Mo1 Nb1 Ta1 Ti1 W1,222.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1 W1,265
+Mo1 Nb1 Ta1 Ti1 W1,222.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1 W1,265
+Mo1 Nb1 Ta1 Ti1,179.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1,265
+Mo1 Nb1 Ta1 Ti1,179.0,MPEA Nano-indentation (calculated),calculated,Mo1 Nb1 Ta1 Ti1,265

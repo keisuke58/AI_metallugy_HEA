@@ -1,0 +1,245 @@
+alloy_name,elastic_modulus,density,hardness,yield_strength,ultimate_strength,elongation,phases,source
+CoFeNi,207.0,8.5,125.0,204.0,,,FCC,Gorsse Dataset
+CoFeNi,207.0,8.5,125.0,209.0,,,FCC,Gorsse Dataset
+CoFeNi,207.0,8.5,,211.0,513.0,31,FCC,Gorsse Dataset
+CoFeNiSi0.25,194.0,7.7,149.0,196.0,,,FCC,Gorsse Dataset
+Al0.25CoFeNi,196.0,7.9,138.0,158.0,,,FCC,Gorsse Dataset
+Al0.5CoFeNi,187.0,7.4,212.0,346.0,,,FCC + BCC,Gorsse Dataset
+Al0.75CoFeNi,179.0,7.0,385.0,794.0,,,FCC + BCC,Gorsse Dataset
+CoCrFeNi,225.0,8.2,,148.0,413.0,48,FCC,Gorsse Dataset
+CoCrFeNi,225.0,8.2,116.0,,,,FCC,Gorsse Dataset
+CoCrFeNi,225.0,8.2,113.0,,,,FCC,Gorsse Dataset
+CoCrFeNiTi,135.0,7.2,,,2020.0,9,FCC,Gorsse Dataset
+Co1.5CrFeNi1.5Ti0.5,211.0,7.8,509.0,,,,FCC,Gorsse Dataset
+Al0.25CoCrFeNi,216.0,7.7,110.0,,,,FCC,Gorsse Dataset
+Al0.25CoCrFeNi,216.0,7.7,113.0,,,,FCC,Gorsse Dataset
+Al0.375CoCrFeNi,211.0,7.5,131.0,,,,FCC,Gorsse Dataset
+Al0.375CoCrFeNi,211.0,7.5,196.0,,,,FCC,Gorsse Dataset
+Al0.5CoCrFeNi,208.0,7.3,159.0,,,,FCC + BCC,Gorsse Dataset
+Al0.5CoCrFeNi,208.0,7.3,209.0,,,,FCC + BCC,Gorsse Dataset
+Al0.75CoCrFeNi,200.0,7.0,388.0,,,,FCC + BCC,Gorsse Dataset
+Al0.75CoCrFeNi,200.0,7.0,280.0,,,,FCC + BCC,Gorsse Dataset
+Al0.875CoCrFeNi,197.0,6.9,,,,,FCC + BCC,Gorsse Dataset
+Al0.875CoCrFeNi,197.0,6.9,538.0,,,,BCC,Gorsse Dataset
+Al0.875CoCrFeNi,197.0,6.9,361.0,,,,FCC + BCC,Gorsse Dataset
+AlCoCrFeNi,194.0,6.7,484.0,,,,BCC,Gorsse Dataset
+AlCoCrFeNi,194.0,6.7,433.0,,,,FCC + BCC,Gorsse Dataset
+AlCoCrFeNi,194.0,6.7,395.0,,,,BCC,Gorsse Dataset
+AlCoCrFeNi,194.0,6.7,,1251.0,2004.0,33,BCC,Gorsse Dataset
+AlCoCrFeNi,194.0,6.7,,1051.0,,,BCC,Gorsse Dataset
+AlCoCrFeNi,194.0,6.7,,1110.0,,,BCC,Gorsse Dataset
+AlCoCrFeNi,125.0,6.7,,1138.0,,,BCC,Gorsse Dataset
+AlCoCrFeNi,125.0,6.7,,1138.0,,11,BCC,Gorsse Dataset
+AlCoCrFeNi,194.0,6.7,,1051.0,,,BCC,Gorsse Dataset
+AlCoCrFeNi,194.0,6.7,520.0,1373.0,3531.0,25,BCC,Gorsse Dataset
+Al1.25CoCrFeNi,188.0,6.5,487.0,,,,BCC,Gorsse Dataset
+Al1.25CoCrFeNi,188.0,6.5,499.0,,,,BCC,Gorsse Dataset
+Al1.5CoCrFeNi,183.0,6.2,484.0,,,,BCC,Gorsse Dataset
+Al1.5CoCrFeNi,183.0,6.2,517.0,,,,BCC,Gorsse Dataset
+Al1.5CoCrFeNi,183.0,6.2,402.0,,,,BCC,Gorsse Dataset
+Al2CoCrFeNi,173.0,5.9,509.0,,,,BCC,Gorsse Dataset
+Al2CoCrFeNi,173.0,5.9,512.0,,,,BCC,Gorsse Dataset
+Al2CoCrFeNi,173.0,5.9,432.0,,,,BCC,Gorsse Dataset
+Al2.5CoCrFeNi,165.0,5.6,487.0,,,,BCC,Gorsse Dataset
+Al3CoCrFeNi,158.0,5.3,506.0,,,,BCC,Gorsse Dataset
+AlC0.1CoCrFeNi,213.0,6.7,,957.0,2550.0,11,BCC + Im,Gorsse Dataset
+AlC0.2CoCrFeNi,151.0,6.8,,906.0,2386.0,9,BCC + Im,Gorsse Dataset
+AlC0.3CoCrFeNi,137.0,6.8,,867.0,2178.0,8,BCC + Im,Gorsse Dataset
+AlC0.4CoCrFeNi,156.0,6.8,,1056.0,2375.0,7,BCC + Im,Gorsse Dataset
+AlC0.5CoCrFeNi,181.0,6.8,,1060.0,2250.0,6,BCC + Im,Gorsse Dataset
+AlCCoCrFeNi,75.0,6.9,,1251.0,2166.0,7,BCC + Im,Gorsse Dataset
+AlC1.5CoCrFeNi,73.0,7.0,,1255.0,2083.0,6,BCC + Im,Gorsse Dataset
+AlCoCrFeMo0.1Ni,196.0,6.8,,1804.0,2280.0,9,BCC,Gorsse Dataset
+Al2CoCrFeMo0.5Ni,185.0,6.3,605.0,,,,BCC,Gorsse Dataset
+AlCoCrFeNb0.1Ni,192.0,6.8,569.0,1641.0,3285.0,17,BCC,Gorsse Dataset
+AlCoCrFeNiSi0.2,188.0,6.5,,1265.0,2173.0,14,BCC,Gorsse Dataset
+AlCoCrFeNiSi0.4,183.0,6.2,,1481.0,2444.0,13,BCC,Gorsse Dataset
+AlCoCrFeNiSi0.6,178.0,6.0,,1834.0,2195.0,3,BCC,Gorsse Dataset
+AlCoCrFeNi,169.0,5.7,,1110.0,,,BCC,Gorsse Dataset
+Al0.2Co1.5CrFeNi1.5Ti0.5,206.0,7.6,487.0,,,,FCC,Gorsse Dataset
+Al0.5CoCrFeNiTi,107.0,6.6,,,1600.0,10,BCC + Im,Gorsse Dataset
+AlCoCrFeNiTi0.5,72.0,6.4,178.0,2040.0,3135.0,24,FCC,Gorsse Dataset
+AlCoCrFeNiTi0.5,178.0,6.4,178.0,2260.0,3140.0,23,BCC,Gorsse Dataset
+AlCoCrFeNiTi,90.0,6.2,,1860.0,2580.0,9,BCC,Gorsse Dataset
+AlCoCrFeNiTi,148.0,6.2,,,2280.0,6,BCC + Im,Gorsse Dataset
+AlCoCrFeNiTi1.5,160.0,6.1,,2220.0,2720.0,5,BCC + Im,Gorsse Dataset
+Al1.5CoCrFeNiTi,133.0,5.9,,,2110.0,10,BCC,Gorsse Dataset
+Al2CoCrFeNiTi,94.0,5.6,643.0,,1030.0,5,BCC,Gorsse Dataset
+CoCrFeMnNi,219.0,8.0,176.0,208.0,,62,FCC,Gorsse Dataset
+CoCrFeMnNi,219.0,8.0,144.0,230.0,,75,FCC,Gorsse Dataset
+CoCrFeMnNiV0.25,215.0,7.9,151.0,200.0,,75,FCC,Gorsse Dataset
+CoCrFeMnNiV0.5,211.0,7.8,186.0,620.0,,75,FCC,Gorsse Dataset
+Al0.10CoCrFeMnNi,216.0,7.9,180.0,,,,FCC,Gorsse Dataset
+Al0.20CoCrFeMnNi,214.0,7.7,171.0,220.0,,56,FCC,Gorsse Dataset
+Al0.38CoCrFeMnNi,209.0,7.5,182.0,244.0,,45,FCC,Gorsse Dataset
+Al0.43CoCrFeMnNi,208.0,7.4,183.0,285.0,,35,FCC + BCC,Gorsse Dataset
+Al0.49CoCrFeMnNi,206.0,7.4,220.0,331.0,,29,FCC + BCC,Gorsse Dataset
+Al0.56CoCrFeMnNi,204.0,7.3,278.0,526.0,,16,FCC + BCC,Gorsse Dataset
+Al0.62CoCrFeMnNi,203.0,7.2,405.0,833.0,,5,FCC + BCC,Gorsse Dataset
+Al0.68CoCrFeMnNi,202.0,7.2,486.0,,,,FCC + BCC,Gorsse Dataset
+Al0.75CoCrFeMnNi,200.0,7.1,530.0,,,,FCC + BCC,Gorsse Dataset
+Al0.81CoCrFeMnNi,199.0,7.0,539.0,,,,FCC + BCC,Gorsse Dataset
+Al0.88CoCrFeMnNi,197.0,7.0,533.0,,,,FCC + BCC,Gorsse Dataset
+Al0.95CoCrFeMnNi,196.0,6.9,535.0,,,,FCC + BCC,Gorsse Dataset
+Al1.25CoCrFeMnNi,190.0,6.6,539.0,,,,BCC,Gorsse Dataset
+CoCrNi,229.0,8.3,,300.0,860.0,60,FCC,Gorsse Dataset
+CoMnNi,202.0,8.4,,231.0,653.0,38,FCC,Gorsse Dataset
+FeMnNi,203.0,8.1,,221.0,602.0,36,FCC,Gorsse Dataset
+CoCrFeNi,225.0,8.2,,274.0,708.0,39,FCC,Gorsse Dataset
+CoCrMnNi,222.0,8.1,,282.0,694.0,44,FCC,Gorsse Dataset
+CoFeMnNi,205.0,8.2,,170.0,550.0,41,FCC,Gorsse Dataset
+Al0.5CrFe1.5MnNi0.5,206.0,7.0,396.0,,,,BCC,Gorsse Dataset
+Al0.3CrFe1.5MnNi0.5,213.0,7.2,297.0,,,,FCC + BCC,Gorsse Dataset
+AlCrFeNi,190.0,6.3,472.0,1406.0,2927.0,29,BCC + B2,Gorsse Dataset
+AlCrFeNiMo0.2,197.0,6.5,549.0,1487.0,3222.0,29,BCC + B2,Gorsse Dataset
+AlCrFeNiMo0.5,205.0,6.8,622.0,1749.0,2644.0,13,BCC + B2,Gorsse Dataset
+CoCrCuFe,206.0,8.2,134.0,,,,FCC,Gorsse Dataset
+Al0.3CoCrCuFe,194.0,7.7,180.0,,,,FCC,Gorsse Dataset
+Al0.5CoCrCuFe,187.0,7.4,207.0,,,,FCC,Gorsse Dataset
+Al0.8CoCrCuFe,177.0,7.0,271.0,,,,FCC + BCC,Gorsse Dataset
+AlCoCrCuFe,172.0,6.8,407.0,,,,FCC + BCC,Gorsse Dataset
+Al1.3CoCrCuFe,165.0,6.5,476.0,,,,FCC + BCC,Gorsse Dataset
+Al1.5CoCrCuFe,167.0,6.3,510.0,,,,FCC + BCC,Gorsse Dataset
+Al1.8CoCrCuFe,155.0,6.0,557.0,,,,FCC + BCC,Gorsse Dataset
+Al2.0CoCrCuFe,152.0,5.9,567.0,,,,FCC + BCC,Gorsse Dataset
+Al2.3CoCrCuFe,147.0,5.7,603.0,,,,FCC + BCC,Gorsse Dataset
+Al2.5CoCrCuFe,144.0,5.6,624.0,,,,FCC + BCC,Gorsse Dataset
+Al2.8CoCrCuFe,140.0,5.5,657.0,,,,BCC,Gorsse Dataset
+Al3.0CoCrCuFe,138.0,5.4,644.0,,,,BCC,Gorsse Dataset
+CoCrCu0.5FeNi,214.0,8.3,172.0,,,,FCC,Gorsse Dataset
+CoCrCuFeNi,56.0,8.3,132.0,230.0,,,FCC,Gorsse Dataset
+CoCrCuFeNi,56.0,8.3,286.0,230.0,888.0,51,FCC,Gorsse Dataset
+CoCrCuFeNi,206.0,8.3,286.0,,,,FCC,Gorsse Dataset
+CoCrCuFeNiTi0.5,93.0,7.8,,700.0,1650.0,29,FCC,Gorsse Dataset
+CoCrCuFeNiTi0.5,99.0,7.8,,700.0,1650.0,22,FCC,Gorsse Dataset
+CoCrCuFeNiTi0.8,128.0,7.6,,1042.0,1848.0,3,FCC + Im,Gorsse Dataset
+CoCrCuFeNiTi,77.0,7.4,,1272.0,1272.0,2,FCC,Gorsse Dataset
+Al0.25CoCrCu0.5FeNiTi0.5,198.0,7.4,,,,,FCC,Gorsse Dataset
+Al0.25CoCrCu0.75FeNiTi0.5,103.0,7.5,,750.0,1970.0,39,FCC,Gorsse Dataset
+Al0.3CoCrCuFeNi,198.0,7.9,180.0,,,,FCC,Gorsse Dataset
+Al0.5CoCrCuFeNi,193.0,7.6,210.0,388.0,,,FCC,Gorsse Dataset
+Al0.5CoCrCuFeNi,193.0,7.6,300.0,,,,,Gorsse Dataset
+Al0.5CoCrCuFeNi,193.0,7.6,225.0,,,,FCC,Gorsse Dataset
+Al0.5CoCrCuFeNi,193.0,7.6,215.0,,,,FCC,Gorsse Dataset
+Al0.8CoCrCuFeNi,187.0,7.3,270.0,,,,FCC + BCC,Gorsse Dataset
+Al0.8CoCrCuFeNi,187.0,7.3,270.0,,,,FCC,Gorsse Dataset
+AlCoCrCuFeNi,183.0,7.1,406.0,950.0,,,FCC + BCC,Gorsse Dataset
+AlCoCrCuFeNi,184.0,7.1,472.0,,,,FCC + BCC,Gorsse Dataset
+AlCoCrCuFeNi,183.0,7.1,,1303.0,,24,FCC + BCC,Gorsse Dataset
+AlCoCrCuFeNiTi,174.0,6.6,,1234.0,,9,FCC + BCC,Gorsse Dataset
+AlCoCrCuFeNiV,175.0,6.9,,1469.0,,16,FCC + BCC,Gorsse Dataset
+Al1.3CoCrCuFeNi,178.0,6.8,470.0,,,,FCC + BCC,Gorsse Dataset
+Al1.5CoCrCuFeNi,133.0,6.6,506.0,,,,FCC + BCC,Gorsse Dataset
+Al1.8CoCrCuFeNi,170.0,6.4,650.0,,,,FCC + BCC,Gorsse Dataset
+Al2CoCrCuFeNi,167.0,6.3,560.0,1620.0,,,FCC + BCC,Gorsse Dataset
+Al2.3CoCrCuFeNi,163.0,6.1,600.0,,,,FCC + BCC,Gorsse Dataset
+Al2.5CoCrCuFeNi,161.0,6.0,620.0,,,,FCC + BCC,Gorsse Dataset
+Al2.8CoCrCuFeNi,157.0,5.8,650.0,,,,BCC,Gorsse Dataset
+Al3CoCrCuFeNi,153.0,5.7,640.0,,,,BCC,Gorsse Dataset
+Al0.5CoCrCu0.5FeNiTi0.5,161.0,7.1,,1580.0,2389.0,17,FCC + BCC,Gorsse Dataset
+Al0.5CoCrCuFeNiTi0.2,191.0,7.5,272.0,,,,FCC,Gorsse Dataset
+Al0.5CoCrCuFeNiTi0.4,188.0,7.3,321.0,,,,FCC,Gorsse Dataset
+Al0.5CoCrCuFeNiTi0.6,186.0,7.2,458.0,,,,FCC + BCC,Gorsse Dataset
+Al0.5CoCrCuFeNiTi0.8,184.0,7.1,590.0,,,,FCC + BCC,Gorsse Dataset
+Al0.5CoCrCuFeNiV0.2,191.0,7.6,204.0,,,,FCC,Gorsse Dataset
+Al0.5CoCrCuFeNiV0.4,189.0,7.5,231.0,,,,FCC + BCC,Gorsse Dataset
+Al0.5CoCrCuFeNiV1.2,182.0,7.3,579.0,,,,BCC,Gorsse Dataset
+Al0.5CoCrCuFeNiV1.4,180.0,7.3,577.0,,,,BCC,Gorsse Dataset
+Al0.5CoCrCuFeNiV1.6,179.0,7.2,594.0,,,,BCC,Gorsse Dataset
+Al0.5CoCrCuFeNiV1.8,177.0,7.2,597.0,,,,BCC,Gorsse Dataset
+Al0.5CoCrCuFeNiV2.0,176.0,7.2,587.0,,,,BCC,Gorsse Dataset
+Al0.75CoCrCu0.25FeNiTi0.5,164.0,6.8,,1900.0,2697.0,12,FCC + BCC,Gorsse Dataset
+AlCoCrCuNiTi,36.0,6.4,,,1495.0,8,BCC,Gorsse Dataset
+AlCoCrCuNiTiY0.5,36.0,6.1,,,1025.0,3,Im,Gorsse Dataset
+AlCoCrCuNiTiY0.8,38.0,5.9,,,1325.0,5,Im,Gorsse Dataset
+AlCoCrCuNiTiY,37.0,5.8,,,1192.0,4,Im,Gorsse Dataset
+AlCoFeNi,173.0,6.6,456.0,964.0,,,BCC,Gorsse Dataset
+AlCoFeNiTiVZr,143.0,6.2,790.0,,,,BCC,Gorsse Dataset
+CoCuFeNi,188.0,8.6,,,480.0,15,FCC,Gorsse Dataset
+CoCuFeNiSn0.02,187.0,8.6,,,548.0,17,FCC,Gorsse Dataset
+AlCoCuFeNi,164.0,7.0,536.0,,,,FCC + BCC,Gorsse Dataset
+AlCoCuFeNiSi,145.0,5.9,682.0,,,,FCC + BCC,Gorsse Dataset
+AlCoCuFeNiTi,156.0,6.5,626.0,,,,FCC + BCC,Gorsse Dataset
+CoCuFeMnNi,190.0,8.4,208.0,,478.0,14,FCC,Gorsse Dataset
+CrCuFeMnNi,204.0,8.1,296.0,,,,FCC + BCC,Gorsse Dataset
+CrCuFeMoNi,230.0,8.7,263.0,,,,FCC,Gorsse Dataset
+AlCrCuFeNi0.6,176.0,6.6,496.0,,,,FCC + BCC,Gorsse Dataset
+AlCrCuFeNi0.8,177.0,6.7,486.0,,,,FCC + BCC,Gorsse Dataset
+AlCrCuFeNi,178.0,6.8,495.0,,,,FCC + BCC,Gorsse Dataset
+AlCrCuFeNi1.2,179.0,6.8,407.0,,,,FCC + BCC,Gorsse Dataset
+AlCrCuFeNi1.4,180.0,6.9,367.0,,,,FCC + BCC,Gorsse Dataset
+AlCrCuFeNi2,182.0,7.1,,,,,FCC + BCC,Gorsse Dataset
+Al0.2CrCuFeNi2,199.0,8.0,,,,,FCC,Gorsse Dataset
+Al0.4CrCuFeNi2,194.0,7.8,,,,,FCC,Gorsse Dataset
+Al0.6CrCuFeNi2,190.0,7.5,,,,,FCC,Gorsse Dataset
+Al0.8CrCuFeNi2,186.0,7.3,,,,,FCC,Gorsse Dataset
+Al1.2CrCuFeNi2,178.0,6.9,,,,,FCC + BCC,Gorsse Dataset
+AlCrCuFeNi,178.0,6.8,342.0,,,,FCC + BCC,Gorsse Dataset
+Al1.125CuFe0.75NiTi1.125,145.0,5.9,516.0,980.0,1326.0,7,FCC,Gorsse Dataset
+Al22.5Cu20Fe15Ni20Ti22.5,145.0,5.9,516.0,980.0,1326.0,7,FCC ,Gorsse Dataset
+AlCuFeNiTi,146.0,6.1,516.0,1074.0,1617.0,8,FCC,Gorsse Dataset
+AlCuNiTi,108.0,5.7,537.0,300.0,536.0,< 1,FCC,Gorsse Dataset
+AlLiMg0.5ScTi1.5,69.0,2.7,591.0,,,,FCC + HCP,Gorsse Dataset
+AlCr0.5NbTiV,124.0,5.6,,1300.0,1430.0,< 1,BCC,Gorsse Dataset
+Al0.4Hf0.6NbTaTiZr,110.0,9.1,500.0,1841.0,2269.0,10,BCC,Gorsse Dataset
+Al0.3HfNbTaTiZr,63.0,9.5,353.0,1188.0,,50,BCC,Gorsse Dataset
+Al0.5HfNbTaTiZr,97.0,9.3,396.0,1302.0,,46,BCC,Gorsse Dataset
+Al0.75HfNbTaTiZr,102.0,9.3,427.0,1415.0,2050.0,30,BCC,Gorsse Dataset
+AlHfNbTaTiZr,103.0,8.6,441.0,1489.0,1900.0,21,BCC + Im,Gorsse Dataset
+AlMo0.5NbTa0.5TiZr,123.0,7.1,591.0,2000.0,2368.0,10,BCC,Gorsse Dataset
+Al0.25MoNbTiV,164.0,7.1,460.0,1250.0,,13,BCC,Gorsse Dataset
+Al0.5MoNbTiV,158.0,6.8,487.0,1625.0,,11,BCC,Gorsse Dataset
+Al0.75MoNbTiV,154.0,6.6,517.0,1260.0,,8,BCC,Gorsse Dataset
+AlMoNbTiV,150.0,6.4,537.0,1375.0,,3,BCC,Gorsse Dataset
+Al0.25NbTaTiV,92.0,8.8,,1330.0,,,BCC,Gorsse Dataset
+Al0.5NbTaTiV,97.0,8.5,,1014.0,,,BCC,Gorsse Dataset
+AlNbTaTiV,101.0,7.9,,993.0,,,BCC,Gorsse Dataset
+Al0.3NbTa0.8Ti1.4V0.2Zr1.3,110.0,7.7,500.0,1965.0,2061.0,5,BCC,Gorsse Dataset
+Al0.5NbTa0.8Ti1.5V0.2Zr,111.0,7.6,530.0,2035.0,2105.0,5,BCC,Gorsse Dataset
+Al0.3NbTaTi1.4Zr1.3,113.0,8.1,490.0,1965.0,2054.0,5,BCC,Gorsse Dataset
+AlNb1.5Ta0.5Ti1.5Zr0.5,106.0,6.8,408.0,1280.0,1367.0,4,BCC,Gorsse Dataset
+AlNbTiV,105.0,5.5,448.0,1020.0,1318.0,5,BCC,Gorsse Dataset
+AlNbTiV,105.0,5.5,,1000.0,1280.0,5,BCC,Gorsse Dataset
+CrHfNbTiZr,112.0,8.2,455.0,1375.0,2130.0,3,BCC + lm,Gorsse Dataset
+HfMo0.25NbTaTiZr,96.0,9.9,395.0,1112.0,,50,BCC,Gorsse Dataset
+HfMo0.5NbTaTiZr,102.0,10.0,480.0,1317.0,,50,BCC,Gorsse Dataset
+HfMo0.75NbTaTiZr,109.0,10.0,492.0,1373.0,,50,BCC,Gorsse Dataset
+HfMoNbTaTiZr,147.0,10.0,505.0,1512.0,,12,BCC,Gorsse Dataset
+HfMoNbTaTiZr,115.0,10.0,505.0,1512.0,,12,BCC,Gorsse Dataset
+HfMoTaTiZr,155.0,10.2,542.0,1600.0,,4,BCC,Gorsse Dataset
+HfMoNbZrTi,139.0,8.7,,1803.0,1719.0,10,BCC,Gorsse Dataset
+HfNbTaZr,109.0,11.1,365.0,1315.0,,,BCC,Gorsse Dataset
+Hf0.5Nb0.5Ta0.5Ti1.5Zr,107.0,8.1,301.0,903.0,990.0,19,BCC,Gorsse Dataset
+HfNbTaTiZr,85.0,9.9,335.0,1015.0,,50,BCC,Gorsse Dataset
+HfNbTaTiZr,55.0,9.7,295.0,1073.0,,50,BCC,Gorsse Dataset
+HfNbTaTiZr,111.0,9.9,390.0,929.0,,50,BCC,Gorsse Dataset
+HfNbTiVZr,128.0,8.1,388.0,1170.0,1463.0,30,BCC + lm,Gorsse Dataset
+HfNbTiZr,92.0,8.4,,879.0,969.0,15,BCC,Gorsse Dataset
+MoNbTaV,187.0,10.7,504.0,1525.0,2400.0,21,BCC,Gorsse Dataset
+MoNbTaVW,232.0,12.4,536.0,1246.0,1270.0,2,BCC,Gorsse Dataset
+MoNbTaW,258.0,13.7,454.0,1058.0,1211.0,2,BCC,Gorsse Dataset
+MoNbTiV,170.0,7.3,441.0,1200.0,,26,BCC,Gorsse Dataset
+MoNbTiV0.25Zr,153.0,7.3,,1776.0,3893.0,30,BCC,Gorsse Dataset
+MoNbTiV0.50Zr,152.0,7.2,,1647.0,3307.0,28,BCC,Gorsse Dataset
+MoNbTiV0.75Zr,150.0,7.2,,1708.0,3929.0,29,BCC,Gorsse Dataset
+MoNbTiV1.0Zr,149.0,7.1,,1786.0,3828.0,26,BCC,Gorsse Dataset
+MoNbTiV1.5Zr,147.0,7.1,,1735.0,3300.0,20,BCC,Gorsse Dataset
+MoNbTiV2.0Zr,146.0,7.0,,1538.0,3176.0,23,BCC,Gorsse Dataset
+MoNbTiV3.0Zr,143.0,6.9,,1418.0,2508.0,24,BCC,Gorsse Dataset
+MoNbTiZr,155.0,7.3,,1592.0,3450.0,34,BCC,Gorsse Dataset
+NbTaTiV,106.0,9.2,,1092.0,,,BCC,Gorsse Dataset
+NbTaVW,208.0,12.9,492.0,1530.0,,12,BCC,Gorsse Dataset
+NbTiVZr,104.0,6.5,335.0,1105.0,,> 50,BCC,Gorsse Dataset
+NbTiV2Zr,109.0,6.4,304.0,918.0,,> 50,BCC,Gorsse Dataset
+CoCrCuFeNiTiVZr,168.0,7.1,680.0,,,,,Gorsse Dataset
+CoCrFeMoNiTiVZr,193.0,7.3,850.0,,,,,Gorsse Dataset
+CoFeNiV,187.0,7.8,238.0,,,,FCC,Gorsse Dataset
+CuFeNiTiVZr,142.0,6.8,590.0,,,,,Gorsse Dataset
+CoCrCuFeMnNiTiV,74.0,7.3,,1312.0,1312.0,< 1,FCC + BCC + Im,Gorsse Dataset
+Al11.1(CoCrCuFeMnNiTiV)88.9,164.0,6.7,,1862.0,2431.0,< 1,FCC + BCC,Gorsse Dataset
+Al20(CoCrCuFeMnNiTiV)80,190.0,6.1,,1465.0,2016.0,2,BCC,Gorsse Dataset
+Al40(CoCrCuFeMnNiTiV)60,163.0,5.1,,1461.0,1461.0,< 1,BCC + Im,Gorsse Dataset
+AlFeNiTiVZr,132.0,5.9,800.0,,,,BCC,Gorsse Dataset
+(CuMnNi)75Zn25,169.0,8.3,147.0,215.0,,>60,FCC,Gorsse Dataset
+(CuMnNi)80Zn20,171.0,8.3,109.0,140.0,,>65,FCC,Gorsse Dataset
+(CuMnNi)95Al5,174.0,8.3,166.0,330.0,,>45,FCC,Gorsse Dataset
